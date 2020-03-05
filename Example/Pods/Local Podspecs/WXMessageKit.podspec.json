@@ -1,13 +1,13 @@
 {
   "name": "WXMessageKit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": {
     "type": "MIT"
   },
   "requires_arc": true,
   "source": {
     "git": "https://github.com/alexiscn/WXMessageKit.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "summary": "WXMessageKit",
   "homepage": "https://github.com/alexiscn/WXMessageKit",
@@ -19,5 +19,10 @@
   },
   "swift_versions": "5.0",
   "source_files": "Sources/**/*.{swift}",
+  "dependencies": {
+    "Texture": [
+
+    ]
+  },
   "swift_version": "5.0"
 }
