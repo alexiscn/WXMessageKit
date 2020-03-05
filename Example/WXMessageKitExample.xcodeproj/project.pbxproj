@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		A3F89C732410D13D00202710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F89C712410D13D00202710 /* Main.storyboard */; };
 		A3F89C752410D14000202710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F89C742410D14000202710 /* Assets.xcassets */; };
 		A3F89C782410D14000202710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F89C762410D14000202710 /* LaunchScreen.storyboard */; };
+		A3F89C992411154C00202710 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89C982411154C00202710 /* Message.swift */; };
+		A3F89C9E2411345C00202710 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89C9D2411345C00202710 /* ChatRoomViewController.swift */; };
+		A3F89CA22411372D00202710 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CA12411372D00202710 /* Session.swift */; };
+		A3F89CA42411374600202710 /* ChatRoomDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CA32411374600202710 /* ChatRoomDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		A3F89C742410D14000202710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3F89C772410D14000202710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3F89C792410D14000202710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3F89C982411154C00202710 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A3F89C9D2411345C00202710 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		A3F89CA12411372D00202710 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		A3F89CA32411374600202710 /* ChatRoomDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomDataSource.swift; sourceTree = "<group>"; };
 		A9633E56065AFBA9070B1CD1 /* Pods-WXMessageKitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXMessageKitExample.release.xcconfig"; path = "Target Support Files/Pods-WXMessageKitExample/Pods-WXMessageKitExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +56,6 @@
 				86286497CBAFF5AA1B4A1BFE /* Pods-WXMessageKitExample.debug.xcconfig */,
 				A9633E56065AFBA9070B1CD1 /* Pods-WXMessageKitExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +88,43 @@
 		A3F89C6A2410D13D00202710 /* WXMessageKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				A3F89CA02411371B00202710 /* Models */,
+				A3F89C9F2411371400202710 /* ViewControllers */,
+				A3F89CA52411377200202710 /* Supporting Files */,
 				A3F89C6B2410D13D00202710 /* AppDelegate.swift */,
 				A3F89C6D2410D13D00202710 /* SceneDelegate.swift */,
 				A3F89C6F2410D13D00202710 /* ViewController.swift */,
-				A3F89C712410D13D00202710 /* Main.storyboard */,
-				A3F89C742410D14000202710 /* Assets.xcassets */,
-				A3F89C762410D14000202710 /* LaunchScreen.storyboard */,
-				A3F89C792410D14000202710 /* Info.plist */,
 			);
 			path = WXMessageKitExample;
+			sourceTree = "<group>";
+		};
+		A3F89C9F2411371400202710 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3F89C9D2411345C00202710 /* ChatRoomViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A3F89CA02411371B00202710 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3F89C982411154C00202710 /* Message.swift */,
+				A3F89CA12411372D00202710 /* Session.swift */,
+				A3F89CA32411374600202710 /* ChatRoomDataSource.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3F89CA52411377200202710 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3F89C712410D13D00202710 /* Main.storyboard */,
+				A3F89C742410D14000202710 /* Assets.xcassets */,
+				A3F89C792410D14000202710 /* Info.plist */,
+				A3F89C762410D14000202710 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +139,7 @@
 				A3F89C652410D13D00202710 /* Frameworks */,
 				A3F89C662410D13D00202710 /* Resources */,
 				F5F6ED518ED31829CE4113FE /* [CP] Embed Pods Frameworks */,
+				A3F89C9A2411158800202710 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -183,6 +219,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A3F89C9A2411158800202710 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nfind \"${SRCROOT}/Pods\" -type f -name *frameworks.sh -exec bash -c \"touch \\\"{}\\\"\" \\;\n";
+		};
 		F5F6ED518ED31829CE4113FE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,8 +261,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3F89C702410D13D00202710 /* ViewController.swift in Sources */,
+				A3F89C992411154C00202710 /* Message.swift in Sources */,
+				A3F89CA22411372D00202710 /* Session.swift in Sources */,
+				A3F89C9E2411345C00202710 /* ChatRoomViewController.swift in Sources */,
 				A3F89C6C2410D13D00202710 /* AppDelegate.swift in Sources */,
 				A3F89C6E2410D13D00202710 /* SceneDelegate.swift in Sources */,
+				A3F89CA42411374600202710 /* ChatRoomDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX863G777H;
-				INFOPLIST_FILE = WXMessageKitExample/Info.plist;
+				INFOPLIST_FILE = "WXMessageKitExample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,7 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX863G777H;
-				INFOPLIST_FILE = WXMessageKitExample/Info.plist;
+				INFOPLIST_FILE = "WXMessageKitExample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

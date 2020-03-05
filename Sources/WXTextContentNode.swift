@@ -14,7 +14,10 @@ public class WXTextContentNode: WXContentNode {
         public static var senderEdgeInsets = UIEdgeInsets(top: 10, left: 12, bottom: 10, right: 15)
         
         public static var receiverEdgeInsets = UIEdgeInsets(top: 10, left: 17, bottom: 10, right: 12)
+     
+        public static var senderBubble = UIImage.as_imageNamed("ChatRoom_Bubble_Text_Sender_Green_57x40_")
         
+        public static var receiverBubble = UIImage.as_imageNamed("ChatRoom_Bubble_Text_Receiver_White_57x40_")
     }
     
     private let bubbleNode = ASImageNode()
@@ -25,9 +28,7 @@ public class WXTextContentNode: WXContentNode {
         super.init(message)
         
         automaticallyManagesSubnodes = true
-        
-        let bubble = UIImage.as_imageNamed("")
-        bubbleNode.image = bubble
+        bubbleNode.image = message.isOutgoing ? Constants.senderBubble : Constants.receiverBubble
     }
     
     public override func didLoad() {

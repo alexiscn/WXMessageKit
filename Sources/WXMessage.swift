@@ -7,6 +7,8 @@
 
 public protocol WXMessage {
     
+    var messageId: String { get set }
+    
     var isOutgoing: Bool { get set }
     
 }

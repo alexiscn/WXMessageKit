@@ -7,14 +7,34 @@
 //
 
 import UIKit
+import WXMessageKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        configureTestButton()
     }
 
+    private func configureTestButton() {
+        let button = UIButton(type: .system)
+        button.setTitle("Chat", for: .normal)
+        view.addSubview(button)
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+     
+        button.addTarget(self, action: #selector(handleTestButtonClicked), for: .touchUpInside)
+    }
 
+    @objc private func handleTestButtonClicked() {
+        let session = Session(sessionId: "1001")
+        let dataSource = ChatRoomDataSource(message: [])
+        let vc = WXMessageViewController(session: session, dataSource: dataSource)
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
-
