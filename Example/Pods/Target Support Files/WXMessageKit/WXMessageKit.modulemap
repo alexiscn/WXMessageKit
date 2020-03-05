@@ -1,0 +1,6 @@
+framework module WXMessageKit {
+  umbrella header "WXMessageKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

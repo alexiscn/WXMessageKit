@@ -1,0 +1,16 @@
+PODS:
+  - WXMessageKit (0.0.1)
+
+DEPENDENCIES:
+  - WXMessageKit (from `../`)
+
+EXTERNAL SOURCES:
+  WXMessageKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WXMessageKit: 2502593ff9e157e7f997ab2ed0c868392c4165cc
+
+PODFILE CHECKSUM: 8636a4c99dbe590a3b327aa000fec33b1a28e7af
+
+COCOAPODS: 1.9.0

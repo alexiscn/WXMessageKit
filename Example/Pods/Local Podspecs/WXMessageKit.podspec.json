@@ -1,0 +1,23 @@
+{
+  "name": "WXMessageKit",
+  "version": "0.0.1",
+  "license": {
+    "type": "MIT"
+  },
+  "requires_arc": true,
+  "source": {
+    "git": "https://github.com/alexiscn/WXMessageKit.git",
+    "tag": "0.0.1"
+  },
+  "summary": "WXMessageKit",
+  "homepage": "https://github.com/alexiscn/WXMessageKit",
+  "authors": {
+    "xushuifeng": "shuifengxu@gmail.com"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "Sources/**/*.{swift}",
+  "swift_version": "5.0"
+}
