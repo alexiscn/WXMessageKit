@@ -7,6 +7,6 @@
 
 import AsyncDisplayKit
 
-public class WXNoticeContentNode: ASDisplayNode {
+public class WXNoticeContentNode: WXContentNode {
     
 }

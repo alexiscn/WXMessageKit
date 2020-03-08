@@ -7,7 +7,7 @@
 
 import AsyncDisplayKit
 
-public class WXVoiceContentNode: ASDisplayNode {
+public class WXVoiceContentNode: WXContentNode {
     
     public struct Constants {
         
@@ -23,6 +23,13 @@ public class WXVoiceContentNode: ASDisplayNode {
     public let durationNode = ASTextNode()
     
     public let unreadNode = ASImageNode()
+    
+    public let voice: WXVoice
+    
+    public init(message: WXMessage, voice: WXVoice) {
+        self.voice = voice
+        super.init(message: message)
+    }
     
     public override func didLoad() {
         super.didLoad()

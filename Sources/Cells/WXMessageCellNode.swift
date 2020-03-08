@@ -58,6 +58,8 @@ open class WXMessageCellNode: ASCellNode {
         if let bottomTextNode = bottomTextNode {
             addSubnode(bottomTextNode)
         }
+        
+        avatarNode.image = WXUtility.image(named: "DefaultHead_48x48_")
     }
     
     open override func didLoad() {

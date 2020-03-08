@@ -18,7 +18,9 @@ public protocol WXMessage {
 
 public enum WXMessageContent {
     case text(String)
-    case voice
+    case image(WXMediaContent)
+    case emoticon(WXEmoticon)
+    case voice(WXVoice)
     case custom(Any?)
 }
 
@@ -29,5 +31,17 @@ public protocol WXMediaContent {
     var image: UIImage? { get }
     
     var url: URL? { get }
+    
+}
+
+
+public protocol WXEmoticon {
+ 
+    var url: URL? { get }
+}
+
+public protocol WXVoice {
+    
+    var duration: Float { get }
     
 }

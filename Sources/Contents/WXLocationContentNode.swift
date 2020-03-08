@@ -7,6 +7,7 @@
 
 import AsyncDisplayKit
 
-public class WXLocationContentNode: ASDisplayNode {
+public class WXLocationContentNode: WXContentNode {
+    
     
 }

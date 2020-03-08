@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'WXMessageKit'
-  s.version      = '0.0.2'
+  s.version      = '0.0.3'
   s.license = 'MIT'
   s.requires_arc = true
   s.source = { :git => 'https://github.com/alexiscn/WXMessageKit.git', :tag => s.version.to_s }

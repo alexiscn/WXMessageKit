@@ -38,7 +38,6 @@ open class WXMessageViewController: ASViewController<ASDisplayNode> {
         node.backgroundColor = Constants.backgroundColor
         
         configureTableNode()
-        
     }
     
     func configureTableNode() {
@@ -71,6 +70,10 @@ extension WXMessageViewController: ASTableDataSource {
             switch message.content {
             case .text(let text):
                 contentNode = WXTextContentNode(message: message, text: text)
+            case .image(let media):
+                contentNode = WXImageContentNode(message: message, media: media)
+            case .voice(let voice):
+                contentNode = WXVoiceContentNode(message: message, voice: voice)
             default:
                 contentNode = WXContentNode(message: message)
                 break
