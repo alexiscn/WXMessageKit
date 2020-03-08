@@ -60,6 +60,22 @@ public protocol WXMessageDataSource {
 
 
 
+`WXMessageContent` represents the actual content of the message.
+
+```swift
+public enum WXMessageContent {
+    case text(String)
+    case image(WXMediaContent)
+    case emoticon(WXEmoticon)
+    case voice(WXVoice)
+    case custom(Any?)
+}
+```
+
+
+
+
+
 Supported Content Type
 
 * Text
@@ -81,6 +97,12 @@ Supported Content Type
 ```swift
 WXMessageContent.text(String)
 ```
+
+
+
+![](Assets/Content_Text.jpg)
+
+
 
 #### Image
 
