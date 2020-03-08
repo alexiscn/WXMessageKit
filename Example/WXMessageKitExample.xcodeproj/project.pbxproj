@@ -23,7 +23,7 @@
 /* Begin PBXFileReference section */
 		86286497CBAFF5AA1B4A1BFE /* Pods-WXMessageKitExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXMessageKitExample.debug.xcconfig"; path = "Target Support Files/Pods-WXMessageKitExample/Pods-WXMessageKitExample.debug.xcconfig"; sourceTree = "<group>"; };
 		959B31C05316AA194874271B /* Pods_WXMessageKitExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WXMessageKitExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3F89C682410D13D00202710 /* WXMessageKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXMessageKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F89C682410D13D00202710 /* MessageKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F89C6B2410D13D00202710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3F89C6D2410D13D00202710 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A3F89C6F2410D13D00202710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		A3F89C692410D13D00202710 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3F89C682410D13D00202710 /* WXMessageKitExample.app */,
+				A3F89C682410D13D00202710 /* MessageKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,7 +147,7 @@
 			);
 			name = WXMessageKitExample;
 			productName = WXMessageKitExample;
-			productReference = A3F89C682410D13D00202710 /* WXMessageKitExample.app */;
+			productReference = A3F89C682410D13D00202710 /* MessageKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -419,7 +419,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.shuifeng.WXMessageKitExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MessageKit;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -438,7 +438,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.shuifeng.WXMessageKitExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MessageKit;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

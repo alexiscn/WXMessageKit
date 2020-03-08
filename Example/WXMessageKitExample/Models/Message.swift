@@ -11,6 +11,10 @@ import WXMessageKit
 
 struct Message: WXMessage {
     
+    var formatTime: String?
+    
+    var content: WXMessageContent
+
     var messageId: String
     
     var isOutgoing: Bool

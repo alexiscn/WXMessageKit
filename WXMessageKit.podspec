@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author          = { 'xushuifeng' => 'shuifengxu@gmail.com' }
   s.platform        = :ios
   s.swift_version   = '5.0'
-  s.source_files    = 'Sources/**/*.{swift}'
+  s.source_files    = 'Sources/**/*.swift'
   s.resource_bundle = { 'Media' => 'Sources/Media.xcassets'}
   s.ios.deployment_target = '12.0'
   s.dependency 'Texture'

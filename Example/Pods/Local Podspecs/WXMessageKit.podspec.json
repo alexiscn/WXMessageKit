@@ -18,7 +18,7 @@
     "ios": "12.0"
   },
   "swift_versions": "5.0",
-  "source_files": "Sources/**/*.{swift}",
+  "source_files": "Sources/**/*.swift",
   "resource_bundles": {
     "Media": "Sources/Media.xcassets"
   },

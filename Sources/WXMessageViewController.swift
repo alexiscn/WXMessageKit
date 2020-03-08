@@ -10,6 +10,10 @@ import AsyncDisplayKit
 
 open class WXMessageViewController: ASViewController<ASDisplayNode> {
     
+    public struct Constants {
+        public static var backgroundColor = UIColor(white: 237.0/255, alpha: 1.0)
+    }
+    
     public let tableNode = ASTableNode()
     
     public let session: WXSession
@@ -22,7 +26,6 @@ open class WXMessageViewController: ASViewController<ASDisplayNode> {
         super.init(node: ASDisplayNode())
         
         node.addSubnode(tableNode)
-        
     }
     
     required public init?(coder: NSCoder) {
@@ -32,14 +35,16 @@ open class WXMessageViewController: ASViewController<ASDisplayNode> {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        node.backgroundColor = .white
+        node.backgroundColor = Constants.backgroundColor
         
         configureTableNode()
         
     }
     
     func configureTableNode() {
+        tableNode.frame = node.bounds
         tableNode.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        tableNode.backgroundColor = .clear
         tableNode.view.allowsSelection = false
         tableNode.view.separatorStyle = .none
         tableNode.dataSource = self
@@ -59,9 +64,19 @@ extension WXMessageViewController: ASTableDataSource {
     }
     
     public func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
-        //let message = 
-        let block = {
-            return ASCellNode()
+        let message = dataSource.message(at: indexPath.row)
+        let block = { () -> ASCellNode in
+            
+            var contentNode: WXContentNode
+            switch message.content {
+            case .text(let text):
+                contentNode = WXTextContentNode(message: message, text: text)
+            default:
+                contentNode = WXContentNode(message: message)
+                break
+            }
+            let cellNode = WXMessageCellNode(message: message, contentNode: contentNode)
+            return cellNode
         }
         return block
     }

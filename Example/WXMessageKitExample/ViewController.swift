@@ -33,7 +33,9 @@ class ViewController: UIViewController {
 
     @objc private func handleTestButtonClicked() {
         let session = Session(sessionId: "1001")
-        let dataSource = ChatRoomDataSource(message: [])
+        let m1 = Message(formatTime: "...", content: .text("Hello World"), messageId: "1", isOutgoing: true)
+        let m2 = Message(formatTime: "...", content: .text("Hello World"), messageId: "1", isOutgoing: false)
+        let dataSource = ChatRoomDataSource(message: [m1, m2])
         let vc = WXMessageViewController(session: session, dataSource: dataSource)
         navigationController?.pushViewController(vc, animated: true)
     }

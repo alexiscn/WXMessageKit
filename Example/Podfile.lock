@@ -56,7 +56,7 @@ SPEC CHECKSUMS:
   PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
-  WXMessageKit: 195de2d3a7abe4fa02934e6d87f178c2e0aaacc4
+  WXMessageKit: 97fbb67ac5b45a913cf1cbb4311ab29d09439384
 
 PODFILE CHECKSUM: 8636a4c99dbe590a3b327aa000fec33b1a28e7af
 

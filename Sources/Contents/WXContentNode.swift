@@ -8,11 +8,11 @@
 import UIKit
 import AsyncDisplayKit
 
-public class WXContentNode: ASDisplayNode {
+open class WXContentNode: ASDisplayNode {
     
     public let message: WXMessage
     
-    public init(_ message: WXMessage) {
+    public init(message: WXMessage) {
         self.message = message
     }
 }
