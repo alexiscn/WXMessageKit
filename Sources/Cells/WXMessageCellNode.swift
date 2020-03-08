@@ -16,6 +16,10 @@ open class WXMessageCellNode: ASCellNode {
         
         /// The insets for the layout.
         public static var insets = UIEdgeInsets(top: 5, left: 12, bottom: 5, right: 12)
+        
+        public static var displayTimeBackground = false
+        
+        public static var preferredTimeLabelHeight: CGFloat = 44.0
     }
     
     public weak var delegate: WXMessageCellNodeDelegate?
@@ -37,6 +41,10 @@ open class WXMessageCellNode: ASCellNode {
     public init(message: WXMessage, contentNode: WXContentNode) {
         self.message = message
         self.contentNode = contentNode
+        
+        if let formattedTime = message.formatTime {
+            timeNode = WXTimeNode(timeText: formattedTime, displayBackground: Constants.displayTimeBackground)
+        }
         
         super.init()
         
@@ -100,7 +108,7 @@ open class WXMessageCellNode: ASCellNode {
         layoutSpec.alignItems = message.isOutgoing ? .end: .start
         var layoutElements: [ASLayoutElement] = []
         if let topTextNode = timeNode {
-            //topTextNode.style.preferredSize = CGSize(width: Constants.screenWidth, height: 44)
+            topTextNode.style.preferredSize = CGSize(width: WXUtility.screenWidth, height: Constants.preferredTimeLabelHeight)
             layoutElements.append(topTextNode)
         }
         layoutElements.append(contentHorizontalSpec)

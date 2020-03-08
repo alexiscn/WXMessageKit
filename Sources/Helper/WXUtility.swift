@@ -9,6 +9,10 @@ import UIKit
 
 class WXUtility {
     
+    static let screenHeight = UIScreen.main.bounds.height
+    
+    static let screenWidth = UIScreen.main.bounds.width
+    
     static var bundle: Bundle? = {
         if let url = Bundle(for: WXUtility.self).url(forResource: "Media", withExtension: "bundle") {
             return Bundle(url: url)

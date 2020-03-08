@@ -26,7 +26,7 @@ open class WXTextContentNode: WXContentNode {
     
     private let bubbleNode = ASImageNode()
     
-    private let textNode = ASTextNode()
+    private let textNode = ASTextNode2()
     
     public init(message: WXMessage, text: String) {
         super.init(message: message)

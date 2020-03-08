@@ -26,4 +26,8 @@ public protocol WXMediaContent {
     
     var size: CGSize { get }
     
+    var image: UIImage? { get }
+    
+    var url: URL? { get }
+    
 }
