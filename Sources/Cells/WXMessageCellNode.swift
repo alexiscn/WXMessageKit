@@ -14,6 +14,8 @@ open class WXMessageCellNode: ASCellNode {
         /// The size for avatar. 40x40 by default.
         public static var avatarPreferredSize = CGSize(width: 40, height: 40)
         
+        public static var avatarPreferredCornerRadius: CGFloat = 6.0
+        
         /// The insets for the layout.
         public static var insets = UIEdgeInsets(top: 5, left: 12, bottom: 5, right: 12)
         
@@ -59,6 +61,9 @@ open class WXMessageCellNode: ASCellNode {
             addSubnode(bottomTextNode)
         }
         
+        avatarNode.style.preferredSize = Constants.avatarPreferredSize
+        avatarNode.cornerRadius = Constants.avatarPreferredCornerRadius
+        avatarNode.cornerRoundingType = .precomposited
         avatarNode.image = WXUtility.image(named: "DefaultHead_48x48_")
     }
     

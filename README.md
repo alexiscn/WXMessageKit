@@ -4,6 +4,12 @@ Status: On-Working
 
 
 
+## Requirements
+
+- iOS 12.0+
+- Xcode 11.0+
+- Swift 5.0+
+
 ## Installation
 
 `WXMessageKit` is available through CocoaPods. To install it, simply add the following line to your Podfile:
@@ -100,7 +106,7 @@ WXMessageContent.text(String)
 
 
 
-![](Assets/Content_Text.jpg)
+![](Assets/Content_Text@2x.jpg)
 
 
 
@@ -108,8 +114,36 @@ WXMessageContent.text(String)
 
 
 
+Conformt to `WXMediaContent` protocol
+
+```swift
+struct Media: WXMediaContent {
+    
+    var size: CGSize
+    
+    var image: UIImage?
+    
+    var url: URL?
+}
+```
+
+
+
+`WXMessageContent.image(media)`
+
+
+
+#### Voice
+
+
+
+#### Customize content node
+
+You can inherit `WXContentNode` to create your own content node. It must be assoicated with `WXMediaContent`.
+
 
 
 ## Configuration
 
 TO BE DONE
+

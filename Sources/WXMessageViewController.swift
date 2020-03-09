@@ -51,6 +51,20 @@ open class WXMessageViewController: ASViewController<ASDisplayNode> {
     }
 }
 
+// MARK: - Public functions
+extension WXMessageViewController {
+    
+    public func scrollToLastMessage(animated: Bool) {
+        DispatchQueue.main.async {
+            let last = self.dataSource.numberOfMessages() - 1
+            if last > 0 {
+                let indexPath = IndexPath(row: last, section: 0)
+                self.tableNode.scrollToRow(at: indexPath, at: .bottom, animated: animated)
+            }
+        }
+    }
+}
+
 // MARK: - ASTableDataSource
 extension WXMessageViewController: ASTableDataSource {
     

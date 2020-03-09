@@ -19,6 +19,7 @@
 		A3F89CA22411372D00202710 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CA12411372D00202710 /* Session.swift */; };
 		A3F89CA42411374600202710 /* ChatRoomDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CA32411374600202710 /* ChatRoomDataSource.swift */; };
 		A3F89CCB24152CE600202710 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CCA24152CE600202710 /* SampleData.swift */; };
+		A3F89CCF2415BD1100202710 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CCE2415BD1100202710 /* Media.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		A3F89CA12411372D00202710 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		A3F89CA32411374600202710 /* ChatRoomDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomDataSource.swift; sourceTree = "<group>"; };
 		A3F89CCA24152CE600202710 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		A3F89CCE2415BD1100202710 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		A9633E56065AFBA9070B1CD1 /* Pods-WXMessageKitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXMessageKitExample.release.xcconfig"; path = "Target Support Files/Pods-WXMessageKitExample/Pods-WXMessageKitExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				A3F89C982411154C00202710 /* Message.swift */,
 				A3F89CA12411372D00202710 /* Session.swift */,
 				A3F89CA32411374600202710 /* ChatRoomDataSource.swift */,
+				A3F89CCE2415BD1100202710 /* Media.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				A3F89CA22411372D00202710 /* Session.swift in Sources */,
 				A3F89C9E2411345C00202710 /* ChatRoomViewController.swift in Sources */,
 				A3F89C6C2410D13D00202710 /* AppDelegate.swift in Sources */,
+				A3F89CCF2415BD1100202710 /* Media.swift in Sources */,
 				A3F89C6E2410D13D00202710 /* SceneDelegate.swift in Sources */,
 				A3F89CA42411374600202710 /* ChatRoomDataSource.swift in Sources */,
 				A3F89CCB24152CE600202710 /* SampleData.swift in Sources */,

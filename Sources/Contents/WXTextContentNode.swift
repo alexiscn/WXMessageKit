@@ -15,8 +15,10 @@ open class WXTextContentNode: WXContentNode {
         
         public static var receiverEdgeInsets = UIEdgeInsets(top: 10, left: 17, bottom: 10, right: 12)
         
+        /// The font of text cell. `UIFont.systemFont(ofSize: 17)` by default.
         public static var font = UIFont.systemFont(ofSize: 17)
         
+        /// The text color. `black` by default.
         public static var textColor = UIColor.black
      
         public static var senderBubble = WXUtility.image(named: "ChatRoom_Bubble_Text_Sender_Green_57x40_")
@@ -24,9 +26,9 @@ open class WXTextContentNode: WXContentNode {
         public static var receiverBubble = WXUtility.image(named: "ChatRoom_Bubble_Text_Receiver_White_57x40_")
     }
     
-    private let bubbleNode = ASImageNode()
+    public let bubbleNode = ASImageNode()
     
-    private let textNode = ASTextNode2()
+    public let textNode = ASTextNode2()
     
     public init(message: WXMessage, text: String) {
         super.init(message: message)
@@ -73,6 +75,7 @@ open class WXTextContentNode: WXContentNode {
     }
 }
 
+// MARK: - 
 extension WXTextContentNode: ASTextNodeDelegate {
     
 }
