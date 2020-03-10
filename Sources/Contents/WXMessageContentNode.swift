@@ -1,5 +1,5 @@
 //
-//  WXContentNode.swift
+//  WXMessageContentNode.swift
 //  WXMessageKit
 //
 //  Created by xushuifeng on 2020/3/5.
@@ -8,7 +8,7 @@
 import UIKit
 import AsyncDisplayKit
 
-open class WXContentNode: ASDisplayNode {
+open class WXMessageContentNode: ASDisplayNode {
     
     public let message: WXMessage
     

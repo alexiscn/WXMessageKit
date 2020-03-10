@@ -13,6 +13,8 @@ class WXUtility {
     
     static let screenWidth = UIScreen.main.bounds.width
     
+    static let lineHeight = 1 / UIScreen.main.scale
+    
     static var bundle: Bundle? = {
         if let url = Bundle(for: WXUtility.self).url(forResource: "Media", withExtension: "bundle") {
             return Bundle(url: url)

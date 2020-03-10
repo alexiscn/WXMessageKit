@@ -7,7 +7,7 @@
 
 import AsyncDisplayKit
 
-public class WXImageContentNode: WXContentNode {
+public class WXImageContentNode: WXMessageContentNode {
     
     public struct Constants {
         
@@ -26,9 +26,9 @@ public class WXImageContentNode: WXContentNode {
     
     public let imageNode: ASNetworkImageNode = ASNetworkImageNode()
     
-    public let media: WXMediaContent
+    public let media: WXMedia
     
-    public init(message: WXMessage, media: WXMediaContent) {
+    public init(message: WXMessage, media: WXMedia) {
         self.media = media
         super.init(message: message)
         automaticallyManagesSubnodes = true

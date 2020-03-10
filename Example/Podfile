@@ -2,5 +2,7 @@ platform:ios, '12.0'
 use_frameworks!
 
 target 'WXMessageKitExample' do
+  
+  pod 'WXNavigationBar'
   pod 'WXMessageKit', :path => '../'
 end

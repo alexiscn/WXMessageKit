@@ -63,6 +63,10 @@ extension WXMessageViewController {
             }
         }
     }
+    
+    public func reloadData() {
+        tableNode.reloadData()
+    }
 }
 
 // MARK: - ASTableDataSource
@@ -80,17 +84,26 @@ extension WXMessageViewController: ASTableDataSource {
         let message = dataSource.message(at: indexPath.row)
         let block = { () -> ASCellNode in
             
-            var contentNode: WXContentNode
+            var contentNode: WXMessageContentNode
             switch message.content {
             case .text(let text):
                 contentNode = WXTextContentNode(message: message, text: text)
             case .image(let media):
                 contentNode = WXImageContentNode(message: message, media: media)
+            case .video(let media):
+                contentNode = WXVideoContentNode(message: message, video: media)
             case .voice(let voice):
                 contentNode = WXVoiceContentNode(message: message, voice: voice)
-            default:
-                contentNode = WXContentNode(message: message)
-                break
+            case .emoticon(let emoticon):
+                contentNode = WXEmoticonContentNode(message: message, emoticon: emoticon)
+            case .location(let loc):
+                contentNode = WXLocationContentNode(message: message, location: loc)
+            case .custom(_):
+                if let node = self.dataSource.customContentNode(for: message.content, at: indexPath) {
+                    contentNode = node
+                } else {
+                    fatalError("Can not create content node")
+                }
             }
             let cellNode = WXMessageCellNode(message: message, contentNode: contentNode)
             return cellNode

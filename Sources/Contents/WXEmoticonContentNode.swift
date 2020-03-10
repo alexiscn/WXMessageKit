@@ -8,7 +8,7 @@
 import AsyncDisplayKit
 import PINRemoteImage
 
-public class WXEmoticonContentNode: WXContentNode {
+public class WXEmoticonContentNode: WXMessageContentNode {
     
     public struct Constants {
         

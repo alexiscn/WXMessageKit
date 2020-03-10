@@ -7,7 +7,7 @@
 
 import AsyncDisplayKit
 
-public class WXVoiceContentNode: WXContentNode {
+public class WXVoiceContentNode: WXMessageContentNode {
     
     public struct Constants {
         

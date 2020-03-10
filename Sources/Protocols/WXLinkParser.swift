@@ -21,3 +21,7 @@ public protocol WXLinkResult {
     var url: URL? { get }
     
 }
+
+extension WXLinkParser {
+    
+}

@@ -18,6 +18,8 @@ public class WXTimeNode: ASDisplayNode {
         public static var textColor = UIColor(white: 0, alpha: 0.3)
         
         public static var textColorWithBackgroundImage = UIColor(white: 0, alpha: 0.9)
+        
+        public static var font = UIFont.systemFont(ofSize: 14)
     }
     
     private let textNode = ASTextNode2()
@@ -35,7 +37,7 @@ public class WXTimeNode: ASDisplayNode {
         let textColor = displayBackground ? Constants.textColorWithBackgroundImage: Constants.textColor
         
         let attributes = [
-            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14),
+            NSAttributedString.Key.font: Constants.font,
             NSAttributedString.Key.foregroundColor: textColor
         ]
         textNode.attributedText = NSAttributedString(string: timeText, attributes: attributes)

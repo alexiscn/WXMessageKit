@@ -17,9 +17,10 @@
 		A3F89C992411154C00202710 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89C982411154C00202710 /* Message.swift */; };
 		A3F89C9E2411345C00202710 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89C9D2411345C00202710 /* ChatRoomViewController.swift */; };
 		A3F89CA22411372D00202710 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CA12411372D00202710 /* Session.swift */; };
-		A3F89CA42411374600202710 /* ChatRoomDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CA32411374600202710 /* ChatRoomDataSource.swift */; };
+		A3F89CA42411374600202710 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CA32411374600202710 /* MessageDataSource.swift */; };
 		A3F89CCB24152CE600202710 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CCA24152CE600202710 /* SampleData.swift */; };
 		A3F89CCF2415BD1100202710 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CCE2415BD1100202710 /* Media.swift */; };
+		A3F89CD42416326600202710 /* MiniProgramContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CD32416326600202710 /* MiniProgramContentNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +37,10 @@
 		A3F89C982411154C00202710 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		A3F89C9D2411345C00202710 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		A3F89CA12411372D00202710 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		A3F89CA32411374600202710 /* ChatRoomDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomDataSource.swift; sourceTree = "<group>"; };
+		A3F89CA32411374600202710 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
 		A3F89CCA24152CE600202710 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		A3F89CCE2415BD1100202710 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		A3F89CD32416326600202710 /* MiniProgramContentNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniProgramContentNode.swift; sourceTree = "<group>"; };
 		A9633E56065AFBA9070B1CD1 /* Pods-WXMessageKitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXMessageKitExample.release.xcconfig"; path = "Target Support Files/Pods-WXMessageKitExample/Pods-WXMessageKitExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 		A3F89C6A2410D13D00202710 /* WXMessageKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				A3F89CD22416324F00202710 /* Views */,
 				A3F89CA02411371B00202710 /* Models */,
 				A3F89C9F2411371400202710 /* ViewControllers */,
 				A3F89CA52411377200202710 /* Supporting Files */,
@@ -116,7 +119,7 @@
 			children = (
 				A3F89C982411154C00202710 /* Message.swift */,
 				A3F89CA12411372D00202710 /* Session.swift */,
-				A3F89CA32411374600202710 /* ChatRoomDataSource.swift */,
+				A3F89CA32411374600202710 /* MessageDataSource.swift */,
 				A3F89CCE2415BD1100202710 /* Media.swift */,
 			);
 			path = Models;
@@ -131,6 +134,14 @@
 				A3F89C762410D14000202710 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3F89CD22416324F00202710 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3F89CD32416326600202710 /* MiniProgramContentNode.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +282,10 @@
 				A3F89CA22411372D00202710 /* Session.swift in Sources */,
 				A3F89C9E2411345C00202710 /* ChatRoomViewController.swift in Sources */,
 				A3F89C6C2410D13D00202710 /* AppDelegate.swift in Sources */,
+				A3F89CD42416326600202710 /* MiniProgramContentNode.swift in Sources */,
 				A3F89CCF2415BD1100202710 /* Media.swift in Sources */,
 				A3F89C6E2410D13D00202710 /* SceneDelegate.swift in Sources */,
-				A3F89CA42411374600202710 /* ChatRoomDataSource.swift in Sources */,
+				A3F89CA42411374600202710 /* MessageDataSource.swift in Sources */,
 				A3F89CCB24152CE600202710 /* SampleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

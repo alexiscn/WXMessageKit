@@ -1,13 +1,13 @@
 {
   "name": "WXMessageKit",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "license": {
     "type": "MIT"
   },
   "requires_arc": true,
   "source": {
     "git": "https://github.com/alexiscn/WXMessageKit.git",
-    "tag": "0.0.3"
+    "tag": "0.0.5"
   },
   "summary": "WXMessageKit",
   "homepage": "https://github.com/alexiscn/WXMessageKit",

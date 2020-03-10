@@ -14,6 +14,7 @@ open class WXMessageCellNode: ASCellNode {
         /// The size for avatar. 40x40 by default.
         public static var avatarPreferredSize = CGSize(width: 40, height: 40)
         
+        /// The cornerRadius for avatar. 6 by default.
         public static var avatarPreferredCornerRadius: CGFloat = 6.0
         
         /// The insets for the layout.
@@ -21,6 +22,7 @@ open class WXMessageCellNode: ASCellNode {
         
         public static var displayTimeBackground = false
         
+        /// The height for the time label. 44 by default.
         public static var preferredTimeLabelHeight: CGFloat = 44.0
     }
     
@@ -30,7 +32,7 @@ open class WXMessageCellNode: ASCellNode {
     
     public var contentTopTextNode: ASTextNode?
     
-    public let contentNode: WXContentNode
+    public let contentNode: WXMessageContentNode
     
     public var bottomTextNode: ASTextNode?
     
@@ -40,7 +42,7 @@ open class WXMessageCellNode: ASCellNode {
     
     public let message: WXMessage
     
-    public init(message: WXMessage, contentNode: WXContentNode) {
+    public init(message: WXMessage, contentNode: WXMessageContentNode) {
         self.message = message
         self.contentNode = contentNode
         
@@ -50,16 +52,10 @@ open class WXMessageCellNode: ASCellNode {
         
         super.init()
         
-        if let timeNode = timeNode {
-            addSubnode(timeNode)
-        }
-        
+        if let timeNode = timeNode { addSubnode(timeNode) }
         addSubnode(avatarNode)
         addSubnode(contentNode)
-        
-        if let bottomTextNode = bottomTextNode {
-            addSubnode(bottomTextNode)
-        }
+        if let bottomTextNode = bottomTextNode { addSubnode(bottomTextNode) }
         
         avatarNode.style.preferredSize = Constants.avatarPreferredSize
         avatarNode.cornerRadius = Constants.avatarPreferredCornerRadius
@@ -71,7 +67,10 @@ open class WXMessageCellNode: ASCellNode {
         super.didLoad()
         
         isUserInteractionEnabled = true
-        
+        configureGestures()
+    }
+    
+    private func configureGestures() {
         let tapGR = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
         self.view.addGestureRecognizer(tapGR)
         
@@ -80,11 +79,11 @@ open class WXMessageCellNode: ASCellNode {
     }
     
     @objc private func handleTapGesture(_ gestureRecognizer: UITapGestureRecognizer) {
-        
+        delegate?.messageCellDidTapContent?(self)
     }
     
     @objc private func handleLongPressedGesture(_ gestureRecognizer: UILongPressGestureRecognizer) {
-        
+        delegate?.messageCellDidLongPressed?(self)
     }
     
     open override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
@@ -131,4 +130,8 @@ open class WXMessageCellNode: ASCellNode {
 @objc public protocol WXMessageCellNodeDelegate: class {
     
     @objc optional func messageCellDidTapAvatar(_ cell: WXMessageCellNode)
+    
+    @objc optional func messageCellDidTapContent(_ cell: WXMessageCellNode)
+    
+    @objc optional func messageCellDidLongPressed(_ cell: WXMessageCellNode)
 }

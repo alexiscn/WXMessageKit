@@ -7,7 +7,7 @@
 
 import AsyncDisplayKit
 
-public class WXVideoContentNode: WXContentNode {
+public class WXVideoContentNode: WXMessageContentNode {
     
     public struct Constants {
         public static var preferredSize = CGSize(width: 200, height: 200)
@@ -21,7 +21,7 @@ public class WXVideoContentNode: WXContentNode {
     
     public let videoLengthNode = ASTextNode2()
     
-    public init(message: WXMessage, video: WXMediaContent) {
+    public init(message: WXMessage, video: WXMedia) {
         super.init(message: message)
     }
     

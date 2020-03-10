@@ -34,11 +34,13 @@ PODS:
     - Texture/Core
   - Texture/Video (2.8.1):
     - Texture/Core
-  - WXMessageKit (0.0.3):
+  - WXMessageKit (0.0.5):
     - Texture
+  - WXNavigationBar (1.8.5)
 
 DEPENDENCIES:
   - WXMessageKit (from `../`)
+  - WXNavigationBar
 
 SPEC REPOS:
   trunk:
@@ -46,6 +48,7 @@ SPEC REPOS:
     - PINOperation
     - PINRemoteImage
     - Texture
+    - WXNavigationBar
 
 EXTERNAL SOURCES:
   WXMessageKit:
@@ -56,8 +59,9 @@ SPEC CHECKSUMS:
   PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
-  WXMessageKit: a045c436d619de876061b7173aeb1642b326b480
+  WXMessageKit: 74d5977c25f51a4870c5b3772b0df4e85dbb29bc
+  WXNavigationBar: cd28619e12102ef1fb0784f0ef9608bf74e34ebd
 
-PODFILE CHECKSUM: 8636a4c99dbe590a3b327aa000fec33b1a28e7af
+PODFILE CHECKSUM: cdbe8460683860f7a7c8c11f14045a471dcf3714
 
 COCOAPODS: 1.9.0

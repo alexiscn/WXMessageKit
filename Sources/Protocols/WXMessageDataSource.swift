@@ -5,7 +5,7 @@
 //  Created by xushuifeng on 2020/3/5.
 //
 
-import Foundation
+import AsyncDisplayKit
 
 public protocol WXMessageDataSource {
     
@@ -13,4 +13,5 @@ public protocol WXMessageDataSource {
     
     func message(at index: Int) -> WXMessage
     
+    func customContentNode(for content: WXMessageContent, at indexPath: IndexPath) -> WXMessageContentNode?
 }
