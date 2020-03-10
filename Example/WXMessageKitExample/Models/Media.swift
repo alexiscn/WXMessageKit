@@ -16,4 +16,16 @@ struct Media: WXMedia {
     var image: UIImage?
     
     var url: URL?
+    
+    init(image: UIImage?) {
+        self.image = image
+        self.size = image?.size ?? .zero
+        self.url = nil
+    }
+    
+    init(url: URL?) {
+        self.image = nil
+        self.size = .zero
+        self.url = url
+    }
 }

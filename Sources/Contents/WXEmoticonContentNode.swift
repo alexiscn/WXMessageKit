@@ -7,6 +7,7 @@
 
 import AsyncDisplayKit
 import PINRemoteImage
+import FLAnimatedImage
 
 public class WXEmoticonContentNode: WXMessageContentNode {
     
@@ -22,8 +23,8 @@ public class WXEmoticonContentNode: WXMessageContentNode {
     
     public let imageNode = ASDisplayNode()
     
-    public lazy var animatedImageView: UIImageView = {
-        let animatedImage = UIImageView()
+    public lazy var animatedImageView: FLAnimatedImageView = {
+        let animatedImage = FLAnimatedImageView()
         return animatedImage
     }()
     
@@ -38,11 +39,12 @@ public class WXEmoticonContentNode: WXMessageContentNode {
     
     public override func didLoad() {
         super.didLoad()
-        imageNode.style.preferredSize = Constants.preferredSize
+        
         animatedImageView.pin_setImage(from: emoticon.url)
     }
     
     public override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+        imageNode.style.preferredSize = Constants.preferredSize
         return ASInsetLayoutSpec(insets: Constants.preferredInsets, child: imageNode)
     }
 }

@@ -41,7 +41,7 @@ public protocol WXMessage {
 
 
 
-`WXSession` protocol represents the session type, which passed to the `WXMessageViewController`.
+`WXSession` protocol represents the session type, which is passed to the `WXMessageViewController`.
 
 ```swift
 public protocol WXSession {
@@ -114,10 +114,10 @@ WXMessageContent.text(String)
 
 
 
-Conformt to `WXMediaContent` protocol
+Conformt to `WXMedia protocol
 
 ```swift
-struct Media: WXMediaContent {
+struct Media: WXMedia {
     
     var size: CGSize
     
@@ -127,7 +127,7 @@ struct Media: WXMediaContent {
 }
 ```
 
-
+![](Assets/Content_Image@2x.jpg)
 
 `WXMessageContent.image(media)`
 
@@ -139,7 +139,25 @@ struct Media: WXMediaContent {
 
 #### Customize content node
 
-You can inherit `WXContentNode` to create your own content node. It must be assoicated with `WXMediaContent`.
+You can inherit `WXMessageContentNode` to create your own content node. It must be assoicated with `WXMessageContent`.
+
+
+
+```swift
+class MiniProgramContentNode: WXMessageContentNode {
+    
+    init(message: WXMessage, program: MiniProgram) {
+        super.init(message: message)
+    }
+    
+    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+        return ASLayoutSpec()
+    }
+    
+}
+```
+
+
 
 
 
@@ -147,3 +165,31 @@ You can inherit `WXContentNode` to create your own content node. It must be asso
 
 TO BE DONE
 
+
+
+#### WXTextContentNode
+
+```swift
+public struct Constants {
+        
+        public static var senderEdgeInsets = UIEdgeInsets(top: 10, left: 12, bottom: 10, right: 15)
+        
+        public static var receiverEdgeInsets = UIEdgeInsets(top: 10, left: 17, bottom: 10, right: 12)
+        
+        /// The font of text cell. `UIFont.systemFont(ofSize: 17)` by default.
+        public static var font = UIFont.systemFont(ofSize: 17)
+        
+        /// The text color. `black` by default.
+        public static var textColor = UIColor.black
+     
+        public static var senderBubble = WXUtility.image(named: "ChatRoom_Bubble_Text_Sender_Green_57x40_")
+        
+        public static var receiverBubble = WXUtility.image(named: "ChatRoom_Bubble_Text_Receiver_White_57x40_")
+}
+```
+
+
+
+
+
+#### 	WXImageContentNode

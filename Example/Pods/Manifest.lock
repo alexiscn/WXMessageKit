@@ -1,4 +1,5 @@
 PODS:
+  - FLAnimatedImage (1.0.12)
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
     - PINCache/Core (= 3.0.1-beta.6)
@@ -7,8 +8,14 @@ PODS:
   - PINCache/Core (3.0.1-beta.6):
     - PINOperation (~> 1.1.0)
   - PINOperation (1.1.2)
+  - PINRemoteImage (3.0.0-beta.13):
+    - PINRemoteImage/FLAnimatedImage (= 3.0.0-beta.13)
+    - PINRemoteImage/PINCache (= 3.0.0-beta.13)
   - PINRemoteImage/Core (3.0.0-beta.13):
     - PINOperation
+  - PINRemoteImage/FLAnimatedImage (3.0.0-beta.13):
+    - FLAnimatedImage (>= 1.0)
+    - PINRemoteImage/Core
   - PINRemoteImage/iOS (3.0.0-beta.13):
     - PINRemoteImage/Core
   - PINRemoteImage/PINCache (3.0.0-beta.13):
@@ -35,6 +42,7 @@ PODS:
   - Texture/Video (2.8.1):
     - Texture/Core
   - WXMessageKit (0.0.5):
+    - PINRemoteImage
     - Texture
   - WXNavigationBar (1.8.5)
 
@@ -44,6 +52,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - FLAnimatedImage
     - PINCache
     - PINOperation
     - PINRemoteImage
@@ -55,11 +64,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
-  WXMessageKit: 74d5977c25f51a4870c5b3772b0df4e85dbb29bc
+  WXMessageKit: 5eb1cf6aff322ff777953d9723993c85a5e3e0ae
   WXNavigationBar: cd28619e12102ef1fb0784f0ef9608bf74e34ebd
 
 PODFILE CHECKSUM: cdbe8460683860f7a7c8c11f14045a471dcf3714

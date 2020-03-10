@@ -23,6 +23,9 @@
     "Media": "Sources/Media.xcassets"
   },
   "dependencies": {
+    "PINRemoteImage": [
+
+    ],
     "Texture": [
 
     ]
