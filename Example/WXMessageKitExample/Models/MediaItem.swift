@@ -9,7 +9,7 @@
 import Foundation
 import WXMessageKit
 
-struct Media: WXMedia {
+struct MediaItem: WXMediaItem {
     
     var size: CGSize
     
