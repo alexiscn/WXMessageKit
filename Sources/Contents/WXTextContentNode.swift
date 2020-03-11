@@ -11,19 +11,23 @@ open class WXTextContentNode: WXMessageContentNode {
     
     public struct Constants {
         
+        /// The insets for the sender.
         public static var senderEdgeInsets = UIEdgeInsets(top: 10, left: 12, bottom: 10, right: 15)
         
+        /// The insets for the receiver.
         public static var receiverEdgeInsets = UIEdgeInsets(top: 10, left: 17, bottom: 10, right: 12)
         
         /// The font of text cell. `UIFont.systemFont(ofSize: 17)` by default.
-        public static var font = UIFont.systemFont(ofSize: 17)
+        public static var font: UIFont = UIFont.systemFont(ofSize: 17)
         
         /// The text color. `black` by default.
-        public static var textColor = UIColor.black
+        public static var textColor: UIColor = UIColor.black
      
-        public static var senderBubble = WXUtility.image(named: "ChatRoom_Bubble_Text_Sender_Green_57x40_")
+        /// The background bubble for the sender. If you do not want display sender bubble, set this value to `nil`.
+        public static var senderBubble: UIImage? = WXUtility.image(named: "ChatRoom_Bubble_Text_Sender_Green_57x40_")
         
-        public static var receiverBubble = WXUtility.image(named: "ChatRoom_Bubble_Text_Receiver_White_57x40_")
+        /// The background bubble for the receiver. If you do not want display receiver bubble, set this value to `nil`.
+        public static var receiverBubble: UIImage? = WXUtility.image(named: "ChatRoom_Bubble_Text_Receiver_White_57x40_")
     }
     
     public let bubbleNode = ASImageNode()

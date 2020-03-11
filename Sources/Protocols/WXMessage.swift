@@ -17,18 +17,38 @@ public protocol WXMessage {
     var formatTime: String? { get }
 }
 
+
+/// An enum representing the content of a message.
 public enum WXMessageContent {
+    /// A standard text message.
     case text(String)
-    case image(WXMedia)
-    case video(WXMedia)
+    
+    /// A image message.
+    case image(WXMediaItem)
+    
+    /// A video message.
+    case video(WXMediaItem)
+    
+    /// A emoticon message.
     case emoticon(WXEmoticon)
+    
+    /// A voice message.
     case voice(WXVoice)
+    
+    /// A location message.
     case location(WXLocation)
+    
+    /// A system notice message.
+    case notice(WXNotice)
+    
+    /// A customize message.
+    /// Note: `WXMessageKit` uses the class type of the value to determine which content node is used.
     case custom(Any)
 }
 
-public protocol WXMedia {
+public protocol WXMediaItem {
     
+    /// The displaying size for `WXMediaItem`. Zero by default, which use `preferredSize` in each content node.
     var size: CGSize { get }
     
     var image: UIImage? { get }
@@ -39,8 +59,10 @@ public protocol WXMedia {
 
 public protocol WXEmoticon {
  
+    /// The thumbnail for emoticon. Can be `nil`.
     var thumbnail: UIImage? { get }
     
+    /// The url of emoticon file. Eihter remote file or local file.
     var url: URL? { get }
 }
 
@@ -63,4 +85,10 @@ public protocol WXLocation {
     var title: String? { get }
     
     var subTitle: String? { get }
+}
+
+public protocol WXNotice {
+    
+    var attributedText: [NSAttributedString.Key: Any] { get }
+    
 }

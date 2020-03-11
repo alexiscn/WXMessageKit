@@ -4,6 +4,8 @@ Status: On-Working
 
 
 
+[TOC]
+
 ## Requirements
 
 - iOS 12.0+
@@ -23,6 +25,8 @@ pod 'WXMessageKit'
 
 
 ## Get Started
+
+### Prepare your models
 
 `WXMessage` protocol represents the message type.
 
@@ -52,6 +56,8 @@ public protocol WXSession {
 
 
 
+### Prepare your data source
+
 `WXMessageDataSource` protocol represents the data source of your chat.
 
 ```swift
@@ -60,6 +66,8 @@ public protocol WXMessageDataSource {
     func numberOfMessages() -> Int
     
     func message(at index: Int) -> WXMessage
+  
+    func customContentNode(for content: WXMessageContent, at indexPath: IndexPath) -> WXMessageContentNode?
     
 }
 ```
@@ -117,7 +125,7 @@ WXMessageContent.text(String)
 Conformt to `WXMedia protocol
 
 ```swift
-struct Media: WXMedia {
+struct MediaItem: WXMediaItem {
     
     var size: CGSize
     

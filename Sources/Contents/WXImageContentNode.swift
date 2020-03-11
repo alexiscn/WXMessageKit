@@ -26,9 +26,9 @@ public class WXImageContentNode: WXMessageContentNode {
     
     public let imageNode: ASNetworkImageNode = ASNetworkImageNode()
     
-    public let media: WXMedia
+    public let media: WXMediaItem
     
-    public init(message: WXMessage, media: WXMedia) {
+    public init(message: WXMessage, media: WXMediaItem) {
         self.media = media
         super.init(message: message)
         automaticallyManagesSubnodes = true

@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// The parser for text message expression, eg `Hi there [simle]` to `Hi there 😊`.
 public protocol WXExpressionParser {
     
     func attributedText(with attributedText: NSAttributedString) -> NSAttributedString
@@ -14,6 +15,7 @@ public protocol WXExpressionParser {
     func parse(text: String) -> [WXExpressionResult]
 }
 
+/// The implementation of the default expression parser.
 extension WXExpressionParser {
     
     func parse(text: String) -> [WXExpressionResult] {

@@ -33,7 +33,7 @@ struct SampleData {
     }
     
     private func imageContent() -> WXMessageContent {
-        let media = Media(url: URL(string: "https://ww3.sinaimg.cn/bmiddle/007y3qHCly1gcnbt2rq2aj30ku1121kx.jpg"))
+        let media = MediaItem(url: URL(string: "https://ww3.sinaimg.cn/bmiddle/007y3qHCly1gcnbt2rq2aj30ku1121kx.jpg"))
         return .image(media)
     }
     

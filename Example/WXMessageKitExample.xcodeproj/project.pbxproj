@@ -19,7 +19,7 @@
 		A3F89CA22411372D00202710 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CA12411372D00202710 /* Session.swift */; };
 		A3F89CA42411374600202710 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CA32411374600202710 /* MessageDataSource.swift */; };
 		A3F89CCB24152CE600202710 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CCA24152CE600202710 /* SampleData.swift */; };
-		A3F89CCF2415BD1100202710 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CCE2415BD1100202710 /* Media.swift */; };
+		A3F89CCF2415BD1100202710 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CCE2415BD1100202710 /* MediaItem.swift */; };
 		A3F89CD42416326600202710 /* MiniProgramContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F89CD32416326600202710 /* MiniProgramContentNode.swift */; };
 		A3F89CD824174FB200202710 /* emoticon.pic.thumb in Resources */ = {isa = PBXBuildFile; fileRef = A3F89CD624174FB200202710 /* emoticon.pic.thumb */; };
 		A3F89CD924174FB200202710 /* emoticon.pic in Resources */ = {isa = PBXBuildFile; fileRef = A3F89CD724174FB200202710 /* emoticon.pic */; };
@@ -42,7 +42,7 @@
 		A3F89CA12411372D00202710 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		A3F89CA32411374600202710 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
 		A3F89CCA24152CE600202710 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
-		A3F89CCE2415BD1100202710 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		A3F89CCE2415BD1100202710 /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
 		A3F89CD32416326600202710 /* MiniProgramContentNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniProgramContentNode.swift; sourceTree = "<group>"; };
 		A3F89CD624174FB200202710 /* emoticon.pic.thumb */ = {isa = PBXFileReference; lastKnownFileType = file; path = emoticon.pic.thumb; sourceTree = "<group>"; };
 		A3F89CD724174FB200202710 /* emoticon.pic */ = {isa = PBXFileReference; lastKnownFileType = file; path = emoticon.pic; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 				A3F89C982411154C00202710 /* Message.swift */,
 				A3F89CA12411372D00202710 /* Session.swift */,
 				A3F89CA32411374600202710 /* MessageDataSource.swift */,
-				A3F89CCE2415BD1100202710 /* Media.swift */,
+				A3F89CCE2415BD1100202710 /* MediaItem.swift */,
 				A3F89CDA2417502900202710 /* Emoticon.swift */,
 			);
 			path = Models;
@@ -303,7 +303,7 @@
 				A3F89C6C2410D13D00202710 /* AppDelegate.swift in Sources */,
 				A3F89CD42416326600202710 /* MiniProgramContentNode.swift in Sources */,
 				A3F89CDB2417502900202710 /* Emoticon.swift in Sources */,
-				A3F89CCF2415BD1100202710 /* Media.swift in Sources */,
+				A3F89CCF2415BD1100202710 /* MediaItem.swift in Sources */,
 				A3F89C6E2410D13D00202710 /* SceneDelegate.swift in Sources */,
 				A3F89CA42411374600202710 /* MessageDataSource.swift in Sources */,
 				A3F89CCB24152CE600202710 /* SampleData.swift in Sources */,

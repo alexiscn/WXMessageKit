@@ -98,6 +98,8 @@ extension WXMessageViewController: ASTableDataSource {
                 contentNode = WXEmoticonContentNode(message: message, emoticon: emoticon)
             case .location(let loc):
                 contentNode = WXLocationContentNode(message: message, location: loc)
+            case .notice(let notice):
+                contentNode = WXNoticeContentNode(message: message, notice: notice)
             case .custom(_):
                 if let node = self.dataSource.customContentNode(for: message.content, at: indexPath) {
                     contentNode = node

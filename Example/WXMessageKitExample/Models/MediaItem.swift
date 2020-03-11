@@ -1,5 +1,5 @@
 //
-//  Media.swift
+//  MediaItem.swift
 //  WXMessageKitExample
 //
 //  Created by xushuifeng on 2020/3/9.
