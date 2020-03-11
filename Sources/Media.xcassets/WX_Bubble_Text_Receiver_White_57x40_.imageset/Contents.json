@@ -10,36 +10,36 @@
         "center" : {
           "mode" : "stretch",
           "width" : 1,
-          "height" : 2
+          "height" : 1
         },
         "cap-insets" : {
-          "bottom" : 10,
-          "top" : 66,
-          "right" : 18,
-          "left" : 8
+          "bottom" : 13,
+          "top" : 65,
+          "right" : 8,
+          "left" : 18
         }
       },
       "idiom" : "universal",
-      "filename" : "ChatRoom_Bubble_Text_Sender_Green_57x40_@2x.png",
+      "filename" : "WX_Bubble_Text_Receiver_White_57x40_@2x.png",
       "scale" : "2x"
     },
     {
       "resizing" : {
         "mode" : "9-part",
         "center" : {
-          "mode" : "tile",
+          "mode" : "stretch",
           "width" : 1,
-          "height" : 3
+          "height" : 2
         },
         "cap-insets" : {
-          "bottom" : 14,
+          "bottom" : 16,
           "top" : 101,
-          "right" : 27,
-          "left" : 12
+          "right" : 12,
+          "left" : 27
         }
       },
       "idiom" : "universal",
-      "filename" : "ChatRoom_Bubble_Text_Sender_Green_57x40_@3x.png",
+      "filename" : "WX_Bubble_Text_Receiver_White_57x40_@3x.png",
       "scale" : "3x"
     }
   ],

@@ -17,6 +17,9 @@ open class WXMessageCellNode: ASCellNode {
         /// The cornerRadius for avatar. 6 by default.
         public static var avatarPreferredCornerRadius: CGFloat = 6.0
         
+        /// The placeholder image for avatar.
+        public static var avatarPlaceholder: UIImage? = WXUtility.imageNamed("WX_DefaultHead_48x48_")
+        
         /// The insets for the layout.
         public static var insets = UIEdgeInsets(top: 5, left: 12, bottom: 5, right: 12)
         
@@ -60,7 +63,7 @@ open class WXMessageCellNode: ASCellNode {
         avatarNode.style.preferredSize = Constants.avatarPreferredSize
         avatarNode.cornerRadius = Constants.avatarPreferredCornerRadius
         avatarNode.cornerRoundingType = .precomposited
-        avatarNode.image = WXUtility.image(named: "DefaultHead_48x48_")
+        avatarNode.image = Constants.avatarPlaceholder
     }
     
     open override func didLoad() {

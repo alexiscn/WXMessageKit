@@ -24,10 +24,10 @@ public enum WXMessageContent {
     case text(String)
     
     /// A image message.
-    case image(WXMediaItem)
+    case image(WXImageItem)
     
     /// A video message.
-    case video(WXMediaItem)
+    case video(WXVideoItem)
     
     /// A emoticon message.
     case emoticon(WXEmoticon)
@@ -46,15 +46,30 @@ public enum WXMessageContent {
     case custom(Any)
 }
 
-public protocol WXMediaItem {
+public protocol WXImageItem {
     
-    /// The displaying size for `WXMediaItem`. Zero by default, which use `preferredSize` in each content node.
+    /// The display size of the image. `.zero` by default, which use `preferredSize` in each content node.
     var size: CGSize { get }
     
+    /// The image.
     var image: UIImage? { get }
     
+    /// The url where image is located.
+    var url: URL? { get }
+}
+
+public protocol WXVideoItem {
+    
+    /// The display size of the video. `.zero` by default, which use `preferredSize` in each content node.
+    var size: CGSize { get }
+    
+    var thumbnail: UIImage? { get }
+    
+    /// The url where video is located.
     var url: URL? { get }
     
+    /// The length of the video.
+    var duration: TimeInterval { get }
 }
 
 public protocol WXEmoticon {
@@ -68,10 +83,11 @@ public protocol WXEmoticon {
 
 public protocol WXVoice {
     
-    var duration: Float { get }
+    /// The length of the voice.
+    var duration: TimeInterval { get }
     
+    /// The url where voice is located.
     var url: URL? { get }
-    
 }
 
 public protocol WXLocation {

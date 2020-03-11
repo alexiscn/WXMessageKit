@@ -13,7 +13,7 @@ public class WXTimeNode: ASDisplayNode {
         
         public static var insets = UIEdgeInsets(top: 1.5, left: 5, bottom: 1.5, right: 5)
         
-        public static var backgroundImage = WXUtility.image(named: "MessageContent_TimeNodeBkg_Light_30x18_")
+        public static var backgroundImage = WXUtility.imageNamed("MessageContent_TimeNodeBkg_Light_30x18_")
         
         public static var textColor = UIColor(white: 0, alpha: 0.3)
         

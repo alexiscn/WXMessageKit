@@ -190,9 +190,9 @@ public struct Constants {
         /// The text color. `black` by default.
         public static var textColor = UIColor.black
      
-        public static var senderBubble = WXUtility.image(named: "ChatRoom_Bubble_Text_Sender_Green_57x40_")
+        public static var senderBubble = WXUtility.image(named: "WX_Bubble_Text_Sender_Green_57x40_")
         
-        public static var receiverBubble = WXUtility.image(named: "ChatRoom_Bubble_Text_Receiver_White_57x40_")
+        public static var receiverBubble = WXUtility.image(named: "WX_Bubble_Text_Receiver_White_57x40_")
 }
 ```
 

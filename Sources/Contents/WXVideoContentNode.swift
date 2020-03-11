@@ -22,9 +22,9 @@ public class WXVideoContentNode: WXMessageContentNode {
     
     public let lengthNode = ASTextNode2()
     
-    public let video: WXMediaItem
+    public let video: WXVideoItem
     
-    public init(message: WXMessage, video: WXMediaItem) {
+    public init(message: WXMessage, video: WXVideoItem) {
         self.video = video
         super.init(message: message)
         
@@ -34,12 +34,20 @@ public class WXVideoContentNode: WXMessageContentNode {
         thumbImageNode.cornerRadius = 6.0
         thumbImageNode.cornerRoundingType = .precomposited
         
-        iconImageNode.image = UIImage.as_imageNamed("Fav_List_Video_Play_40x40_")
-        shadowNode.image = UIImage.as_imageNamed("Albumtimeline_video_shadow_4x28_")
+        iconImageNode.image = WXUtility.imageNamed("WX_Video_Play_40x40_")
+        shadowNode.image = WXUtility.imageNamed("WX_Video_shadow_4x28_")
         shadowNode.cornerRadius = 6.0
         shadowNode.cornerRoundingType = .precomposited
         
-        //lengthNode.attributedText = video.attributedStringForVideoLength()
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .right
+        let attributes = [
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10),
+            NSAttributedString.Key.foregroundColor: UIColor.white,
+            NSAttributedString.Key.paragraphStyle: paragraphStyle
+        ]
+        let length = WXUtility.formatDuration(video.duration)
+        lengthNode.attributedText = NSAttributedString(string: length, attributes: attributes)
     }
     
     public override func didLoad() {

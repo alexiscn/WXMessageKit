@@ -36,7 +36,7 @@ public class WXLocationContentNode: WXMessageContentNode {
         
         automaticallyManagesSubnodes = true
         
-        let icon = message.isOutgoing ? "ChatRoom_Bubble_App_Sender_57x40_": "ChatRoom_Bubble_Text_Receiver_White_57x40_"
+        let icon = message.isOutgoing ? "WX_Bubble_App_Sender_57x40_": "WX_Bubble_Text_Receiver_White_57x40_"
         bubbleNode.image = UIImage(named: icon)
         bubbleNode.style.flexShrink = 1
         

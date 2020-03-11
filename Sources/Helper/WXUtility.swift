@@ -22,7 +22,26 @@ class WXUtility {
         return nil
     }()
     
-    static func image(named: String) -> UIImage? {
-        return UIImage(named: named, in: bundle, compatibleWith: nil)
+    static func imageNamed(_ name: String) -> UIImage? {
+        return UIImage(named: name, in: bundle, compatibleWith: nil)
+    }
+    
+    static let durationFormatter: DateComponentsFormatter = {
+        let formatter = DateComponentsFormatter()
+        formatter.calendar = Calendar(identifier: .chinese)
+        formatter.unitsStyle = .positional
+        formatter.allowedUnits = [.minute, .second]
+        formatter.zeroFormattingBehavior = [.pad]
+        return formatter
+    }()
+    
+    static func formatDuration(_ duration: TimeInterval) -> String {
+        if let text = durationFormatter.string(from: duration) {
+            if text.count == 3 {
+                return "0" + text
+            }
+            return text
+        }
+        return ""
     }
 }

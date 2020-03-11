@@ -1,5 +1,5 @@
 //
-//  MediaItem.swift
+//  ImageMediaItem.swift
 //  WXMessageKitExample
 //
 //  Created by xushuifeng on 2020/3/9.
@@ -9,7 +9,7 @@
 import Foundation
 import WXMessageKit
 
-struct MediaItem: WXMediaItem {
+class ImageMediaItem: WXImageItem {
     
     var size: CGSize
     

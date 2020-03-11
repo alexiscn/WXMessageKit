@@ -7,6 +7,7 @@
 
 import AsyncDisplayKit
 
+/// The text message content node.
 open class WXTextContentNode: WXMessageContentNode {
     
     public struct Constants {
@@ -24,10 +25,10 @@ open class WXTextContentNode: WXMessageContentNode {
         public static var textColor: UIColor = UIColor.black
      
         /// The background bubble for the sender. If you do not want display sender bubble, set this value to `nil`.
-        public static var senderBubble: UIImage? = WXUtility.image(named: "ChatRoom_Bubble_Text_Sender_Green_57x40_")
+        public static var senderBubble: UIImage? = WXUtility.imageNamed("WX_Bubble_Text_Sender_Green_57x40_")
         
         /// The background bubble for the receiver. If you do not want display receiver bubble, set this value to `nil`.
-        public static var receiverBubble: UIImage? = WXUtility.image(named: "ChatRoom_Bubble_Text_Receiver_White_57x40_")
+        public static var receiverBubble: UIImage? = WXUtility.imageNamed("WX_Bubble_Text_Receiver_White_57x40_")
     }
     
     public let bubbleNode = ASImageNode()

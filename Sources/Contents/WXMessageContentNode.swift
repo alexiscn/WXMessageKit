@@ -8,6 +8,8 @@
 import UIKit
 import AsyncDisplayKit
 
+/// The base node for message content.
+/// Note: custom content node should inherit `WXMessageContentNode`
 open class WXMessageContentNode: ASDisplayNode {
     
     public let message: WXMessage
