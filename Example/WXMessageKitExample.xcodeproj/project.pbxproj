@@ -81,13 +81,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A31E1FA42418F50800983955 /* WXInputBar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WXInputBar;
-			sourceTree = "<group>";
-		};
 		A3F89C5F2410D13D00202710 = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +102,6 @@
 		A3F89C6A2410D13D00202710 /* WXMessageKitExample */ = {
 			isa = PBXGroup;
 			children = (
-				A31E1FA42418F50800983955 /* WXInputBar */,
 				A3F89CD22416324F00202710 /* Views */,
 				A3F89CA02411371B00202710 /* Models */,
 				A3F89C9F2411371400202710 /* ViewControllers */,

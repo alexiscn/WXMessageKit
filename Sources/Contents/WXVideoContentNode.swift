@@ -10,7 +10,12 @@ import AsyncDisplayKit
 public class WXVideoContentNode: WXMessageContentNode {
     
     public struct Constants {
+        
+        /// The preferred size for video content. 200x200 by default.
         public static var preferredSize = CGSize(width: 200, height: 200)
+        
+        /// Custom time formatter of video length
+        public static var durationFormatter: ((TimeInterval) -> String)? = nil
     }
     
     public let thumbImageNode = ASNetworkImageNode()
@@ -46,7 +51,7 @@ public class WXVideoContentNode: WXMessageContentNode {
             NSAttributedString.Key.foregroundColor: UIColor.white,
             NSAttributedString.Key.paragraphStyle: paragraphStyle
         ]
-        let length = WXUtility.formatDuration(video.duration)
+        let length = Constants.durationFormatter?(video.duration) ?? WXUtility.formatDuration(video.duration)
         lengthNode.attributedText = NSAttributedString(string: length, attributes: attributes)
     }
     
