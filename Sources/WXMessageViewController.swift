@@ -10,24 +10,32 @@ import AsyncDisplayKit
 
 open class WXMessageViewController: ASViewController<ASDisplayNode> {
     
+    public weak var delegate: WXMessageViewControllerDelegate?
+    
+    public weak var cellDelegate: WXMessageCellNodeDelegate?
+    
     public struct Constants {
+        
+        /// The background color of `WXMessageViewController`.
         public static var backgroundColor = UIColor(white: 237.0/255, alpha: 1.0)
     }
     
+    /// The message tableView
     public var tableNode: ASTableNode!
     
+    /// The input bar.
     public var inputBar: WXInputBar!
     
+    /// The session you passed in.
     public let session: WXSession
     
+    /// The data source of messages.
     public let dataSource: WXMessageDataSource
     
     public init(session: WXSession, dataSource: WXMessageDataSource) {
         self.session = session
         self.dataSource = dataSource
         super.init(node: ASDisplayNode())
-        
-        //node.addSubnode(tableNode)
     }
     
     required public init?(coder: NSCoder) {
@@ -57,6 +65,7 @@ open class WXMessageViewController: ASViewController<ASDisplayNode> {
     
     func configureInputBar() {
         inputBar = WXInputBar(frame: .zero)
+        inputBar.associatedTableView = tableNode.view
         view.addSubview(inputBar)
         
         inputBar.translatesAutoresizingMaskIntoConstraints = false
@@ -99,6 +108,7 @@ extension WXMessageViewController: ASTableDataSource {
     
     public func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
         let message = dataSource.message(at: indexPath.row)
+        let delegate = cellDelegate
         let block = { () -> ASCellNode in
             
             var contentNode: WXMessageContentNode
@@ -121,10 +131,11 @@ extension WXMessageViewController: ASTableDataSource {
                 if let node = self.dataSource.customContentNode(for: message.content, at: indexPath) {
                     contentNode = node
                 } else {
-                    fatalError("Can not create content node")
+                    fatalError("Can not create custom content node. Make sure that you implement customContentNode(for:at:)")
                 }
             }
             let cellNode = WXMessageCellNode(message: message, contentNode: contentNode)
+            cellNode.delegate = delegate
             return cellNode
         }
         return block

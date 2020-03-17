@@ -45,3 +45,9 @@ class WXUtility {
         return ""
     }
 }
+
+extension UIView.AnimationCurve {
+    
+    static let overdamped = UIView.AnimationCurve(rawValue: 7) ?? .easeOut
+    
+}

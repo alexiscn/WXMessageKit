@@ -23,6 +23,16 @@ public class WXInputBar: UIView {
     
     public var customInputContainerView: UIView!
     
+    public var stickerPanel: UIView!
+    
+    public var morePanel: UIView!
+    
+    public var preferredHeightOfMorePanel: CGFloat = 240.0
+    
+    public var preferredHeightOfStickerPanel: CGFloat = 240.0
+    
+    public weak var associatedTableView: UITableView?
+    
     private var safeAreaBottomInset: CGFloat {
         return UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0.0
     }
@@ -33,6 +43,8 @@ public class WXInputBar: UIView {
     
     private var inputTextViewHeightConstraint: NSLayoutConstraint!
     private var customInputContainerHeightConstraint: NSLayoutConstraint!
+    private var reportHeightUpdateWhenKeyboardFrameChanges = false
+    private var hasLayoutSubviews = false
     
     public override init(frame: CGRect) {
         
@@ -49,6 +61,7 @@ public class WXInputBar: UIView {
         stickerButton.setImage(WXUtility.imageNamed("WX_InputBar_Keyboard")?.withRenderingMode(.alwaysOriginal), for: .selected)
         
         moreButton = UIButton(type: .system)
+        moreButton.tintColor = .clear
         moreButton.setImage(WXUtility.imageNamed("WX_InputBar_Add")?.withRenderingMode(.alwaysOriginal), for: .normal)
         
         inputTextView = UITextView(frame: .zero)
@@ -59,6 +72,12 @@ public class WXInputBar: UIView {
         inputTextView.tintColor = .red
         
         customInputContainerView = UIView()
+        
+        stickerPanel = UIView()
+        stickerPanel.backgroundColor = .red
+        
+        morePanel = UIView()
+        morePanel.backgroundColor = .green
         
         super.init(frame: frame)
         
@@ -137,7 +156,10 @@ public class WXInputBar: UIView {
     public override func layoutSubviews() {
         super.layoutSubviews()
         
-        print("=====\(inputContainerView.frame)")
+        if !hasLayoutSubviews {
+            hasLayoutSubviews = true
+            setPreferredContentHeight(bounds.height, animated: false)
+        }
     }
 }
 
@@ -160,11 +182,17 @@ extension WXInputBar {
     private func configureEvents() {
         voiceButton.addTarget(self, action: #selector(voiceButtonClicked(_:)), for: .touchUpInside)
         stickerButton.addTarget(self, action: #selector(stickerButtonClicked(_:)), for: .touchUpInside)
-        moreButton.addTarget(self, action: #selector(moreButtonClicked), for: .touchUpInside)
+        moreButton.addTarget(self, action: #selector(moreButtonClicked(_:)), for: .touchUpInside)
     }
     
-    @objc private func moreButtonClicked() {
-        
+    @objc private func moreButtonClicked(_ sender: UIButton) {
+        if sender.isSelected {
+            inputTextView.becomeFirstResponder()
+        } else {
+            resignTextViewWithoutReportingHeightUpdate()
+            loadCustomInput(morePanel, preferredHeight: preferredHeightOfMorePanel)
+        }
+        sender.isSelected.toggle()
     }
     
     @objc private func voiceButtonClicked(_ sender: UIButton) {
@@ -172,7 +200,69 @@ extension WXInputBar {
     }
     
     @objc private func stickerButtonClicked(_ sender: UIButton) {
+        if sender.isSelected {
+            inputTextView.becomeFirstResponder()
+        } else {
+            resignTextViewWithoutReportingHeightUpdate()
+            loadCustomInput(stickerPanel, preferredHeight: preferredHeightOfStickerPanel)
+        }
         sender.isSelected.toggle()
+    }
+    
+    private func loadCustomInput(_ inputView: UIView, preferredHeight: CGFloat) {
+        
+        customInputContainerView.subviews.forEach { $0.removeFromSuperview() }
+        customInputContainerView.addSubview(inputView)
+        inputView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            inputView.leadingAnchor.constraint(equalTo: customInputContainerView.leadingAnchor),
+            inputView.topAnchor.constraint(equalTo: customInputContainerView.topAnchor),
+            inputView.trailingAnchor.constraint(equalTo: customInputContainerView.trailingAnchor),
+            inputView.heightAnchor.constraint(equalToConstant: preferredHeight)
+        ])
+        customInputContainerHeightConstraint.constant = safeAreaBottomInset + preferredHeight
+        
+        UIView.animate(withDuration: 0.25) {
+            UIView.setAnimationCurve(.overdamped)
+            self.customInputContainerView.alpha = 1
+        }
+    }
+    
+    private func dismissCustomInput() {
+        stickerButton.isSelected = false
+        moreButton.isSelected = false
+        voiceButton.isSelected = false
+        
+        UIView.animate(withDuration: 0.25) {
+            UIView.setAnimationCurve(.overdamped)
+            self.customInputContainerView.alpha = 0
+        }
+    }
+    
+    private func resignTextViewWithoutReportingHeightUpdate() {
+        guard inputTextView.isFirstResponder else {
+            return
+        }
+        reportHeightUpdateWhenKeyboardFrameChanges = false
+        inputTextView.resignFirstResponder()
+        reportHeightUpdateWhenKeyboardFrameChanges = true
+    }
+    
+    private func setPreferredContentHeight(_ contentHeight: CGFloat, animated: Bool) {
+        updateTableView(animated: animated)
+    }
+    
+    private func updateTableView(animated: Bool) {
+        associatedTableView?.scrollIndicatorInsets.bottom = bounds.height - safeAreaBottomInset
+        if animated {
+            UIView.beginAnimations(nil, context: nil)
+            UIView.setAnimationDuration(0.5)
+            UIView.setAnimationCurve(.overdamped)
+        }
+        associatedTableView?.contentInset.bottom = bounds.height
+        if animated {
+            UIView.commitAnimations()
+        }
     }
 }
 
@@ -199,7 +289,6 @@ extension WXInputBar {
         guard inputTextView.isFirstResponder else {
             return
         }
-        self.backgroundColor = .clear
     }
     
     @objc private func keyboardWillChangeFrame(_ notification: Notification) {
@@ -208,29 +297,34 @@ extension WXInputBar {
         }
         let keyboardWillBeInvisible = (screenHeight - endFrame.origin.y) <= 1
         
-        if keyboardWillBeInvisible {
-            
-        } else {
-            
+        if !keyboardWillBeInvisible {
+            customInputContainerHeightConstraint.constant = endFrame.height 
         }
     }
     
     @objc private func keyboardWillHide(_ notification: Notification) {
-        UIView.performWithoutAnimation {
-            self.backgroundColor = .clear // TODO
-        }
+        
     }
 }
 
 // MARK: - UITextViewDelegate
 extension WXInputBar: UITextViewDelegate {
     
+    public func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+        dismissCustomInput()
+        return true
+    }
+    
     public func textViewDidChange(_ textView: UITextView) {
         guard let lineHeight = textView.font?.lineHeight else {
             return
         }
 
-        let maxHeight = ceil(lineHeight * CGFloat(4) + textView.textContainerInset.top + textView.textContainerInset.bottom)
+        let maxHeight = ceil(
+            lineHeight * CGFloat(maximumNumberOfLines)
+            + textView.textContainerInset.top
+            + textView.textContainerInset.bottom)
+        
         let sizeToFit = CGSize(width: textView.bounds.width, height: UIView.layoutFittingExpandedSize.height)
         let contentHeight = ceil(textView.sizeThatFits(sizeToFit).height)
         textView.isScrollEnabled = contentHeight > maxHeight
