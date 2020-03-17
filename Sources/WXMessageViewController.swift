@@ -14,7 +14,9 @@ open class WXMessageViewController: ASViewController<ASDisplayNode> {
         public static var backgroundColor = UIColor(white: 237.0/255, alpha: 1.0)
     }
     
-    public let tableNode = ASTableNode()
+    public var tableNode: ASTableNode!
+    
+    public var inputBar: WXInputBar!
     
     public let session: WXSession
     
@@ -25,7 +27,7 @@ open class WXMessageViewController: ASViewController<ASDisplayNode> {
         self.dataSource = dataSource
         super.init(node: ASDisplayNode())
         
-        node.addSubnode(tableNode)
+        //node.addSubnode(tableNode)
     }
     
     required public init?(coder: NSCoder) {
@@ -38,9 +40,12 @@ open class WXMessageViewController: ASViewController<ASDisplayNode> {
         node.backgroundColor = Constants.backgroundColor
         
         configureTableNode()
+        configureInputBar()
     }
     
     func configureTableNode() {
+        tableNode = ASTableNode()
+        node.addSubnode(tableNode)
         tableNode.frame = node.bounds
         tableNode.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         tableNode.backgroundColor = .clear
@@ -48,6 +53,18 @@ open class WXMessageViewController: ASViewController<ASDisplayNode> {
         tableNode.view.separatorStyle = .none
         tableNode.dataSource = self
         tableNode.delegate = self
+    }
+    
+    func configureInputBar() {
+        inputBar = WXInputBar(frame: .zero)
+        view.addSubview(inputBar)
+        
+        inputBar.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            inputBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            inputBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            inputBar.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
     }
 }
 

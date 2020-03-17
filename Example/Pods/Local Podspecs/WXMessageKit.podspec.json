@@ -23,11 +23,11 @@
     "Media": "Sources/Media.xcassets"
   },
   "dependencies": {
-    "PINRemoteImage": [
-
-    ],
     "Texture": [
 
+    ],
+    "PINRemoteImage": [
+      "3.0.0-beta.13"
     ]
   },
   "swift_version": "5.0"

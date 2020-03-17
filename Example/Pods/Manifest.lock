@@ -42,7 +42,7 @@ PODS:
   - Texture/Video (2.8.1):
     - Texture/Core
   - WXMessageKit (0.0.5):
-    - PINRemoteImage
+    - PINRemoteImage (= 3.0.0-beta.13)
     - Texture
   - WXNavigationBar (1.8.6)
 
@@ -69,7 +69,7 @@ SPEC CHECKSUMS:
   PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
-  WXMessageKit: 5eb1cf6aff322ff777953d9723993c85a5e3e0ae
+  WXMessageKit: 69fc2e564823633cf374683cb7239256431e9ea0
   WXNavigationBar: e4e01f8da65481e4c867a895cc312ca0aae64e22
 
 PODFILE CHECKSUM: cdbe8460683860f7a7c8c11f14045a471dcf3714

@@ -29,12 +29,12 @@
 		0873D1FB2A263D363B22687ACDB68C19 /* PINRemoteImageTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 8340B9B54EC63A8934D398CC0B5AA50E /* PINRemoteImageTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09E1B26CCFAD9C7A295BB181DCCC0BB4 /* _ASDisplayLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 388BB6FFF52ADB213E41B8B379995FBB /* _ASDisplayLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A5138E74E89DEA7B9190D708818621F /* PINResume.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1AB1D21035E110593E91ABC9778C43 /* PINResume.m */; };
+		0B0C47A213F3DB49DD603591FD033AC9 /* WXNoticeContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648C7DCA1EDC30D9ABCDBEA5BD408D04 /* WXNoticeContentNode.swift */; };
 		0B269BCCD0EB4A0324303CF2EBF429BB /* PINCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 340FFBE4238BF6DAD08FEEC524BFA0B8 /* PINCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		0BD4C7C6A2EB249987586F5444AAD546 /* ASAbstractLayoutController+FrameworkPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = D01378A8124C6C6A884A1B1460982298 /* ASAbstractLayoutController+FrameworkPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0D31219B5DC9333FDE2110ED1E4377B2 /* ASCollectionViewLayoutController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 54EDD2B719D8E85D66C6D7811B875F4C /* ASCollectionViewLayoutController.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		0D6395EA2227BAA083EA3F045E165EC5 /* ASImageNode+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E8113C2D8DD233DDB6EBC037FC6325D3 /* ASImageNode+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0D73C8C9DC543315F1B17E1815A3D2F1 /* ASImageNode+AnimatedImagePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = D83AA64E45F94DDD6DA1CADE3CE9E066 /* ASImageNode+AnimatedImagePrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0D846AA848796830FF77EA387B3660B3 /* WXMessageContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B866A377417FF116DBB5B1B5843A30FA /* WXMessageContentNode.swift */; };
 		0DB7D0EE591B6FA31F1EA8AD52435873 /* ASCollectionLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DAE9B94FB4BD4537F438FF2855E30D2 /* ASCollectionLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0DD653DC248232E3421B2BDAA665EE07 /* ASLayoutElementPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A8DD7C211E74B80D1BB6FEF77898B8C /* ASLayoutElementPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E1DD80748781A950EE5F94272757B5E /* ASTipNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 981675CB0857309AE20C3AAC17C49E09 /* ASTipNode.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
@@ -45,6 +45,7 @@
 		10D685AF3B1C113F3E459C939ABDF7F1 /* ASPagerFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 742D240847163A7B6CB3C6BAC00A0DC4 /* ASPagerFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10D745D19BDB05D784DA5ED816193FCA /* ASIGListAdapterBasedDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8969841F2A5AB5CB7CA33B6D0DBB825 /* ASIGListAdapterBasedDataSource.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		10DBE461D8A06CE975D03AE020106808 /* ASNetworkImageLoadInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 31970EF77AA73D4944521F86202E2B5B /* ASNetworkImageLoadInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11132F84705067D80D36988EFD5E8F19 /* WXMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE1E40C1A53DA1CBF513654A6B97DB6 /* WXMessageViewController.swift */; };
 		112CD42E3CC00F05AEFB1AA8ADAB26DD /* PINRemoteImageMemoryContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = F93E6E12FFCBA09D324D961F023FB8AA /* PINRemoteImageMemoryContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11D7CF9506912DAADBA5ABF214E50103 /* AsyncDisplayKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 38DDAFABDE7F8DD321D199E44BFA599B /* AsyncDisplayKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11E4083FE5D92B1DC32D1165F97915D6 /* ASSectionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = D0D3E4ECF0681CE9D24292FBBC2C80C2 /* ASSectionContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,6 +57,8 @@
 		14B16D82223A9415B11A0158A2D627B9 /* UIView+ASConvenience.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6B9C840506534C917E956998FA76CE /* UIView+ASConvenience.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15160F9217A3745BD8A1EAEA1FC121E5 /* PINCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F840F4081F272F44915BA54ED3D3B1E1 /* PINCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		154078E295CEF73049CC0E6EA4E894BF /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EAB49A75516988FF968EFBA6F3093A /* Photos.framework */; };
+		1598AE300F38D69B2424FEDB50994CA8 /* WXImageContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107403307B1DB29BCC096D9290E8A5F9 /* WXImageContentNode.swift */; };
+		15F4A0F9240EA7298BE610C5B5BFA19E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CB701F0D8F0A53E1F8921806953918 /* Media.xcassets */; };
 		16642C1D32032DBB54C485753C29E3A9 /* ASPageTable.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA93F54EEC7D361805879095DC69C39 /* ASPageTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1687E1405D8B76F297F6D9853BAB346E /* ASTip.h in Headers */ = {isa = PBXBuildFile; fileRef = 080243EE1DABD2D2EECBF5777CA5BE11 /* ASTip.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		16B7CFBB89DD8CBF96D4210337038E52 /* PINDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = A741675D049F650C3949402538B675DB /* PINDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,9 +79,7 @@
 		1F70E930F9B87CC562271891712E24FF /* ASTextRunDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D9AA84FEE3CDD02E2A90680966DC3E96 /* ASTextRunDelegate.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		1F81C32C2D7814DBB3C379F67C48E012 /* PINGIFAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 628B7C0A9E31E73E815ABA7AB87F862C /* PINGIFAnimatedImage.m */; };
 		1FB2A8AB63E50669C198493B9DF85335 /* PINRemoteImageCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB6E2D20B516353662DD1CBB87C4CDC /* PINRemoteImageCallbacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FB8573FD45C81C92579D191261D3B3C /* WXMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FFF685FBBF9E9C9519E1B4374F2F3 /* WXMessageViewController.swift */; };
 		20DA623C76E1F8309F402CDECC5B9B42 /* ASNetworkImageNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = E628C93553CDE7E8B45431BE69687B43 /* ASNetworkImageNode.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
-		21226D6A12F4AD62E1F22246D5E935EE /* WXImageContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EF743847097A3E0B6099B216E0D46 /* WXImageContentNode.swift */; };
 		2137C3377BF2B235A0BA017C04B5AB2E /* ASRangeController.h in Headers */ = {isa = PBXBuildFile; fileRef = FB467500CF408284A45C9A6982D3AC49 /* ASRangeController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22C6082EA35CCB6F3608CE0C9631A6EF /* PINOperationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D2163A8468D17BB468D19875A8E4735D /* PINOperationMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23BE55E8E6410B8D54D6F9C2D40BD16D /* ASTraitCollection.mm in Sources */ = {isa = PBXBuildFile; fileRef = EFADAC911E0B95D5CF564FA6DA5837C0 /* ASTraitCollection.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
@@ -106,8 +107,6 @@
 		2E585ED585C6DCAFAA3C299D223722B9 /* PINRequestRetryStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 466C478D7323E5D40EA31897775ECD44 /* PINRequestRetryStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F3EA1FD73E0904E3966BF1FE94E5264 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B0BD4530A2B49D61054E931F08922F /* Foundation.framework */; };
 		3005777C0CE73129A6B810B3555D2F2D /* ASControlNode+Subclasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FBAAFDC2C618D76A7E940051A5D38A9 /* ASControlNode+Subclasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		301EFE5DF22AAAA4C74A38F09B4FA4A9 /* WXMessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA97FB49AA17D42A940BBCCDF7DC90 /* WXMessageDataSource.swift */; };
-		30258730F4C86D4E1382EABCA8DDEEDF /* WXExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F92B4FA6B7BBD82670D3C1E847B2E /* WXExpressionParser.swift */; };
 		31592827D033C5045F36B35D5235CD2C /* ASCollectionLayoutDefines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3F525DB2E5D506EAF46E3049077F8 /* ASCollectionLayoutDefines.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		317E4E8B93A75823613C601DFFCF3B4E /* ASLayoutRangeType.h in Headers */ = {isa = PBXBuildFile; fileRef = BB88F564D5F14445733BFA39867AF6B3 /* ASLayoutRangeType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		322DDB8D538FB139A6F59BB3FA54092D /* PINRemoteImageDownloadQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843F776F36291ED724BAC5F5BF96ED5 /* PINRemoteImageDownloadQueue.m */; };
@@ -120,10 +119,9 @@
 		36575619B625EF1C5E621DDE0F9E99EB /* ASEditableTextNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1239FF16156471B9F12BA211CB5CB3ED /* ASEditableTextNode.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		369C1DD571DE019562ADE66655FE36D3 /* ASDisplayNode+Yoga.h in Headers */ = {isa = PBXBuildFile; fileRef = B35699A4DA63ACA64E95BB8418C1D9C8 /* ASDisplayNode+Yoga.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37CA83359712F5584386382793206669 /* ASTableView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE858314456339FFF712C07176A20550 /* ASTableView.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
-		3889DCC7D6263DBACF320F52DCCC5922 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849BBD5D4C40FA086266689C7DAD6BA0 /* PINRemoteImage.framework */; };
 		38E99CD9A2904EBF5DBB0F33BBED2CC6 /* ASTextUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A58866F9B4F3E94D708BB0AB1F87F8F /* ASTextUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3904433E32284DB84884CDD1B6E1ABED /* ASCollectionLayoutCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C8FD18EE3805664BFE848EDC7EA19FC /* ASCollectionLayoutCache.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
-		3A451DE275B3D3F75D42F95693023A0E /* WXMessageKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1F8F9E3F89B415B9482221331CF676F /* WXMessageKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		395375556E4C1557B3533D424012BF0B /* WXVoiceContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55F19EE4A3D761BD3D1476689CA8BF /* WXVoiceContentNode.swift */; };
 		3A4C3C416115B6811876A290B0E3F9A9 /* ASGraphicsContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = A45C8163DDB39D3837CE492A8DDF891E /* ASGraphicsContext.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		3AD0CFFDA5036A5440253EBDBFD9A9F7 /* PINRemoteImageMemoryContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = F38071F0675B70DD6DF574B9995CFD55 /* PINRemoteImageMemoryContainer.m */; };
 		3B5CF4A5E8DD242D99FAE2464626184F /* ASDisplayNode+Yoga.mm in Sources */ = {isa = PBXBuildFile; fileRef = C9FF62405D4260EDA88ADB709DCCD8D4 /* ASDisplayNode+Yoga.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
@@ -145,10 +143,10 @@
 		432AD0DFD745778B91229949146344C3 /* PINRemoteImageCategoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF23441EDA90C2879ED2248FD6A5F00 /* PINRemoteImageCategoryManager.m */; };
 		43CEE1A4B055933A0CB57409BDD51592 /* ASNodeController+Beta.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0DA949B7DEF13F31FF9FAF9482C3AC4 /* ASNodeController+Beta.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		441D77CEBE2C3B8D28B5866F90374B50 /* ASDisplayNodeTipState.mm in Sources */ = {isa = PBXBuildFile; fileRef = F92A10EE3345B3F1E43216B65A580251 /* ASDisplayNodeTipState.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
+		4626EC928C27FD6CE1493778835633A4 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849BBD5D4C40FA086266689C7DAD6BA0 /* PINRemoteImage.framework */; };
 		4645B27FF433ED2750B4309F2489FC50 /* ASPINRemoteImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9221AAC962E26739C18A514BBDE0FD04 /* ASPINRemoteImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		469C351BC6D64602B1742D5F0045BD29 /* ASConfigurationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5999229C757F3DC9F54632CE290FC73B /* ASConfigurationInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46DB5F02CE4430EA881B21A9D3CEE370 /* ASControlTargetAction.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D330B31E9F334244F66C2D22F3AEB8E /* ASControlTargetAction.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
-		46F8E7C59D9B48F495D293848940C980 /* WXTimeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89101F0C5AC5A427C0785C9D3A77D4CB /* WXTimeNode.swift */; };
 		471BC5ABB7D0E3B32E5C3F43F461F256 /* ASDefaultPlaybackButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FAB33BF4E26DE0EF41AC5900BC35CD4 /* ASDefaultPlaybackButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		47244AD1C3D2DD40C6276E0E2B10C2F8 /* CoreGraphics+ASConvenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD15EA7E0D73E57C5A068324553FB0E /* CoreGraphics+ASConvenience.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4736CF65E8A0866A520739C21E818F69 /* PINRemoteImageBasicCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CE4915C804AF0DEBA41D6E3DE2F846C /* PINRemoteImageBasicCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -165,6 +163,7 @@
 		4AB004656F00C44B4B9F8D56C4754D0A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B417DEC2FB7286D0154730E1C5A9BB7C /* ImageIO.framework */; };
 		4C23EF2E6893AA838D689B28DC1F13E4 /* _ASDisplayLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6A608F7DDE18334B6BE146218F6A6 /* _ASDisplayLayer.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		4C480FDD8ADE120B5B9CDE009485248C /* NSIndexSet+ASHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EFC5225DFF313BE8CEBEC73829C7067 /* NSIndexSet+ASHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CCBCD6C22A3545D02B6B09297627133 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B0BD4530A2B49D61054E931F08922F /* Foundation.framework */; };
 		4D2DDBFD3EE5709B5674F7949EFB3FAF /* _ASCollectionGalleryLayoutItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A0C1749CD55AE1B664A79B2A567DCB /* _ASCollectionGalleryLayoutItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4D894BF22B604E122139AD67FBD8129B /* ASCenterLayoutSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = B4EE20FE13E08FB9EBCA05CB2FA10E8C /* ASCenterLayoutSpec.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		4E441B704883F919B3E9E7B053EB1582 /* ASLayoutSpecUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 7200E914CA8EB30A856BDCA5C1E4FE63 /* ASLayoutSpecUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -177,7 +176,6 @@
 		518249381F84899A316A831778181B10 /* FLAnimatedImageView+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C6987F61BF4CCEBDA4409443AB710 /* FLAnimatedImageView+PINRemoteImage.m */; };
 		51CD3CA60054DAA0FFCD9DF88D973559 /* ASBatchContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 813BEBEF7BBC5FEA855FFBB4899351CD /* ASBatchContext.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		520EA1553E617D6F84D57E6EAC9B5636 /* ASPageTable.mm in Sources */ = {isa = PBXBuildFile; fileRef = 89E164D52D28413E28CBFC5B4930FB51 /* ASPageTable.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
-		528A23D31E81A109E828B0C133791951 /* WXMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350BD7D9979C60F4606ADF3EC0B8F9AD /* WXMessage.swift */; };
 		52F16FA44A76E4C5D48734B43A537E5C /* _ASTransitionContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 436250101DB8C7E2B1BD3A1C58610C59 /* _ASTransitionContext.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		540DBCCD2FB0588BEEFABB462EA6D4CB /* PINRemoteImageProcessorTask.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A555C124D16682A83B7CB9F00BAD99 /* PINRemoteImageProcessorTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54188FC0D3DD5B62574DFBA0F7F9EFCD /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E8A36C16E37A32395BA3ED51B55846 /* Accelerate.framework */; };
@@ -191,6 +189,7 @@
 		578E05F095B93031980AE66C8BA746FF /* PINSpeedRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5111903E855DA1EB1255FCAC58BD8934 /* PINSpeedRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58753E1516397F4D04341782B8D6A9CB /* ASAbsoluteLayoutElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CCCC5DE229EF9B5F752B0A69A5804E /* ASAbsoluteLayoutElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5961CFB3886E05BA9C5D5C483F1EEC52 /* PINGIFAnimatedImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94345B2F205311716CE2409857C77DC5 /* PINGIFAnimatedImageManager.m */; };
+		5984286D813586D05B56ADF9A87537B9 /* Media.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC5B7603BBCAE1052B7F2354F207E92D /* Media.bundle */; };
 		5A8461D5F903DF711A276BE04577F79A /* ASCollectionElement.h in Headers */ = {isa = PBXBuildFile; fileRef = B55DBBC779A7E6C8F21EF3A12EE2F55A /* ASCollectionElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AB2ED6FDED600E76917BD6DB6BC4608 /* PINImage+DecodedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A3EE95AF765145863478D2C30CE62B91 /* PINImage+DecodedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B6BD09559DC9FD1598F007FACFDDF4A /* ASLayoutSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E4A1EF1D982AF777882C61658BF345 /* ASLayoutSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -205,12 +204,15 @@
 		5D982019D9EC96DFD1889874B1BA2500 /* ASCollectionFlowLayoutDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D46FAE249E7AE78FD47EE1F4718D06B /* ASCollectionFlowLayoutDelegate.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		5DBA02868B801D2A716CF9CA8E92AE81 /* _ASAsyncTransactionGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 65CB53E3BD3676E1CA26C36C44794E8C /* _ASAsyncTransactionGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DC3958D6527253CDDE5F8B2D00273B6 /* PINOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF6BEEECB10E700CD7274ED61343C44 /* PINOperationQueue.m */; };
+		5F2D0BAFAD9EC9EDDC41A63B170B7983 /* WXTextContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CFA55A55F1C642E2893A0F5AB71DC1 /* WXTextContentNode.swift */; };
 		5F5D9D949369EB06621D08D716C5BE04 /* ASCenterLayoutSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E3F8B21B7ACBC2DD8A2D3E9A136E7A /* ASCenterLayoutSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6041607BC6CEC6D5727CD75BD44F0CE1 /* ASCollectionLayoutState+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CBB27A1D954A9735A5F67F20BB287BC0 /* ASCollectionLayoutState+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		60B2952345981538EAF69C458EB663FE /* _ASAsyncTransaction.mm in Sources */ = {isa = PBXBuildFile; fileRef = A7F75A6241A13B9FB1E1B9FF89E097A4 /* _ASAsyncTransaction.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		60E8314B695F682FCF6706C3255FF541 /* ASCollectionLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A4729AF0F58830E98300CD8EF04FD0 /* ASCollectionLayoutDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		61818283679C6B38C94B9FB8B0AD55D6 /* AsyncDisplayKit+Tips.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8603C79FB1AD98D6848445228B1F2AC0 /* AsyncDisplayKit+Tips.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		61C78F3D284DB41CBB280CBEC4AB47F4 /* ASDimensionInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E769D4E4A1DAFEA7B1E49A47BE247CC /* ASDimensionInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		629B2E54DE38B7EB6650C0331363EA09 /* WXEmoticonContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DF477EA73366DC3F8C65DE19A86DB9 /* WXEmoticonContentNode.swift */; };
+		62D25F65CB22A5EA8746E158F2CA2B9A /* WXUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969EE86983CEAFEFAF673746998956F8 /* WXUtility.swift */; };
 		62D84DB785440E0E5154605E544E0958 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B0BD4530A2B49D61054E931F08922F /* Foundation.framework */; };
 		6377CEF639BB89C5C48555D177F4F34D /* NSAttributedString+ASText.mm in Sources */ = {isa = PBXBuildFile; fileRef = BEA98FFD1DDF2695C41B70CAE8EA2130 /* NSAttributedString+ASText.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		65E418C3F2B732069D641B3CAA82D3C5 /* ASTableNode+Beta.h in Headers */ = {isa = PBXBuildFile; fileRef = B95E8CE868C5163EE1008EA80EE35663 /* ASTableNode+Beta.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -234,13 +236,11 @@
 		6F6E88826C13843A8DC1B91ACAE2F01F /* ASDisplayNode+Layout.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7D7233FD6A7E3BF108E7730DC6257A0E /* ASDisplayNode+Layout.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		6F96FC61A34C082E9F1113276E47D231 /* PINImage+DecodedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BA525B4F55B1227A935EFDBA863847 /* PINImage+DecodedImage.m */; };
 		6F98B53F8BD238D23C4FB3A1A984E831 /* ASTextNodeCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C35F8B194DB8508CDD167B18529812 /* ASTextNodeCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FA5C3233D4AD6623951C0CF823440B9 /* WXNoticeContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B87ACD7827873E60C6C077EE6D140F /* WXNoticeContentNode.swift */; };
-		70287DABD6CEE93DF5D6B849E64F480A /* Media.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC5B7603BBCAE1052B7F2354F207E92D /* Media.bundle */; };
+		720DC94785106EC238696FF6304FE47A /* WXLinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECF63977F406D0D9BF4F099F3758038 /* WXLinkParser.swift */; };
 		7263DE605516B38C4FA0F16E3FD4D981 /* ASVideoPlayerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B43AD0884780D6C595B915EA74F535 /* ASVideoPlayerNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72A60D282E9C26F5EF2C0AB2908818C1 /* ASTableLayoutController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E90F1B0FBC54209F4512A2E4BF1314DC /* ASTableLayoutController.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		72D59D32A599A93C75D4FDAB7DC9737B /* ASYogaUtilities.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E82D9DADDAB9452E0255B74887BDF9C /* ASYogaUtilities.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		72F6F0CC202391378422014A75933647 /* ASDisplayNodeExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C52F66F3CD820DAB9540EAA2676BF46 /* ASDisplayNodeExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7476886C290FBEE37F3005BF85A20C36 /* WXMessageCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7F64BA75CA047351E314F149462DBE /* WXMessageCellNode.swift */; };
 		75B6AB3A7B5AF53467B25C45DF3B96C4 /* _ASCoreAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59A0F7F7C281B5B364FBEFEED81EA7F2 /* _ASCoreAnimationExtras.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		75EA6D8C949888CECFDE996ACBCC7E1C /* PINOperationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DEB107409DB32D9894FCF272FD721F5 /* PINOperationTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76486E3D71D10617BF6F2AE87460B3CA /* ASLayout+IGListKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDA2439F842D56DFE078CAABE77CBF12 /* ASLayout+IGListKit.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
@@ -248,6 +248,7 @@
 		77B4529FD12983A4B2E36A8B27A7FA69 /* ASTextInput.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20E6E09F7B346E903D590D8FDC464FB5 /* ASTextInput.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		7845B815BDBA490E7BE225C43E9AD527 /* IGListAdapter+AsyncDisplayKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E8BA0B690F571BBACAEF5A43A2382E1 /* IGListAdapter+AsyncDisplayKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7938644E140C00A37AEE202C0D91E0F2 /* ASLayoutTransition.mm in Sources */ = {isa = PBXBuildFile; fileRef = AAF5619DD0351D48748F392FBB37076F /* ASLayoutTransition.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
+		795CB1C5FA063E395906512A1D769D14 /* WXMessageContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC93BC1A9C42C1A0D4DE86574EAEFC /* WXMessageContentNode.swift */; };
 		798E0F169582BD5816A770931B6BFBC6 /* ASTextLine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 23EFA511583DCFA0DEEA32F41E0C24CE /* ASTextLine.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		799110AB6B3B61159954AD7212E849B6 /* ASCGImageBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 70CDE84252D2D2762D31A0206BC6E5F6 /* ASCGImageBuffer.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		79CBD53F1BA8489870E7D07145984BEC /* ASDisplayNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 05B9154E41AC9651D1500396B45CC89A /* ASDisplayNode.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
@@ -258,6 +259,7 @@
 		7B7A5F480C8891F20625B3220914BCBA /* PINProgressiveImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EEB41B022564EE0904817540753CC2 /* PINProgressiveImage.m */; };
 		7C27E5F68E9EB61979B1E88841500324 /* ASCollectionView+Undeprecated.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A10D594B47B6C5747FC14DEABCE7058 /* ASCollectionView+Undeprecated.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7C51F2960212F1E1E01D37FE6B288A5B /* PINRemoteImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B54A712317702A0D939F7C278F907F18 /* PINRemoteImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C56C58456EC73299F44D86C86B60379 /* WXInputBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DBB1704720CE003A608542A07B362C /* WXInputBar.swift */; };
 		7CC5C2375A5EC03117CA2CA5B9C5F76D /* ASLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4B188E344DB6BAC747A95A9F4BDD54A /* ASLayout.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		7CF858AAAC21AD1EEBFBFF15066DC692 /* PINRemoteImageDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A5160A2B1CF10B4135ABA00712CE356D /* PINRemoteImageDownloadTask.m */; };
 		7D209077CBCD22897C437A088B0F716A /* ASDimension.mm in Sources */ = {isa = PBXBuildFile; fileRef = 88CC708CF71BD3D6391A982F77AA3DC4 /* ASDimension.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
@@ -269,6 +271,8 @@
 		800B28591DEE42878E61A0CE4479B452 /* ASTextKitContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1867AFECC3782442C39BBEA703D64683 /* ASTextKitContext.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		802BB286EA6040319B686BCA471CBE2D /* ASLayoutElementStylePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A59935C13FCA245BD763EA5BE8FE55C /* ASLayoutElementStylePrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8036EB2C889DD6B8020E10F502728057 /* NSData+ImageDetectors.h in Headers */ = {isa = PBXBuildFile; fileRef = 26C75F7B4C4DA920EE600B2F68B5C4C1 /* NSData+ImageDetectors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		808F13CDCCA8915291C0FCF385B269A0 /* WXMessageKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FB139C2A81C60ABC4874A7B1801BE5C /* WXMessageKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80C57F188EF062920F3034FC4D016C49 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5052806C3106CEE59336C083FD0D9E /* AsyncDisplayKit.framework */; };
 		81166544D68BCBBB67F86AAB363EA440 /* AsyncDisplayKit+Debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 728E400A11E852FB3C0958D698E29A86 /* AsyncDisplayKit+Debug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81D8CB5489749AD323DCC8FF7B5DA738 /* ASTextKitTruncating.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6E0A036026E4902DA46D9072E27ED0 /* ASTextKitTruncating.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		82E1F9883A68CC966B271D7AA1914358 /* Texture-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E48079FE18C92056AF92ECE3C16A979 /* Texture-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -307,6 +311,7 @@
 		91FBB18FC6B78968CD3790576B1D791C /* UIResponder+AsyncDisplayKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = CC8FFC5C6C397CB57E854E5B8244C3B5 /* UIResponder+AsyncDisplayKit.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		92710081F9E7141F2E165E6A5CD30818 /* ASCellNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A4A72F2BFDD0A09B02B205234F083 /* ASCellNode.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		927F14D8D5513C8096D98B5A6ACFFA7B /* ASTextKitCoreTextAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79502788F9F6A673C292C9A063B1719D /* ASTextKitCoreTextAdditions.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
+		92973299463484CD0F0E20AD83E51AC7 /* WXTimeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C61885EF1D6C18F9E9DA9F53C9DFE /* WXTimeNode.swift */; };
 		93A2714B5C617D45BA9E4D8460B29357 /* ASCollectionNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3938C29079B35063A6754221269F1CD6 /* ASCollectionNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		945CECD5F856F8152BC44D08FE852CCF /* NSMutableAttributedString+TextKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 96B7FF344B6411E0BD6697534B602176 /* NSMutableAttributedString+TextKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94B283EAF84B04C61B736FF02F4EF50E /* PINRemoteImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4965239E64B0DAB243FB2E4BCD974510 /* PINRemoteImageManager.m */; };
@@ -326,13 +331,11 @@
 		9B2EE65ED8B007D4C344FEC6F768C9B4 /* ASTipProvider.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66331F43F967B780CC9CAF4A790AA9CB /* ASTipProvider.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		9C2BB387083631012EB5C1EC1F8EE729 /* PINCaching.h in Headers */ = {isa = PBXBuildFile; fileRef = DFF354F96B04FAB84EFE1A8C93121AFA /* PINCaching.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C9A3753719E2E7C43A778D0D68D8A1C /* PINRemoteImageCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 784FA7E09998419FB6D772D4D6622CEC /* PINRemoteImageCallbacks.m */; };
-		9CA57836E865421142CF04DDCE59E20F /* WXLocationContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B159282B4E0A71B9C509757321B65288 /* WXLocationContentNode.swift */; };
 		9CC2B88E26F683FE73C473A17936AB65 /* ASLayerBackingTipProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 533E6ED331B191B85249C3F502239C0D /* ASLayerBackingTipProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9D2B61530DF42396EE9D345C5BC53F83 /* Pods-WXMessageKitExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F7690484009EC6BF5F7FC340F367EA /* Pods-WXMessageKitExample-dummy.m */; };
 		9D3EBEE8BB53469FF82B5268A385E918 /* PINRemoteImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DED9269512F5F3FD9ED2ED49453A7327 /* PINRemoteImage-dummy.m */; };
 		9D5AED0578E631788B8D9895C1B949E4 /* ASLayoutSpec+Subclasses.h in Headers */ = {isa = PBXBuildFile; fileRef = BB5509AC2F24A2A92EBBA6CEA729CA66 /* ASLayoutSpec+Subclasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D62D32EB5AE2F7884B5E616F40FA296 /* ASEventLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8CFC189622706290CF1B3C87E768DB /* ASEventLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D7EE2434816A8BFD0EA1F82AEF11D40 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5052806C3106CEE59336C083FD0D9E /* AsyncDisplayKit.framework */; };
 		9D92116AFE6C294869B1C2FFB0F9961B /* ASWeakMap.h in Headers */ = {isa = PBXBuildFile; fileRef = F504E364179F781D8E84286B8C102F2F /* ASWeakMap.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9DB1B4681E1BD5B5180D5F5A74EAC1A7 /* ASCollectionNode+Beta.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F28CF13FD263006822930AC85291085 /* ASCollectionNode+Beta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EA768EAC7DD105D55C6E0ADE5C11A44 /* ASDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF1EA269C2018E999CFA66796D77058 /* ASDispatch.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -382,6 +385,7 @@
 		B0C54A106E41470E67AE2D2581DE4D27 /* ASViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CBFEFAF4A327450CFA6C1E5C86646C8C /* ASViewController.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		B1302449E04F94715BE52278CE836E2C /* PINImage+ScaledImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B599CEF5896A05A999BBFDAA9F97EB4 /* PINImage+ScaledImage.m */; };
 		B15A3220207A7B9906FAC195E58C28A5 /* ASSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = C2EB8A8FB5C7717A5B6D295284DB7B4E /* ASSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B20580E002AAB5EB708CFEC3D037574B /* WXExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE770E78BE4A82B6F371F26EE3DD5FB6 /* WXExpressionParser.swift */; };
 		B2FF0B3F9E98DB9D32AC6F1FB4AF5973 /* _ASCollectionReusableView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D1FBD819F0C791936D435AB7AA1DF11 /* _ASCollectionReusableView.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		B314498ED96D2F0129A1A368118CD09C /* ASRangeController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4591432FDD1D8F7F541116A89EB1F056 /* ASRangeController.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		B318E6FB4194F6FE456852556DF10B32 /* ASCollectionGalleryLayoutDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 390E0F47B9FF2800C2C335B8F217C39E /* ASCollectionGalleryLayoutDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -399,12 +403,11 @@
 		B657E5107351084226E67342A4616E78 /* ASTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = B055C6D8B86E2115F225864D51C48EEA /* ASTextInput.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B70DC15A7BF4D41B8A2DA1C20C646285 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67CA002148EAC2274CD1FE9979424660 /* CoreMedia.framework */; };
 		B7E91ABE499B6733517D33FE1E4C1502 /* AsyncDisplayKit+Debug.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2707C629E1061529715511EBD8E68 /* AsyncDisplayKit+Debug.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
-		B86885BA502CD4B472995101B71881E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B0BD4530A2B49D61054E931F08922F /* Foundation.framework */; };
 		B86DF2CD8EDE86C19772343D0B2945FE /* _ASAsyncTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 20374B33019E9F90DAA570528F392611 /* _ASAsyncTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89B9695B0382264D4CAFE6FFAF625DC /* WXLocationContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6A93A9F0A2B182D958B7BA47C25050 /* WXLocationContentNode.swift */; };
 		B8C0C60FA8A8D1523B5E966079559F1F /* ASLayoutTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = BA9342E702CACC3EB25B1E152BE0BE12 /* ASLayoutTransition.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B91877FE183B4921AC6F3DD06246EBA7 /* ASDisplayNode+Subclasses.h in Headers */ = {isa = PBXBuildFile; fileRef = FF969382F22DD043499B5CE202B8776E /* ASDisplayNode+Subclasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B94E437AD7533B455340EE6D9A4B6463 /* ASCollections.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CD9922B4FC94A411654FE7F9EADD21A /* ASCollections.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
-		BA80BB743D3B36C0649C7BE064871EF1 /* WXMessageKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A31E5F9009CD35180056834C6EFD4390 /* WXMessageKit-dummy.m */; };
 		BA991D5B0D15C90393E182370ED3F7E3 /* NSIndexSet+ASHelpers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 792E0C619964F1AFB5C914A9ED2C4191 /* NSIndexSet+ASHelpers.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		BABCA75A40E66297E498280E1D393E26 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40499263D613B0E7F1F14E9E93105DD8 /* AssetsLibrary.framework */; };
 		BABF973B5B192D51D6C4F7456103BE75 /* ASDisplayNode+DebugTiming.h in Headers */ = {isa = PBXBuildFile; fileRef = 488676C567394F1172D6120E46AE83BE /* ASDisplayNode+DebugTiming.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -413,7 +416,6 @@
 		BCB657CBC4EF85FDD1F4F441C82D2A1D /* PINMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F6333BABECF48316AC84A9D64ABC81 /* PINMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCB68BB3E16B87F0C927313DC119424E /* ASNodeController+Beta.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F51E9F4FEEBD2962AEF7BAEB0B7983 /* ASNodeController+Beta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCE1BD0B7DCCEC19DB489FD3BB67EE62 /* ASRecursiveUnfairLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 66317FADEE8781EAD7C5B8D700724172 /* ASRecursiveUnfairLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD028C6CD34086196AD3A16D712F7160 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0673FBB071C70B1041DB9934AED85F /* Media.xcassets */; };
 		BD71AB07F2DAD99A050F4B20FCA710F4 /* ASSignpost.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DEBF5D8050174944A151D6EEF6FBE99 /* ASSignpost.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BDCEA7D86EF5EAA1D0132FA11A8C7679 /* ASButtonNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 41A510A94AA2FF239009DB1296CD65DD /* ASButtonNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE0308C81B8EB5C5854C50AFE4EC5F05 /* NSAttributedString+ASText.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A3E29D821F098E24E77337844AEB89 /* NSAttributedString+ASText.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -444,7 +446,6 @@
 		C94A4ECBE846B2C754CD0DE8A584F46B /* PINCachedAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BC87499CCFFF9A602E395983728CFD /* PINCachedAnimatedImage.m */; };
 		C94CBEE8592258E9711DFAF7033F1EFD /* _ASDisplayView.h in Headers */ = {isa = PBXBuildFile; fileRef = ED09D2BF5252D491B976669E7676AFEB /* _ASDisplayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C97187C469117AEB7EC5067C1A3E0FEB /* PINImage+ScaledImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E4B48BC31BA1B6E66D3135FCF9E9CB /* PINImage+ScaledImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9E71DF65F8F59C0D3F1A125ECB831D0 /* WXVoiceContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AA871B08FBFC3BE5E544D74B5EF0F /* WXVoiceContentNode.swift */; };
 		CA38ACE37FA6D3346953C102DC0CF417 /* ASAbsoluteLayoutSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = C75A011045CE17F6D3BC2740CCF1BFF2 /* ASAbsoluteLayoutSpec.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		CABC9E83A17F030D6B854E7BE681F79E /* ASNetworkImageLoadInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = A22B64F029B18CC03A3B74BFD37B7B57 /* ASNetworkImageLoadInfo.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		CABFD58E0EC8F3FBC7C7BAFB0EE3D814 /* ASBackgroundLayoutSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BCD1EA3B7068A262EA95E97B3BD1AEA /* ASBackgroundLayoutSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -457,11 +458,12 @@
 		CD7F69C88C619060BBC6A59FFF61C639 /* _ASAsyncTransactionContainer+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 772DE6D395FF70C703FED4279A7D02A7 /* _ASAsyncTransactionContainer+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDDB2859AD81C0BF3798E6E4B11D7EEB /* ASEventLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0F40D04115DF69394F435D5162C63 /* ASEventLog.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		CF73659CF777E13FF16E7887F8F03F13 /* PINImageView+PINRemoteImage.h in Headers */ = {isa = PBXBuildFile; fileRef = E6AC92B01F29DEF4697360D3DC84A77A /* PINImageView+PINRemoteImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0C35450A6C23F9A3266AFFDEBC4ADBD /* WXMessageCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A856AD45421833E5ABD7872295F1262C /* WXMessageCellNode.swift */; };
+		D1161C677957BCCA3C07BB5C02A9C467 /* WXSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9040C3AF6746A671C5428B7E019CD7 /* WXSession.swift */; };
 		D12FEAC2B168519EA04F32F80A1A6C26 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F435F5508200ACC478E52E3BF29B8FA2 /* CoreLocation.framework */; };
 		D151AD5C0614B9CD096813DA5583792E /* ASTextKitShadower.mm in Sources */ = {isa = PBXBuildFile; fileRef = A804920595511979AFDF6E8EDB4077CB /* ASTextKitShadower.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		D1A7903C6CEDB9F9CA80C296D81651CF /* ASCollectionView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97560110B5EA50B74FB28425134282C5 /* ASCollectionView.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		D1C2B6C9B28D974F10C233EC059377C7 /* PINMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D06C9AE71C7C3A301103EA257E7300D5 /* PINMemoryCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D1C938D069A89EC95BEDF2088BB3A336 /* WXTextContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503638020DD1AC0E0D3B8E493C09551 /* WXTextContentNode.swift */; };
 		D25038080560B83F9B92E9F473DB10D8 /* ASDisplayNode+LayoutSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB7B66B1C4D1019E5C3C25A07C468D0A /* ASDisplayNode+LayoutSpec.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		D2D96C2A2312008724BC4C55BD130768 /* Texture-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2644D0FD1EE8DDC1807A51463C0EBB79 /* Texture-dummy.m */; };
 		D2F6B3F151EE8B106C6E6105EC1739CE /* ASInsetLayoutSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 82D6370E6FBB34189AE707533CEF4801 /* ASInsetLayoutSpec.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
@@ -472,7 +474,6 @@
 		D4D187C5502D1B6BE469EB84707455CD /* ASTextKitShadower.h in Headers */ = {isa = PBXBuildFile; fileRef = 98FD9D1E83495FAB33338119BFA8A189 /* ASTextKitShadower.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D51D44504EF0A8D760929A136FC580FA /* ASCollectionViewLayoutInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB28C69B3C36F4C4F6AA40F25066C46 /* ASCollectionViewLayoutInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D61DF2CD8BEA2617F8A666D0F3828466 /* ASTextUtilities.mm in Sources */ = {isa = PBXBuildFile; fileRef = 227218D646B9CA72F7F0AA23A0DD365A /* ASTextUtilities.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
-		D72F1BD4069AEF7FA2BE4CC387CD3A19 /* WXEmoticonContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304951079F44FADB75C165A47C47346F /* WXEmoticonContentNode.swift */; };
 		D7A79E0DAC9677BA1663ED5039F087DE /* FLAnimatedImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1301A8E8696DA780ABA8CC40A7DD388 /* FLAnimatedImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7B81994873CE58FC1520DA0AC804398 /* ASDisplayNodeTipState.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB4E3DAE33522288E3CF2738D1F42C9 /* ASDisplayNodeTipState.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D80B63A96BDC1D4BB85809F99C26124B /* FLAnimatedImageView+PINRemoteImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F458D3EAFDC31F9EB3DEAA1575EED1FA /* FLAnimatedImageView+PINRemoteImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -490,7 +491,6 @@
 		DB0B0877719D949A31200A8EDE68CC81 /* ASBaseDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 28FC43BE555B2D8FFB97B314F5043794 /* ASBaseDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB53D338231A5CCA6F4BB529E3CCBCC7 /* PINWebPAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C5428421758E83BC2069870B219EA /* PINWebPAnimatedImage.m */; };
 		DB83DB23211033F5D5A49DD39823CBEA /* _ASDisplayViewAccessiblity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47FC33652197236631C1762FDBE0CCAD /* _ASDisplayViewAccessiblity.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
-		DB93E5C05052E4E7783BC4974EFBFFD6 /* WXSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5DF2FF4575504A353ED4CA9433A20E /* WXSession.swift */; };
 		DB94E770C82687C8628FB93265B2E46E /* PINCachedAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 22755D481E14433D045E4081EFCF25A8 /* PINCachedAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBBE66619BE131AAB0ED29B21F4C0782 /* ASImageProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 1279B19F436C1E30D18B6DDAB090C1A4 /* ASImageProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC709A9A173411EDA887B60009912C0B /* ASMutableElementMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C95D2562342F922315E21FADB64F8C1 /* ASMutableElementMap.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -515,7 +515,6 @@
 		E1E0F0B55021FD2EA75B591CF86EB797 /* FLAnimatedImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B561325EB339D0797767E68D7DD4E7FA /* FLAnimatedImage-dummy.m */; };
 		E22741A4AFDACFD4EFA1796CD566D9A0 /* ASIGListAdapterBasedDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 721AAE4A59F10BD71B6A08542A6CCEBE /* ASIGListAdapterBasedDataSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E23A7BFDFD83FB3EF705AE91EDE800C0 /* ASTextNode2.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CF530E43787729D81A458E8B9AA7C83 /* ASTextNode2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2EB9FC7E41724327DFD31F6E9263ACD /* WXUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6BF8C45A5D7452C117561474F5CF89 /* WXUtility.swift */; };
 		E4DA68854AE8AEF318DD2002495169AF /* ASConfigurationInternal.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA835C5A0730CD6EB8FBFFA5612C3E1F /* ASConfigurationInternal.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		E562E9196F87EB8868D5D150A50A4A0F /* ASWeakMap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67CBB55FF5654A79AE8B2E7FB490FAC6 /* ASWeakMap.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		E594B2023EDA296EB759343493CCC0B1 /* ASLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E910BF8F81C0F295229F72C5CF5804A /* ASLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -529,20 +528,23 @@
 		E931910D623E887EE1B3E9635BEA0906 /* ASTextNodeTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 80B6C6C4C69E92B7E87D05493781741E /* ASTextNodeTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9445389569C3B57DC6184A48247CA17 /* ASConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DBC8C48DBD3869E3546E52DB8BDB24 /* ASConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9FDE332EF4FB89FBF5865A984B4E650 /* ASCollectionViewFlowLayoutInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 36304F90C2D861228D5DCB0516433E50 /* ASCollectionViewFlowLayoutInspector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EBA533AC43734981FD80612E8B0205F8 /* WXVideoContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F372FF012A57D175A291B10BFAA311 /* WXVideoContentNode.swift */; };
 		EBF6479922ED01E185419A2FDE61454C /* ASTipsController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E04E9B81038642591C3E0027D56D431 /* ASTipsController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EC1BB835D45773A0FFC8211C6BDC7DD3 /* _ASCollectionGalleryLayoutItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = E73E069DF3F437A7E2608333BDEE6FDE /* _ASCollectionGalleryLayoutItem.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
+		ED0B14558EBF10100A2B279FDC9F3D2C /* WXMessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E6C92C8839E67E630172DA4D0339C /* WXMessageDataSource.swift */; };
+		ED4471AC846660D526E48CD6CD5C19DE /* WXMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49828ACE54DBD9763DFD6A4A56CB633 /* WXMessage.swift */; };
 		EDD39001F5CEE1894315A687A3BBB54F /* ASTextKitRenderer+Positioning.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF57FDF90A1722DC240A42B44CF7752F /* ASTextKitRenderer+Positioning.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		EE9826EAD4013D63E0102D26BDD5E460 /* ASCollectionLayoutCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AD3A3580F0282CFC708FBE2EF1CD092D /* ASCollectionLayoutCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EEC8FA0CF9FC6D0865029B43A2DA1579 /* ASLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0AE413D2C2638FAE4AA757C9AC248A /* ASLayoutManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EF4C0AB9A764F1E676C064BB9BFF41BA /* ASDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4968CD7733A9DEC5AD061A18637FD367 /* ASDelegateProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF79F88DE3DEBC770852C44680868FC6 /* ASPagerNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE1C69EA1CE671008038A2557BEE2A1B /* ASPagerNode.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
+		EF8D1B742AC0D84FD6A263A01DA1437A /* WXMessageKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE434CFAB3256C9EEC01836E8C9721AD /* WXMessageKit-dummy.m */; };
 		F0B1C782468C4E0A2D8EEF0C75AF7503 /* ASStackPositionedLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 932E60F991784CDE7743A90D8F12DFFC /* ASStackPositionedLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F226556F01BEFDF2DE085670133A3149 /* ASTextKitRenderer+TextChecking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6865A0B58DAFF7BFF49E617059157F62 /* ASTextKitRenderer+TextChecking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F259DE3E21154420D8C2D9C786100761 /* ASLayoutSpecPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 749D7DEF1F4C5BAB1A378341FAF10628 /* ASLayoutSpecPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F26DBA07E4395641FAE0F387285C6DAD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49E9F6CB2EBDBF7DBBA9A3B7C936EA2 /* MapKit.framework */; };
 		F285BAE9B392AE3FDEE0859C9C61B2B1 /* _ASCollectionReusableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1F646210B6A8421EB1339AC4654DD6 /* _ASCollectionReusableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2E36281F7D4CE23192D973626ECCCB5 /* PINRequestRetryStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33545ABE915AB5CE76CA09DE4FC6537D /* PINRequestRetryStrategy.m */; };
-		F318079158B756C1515030FE2616E5A8 /* WXVideoContentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC91C4CB17851A223CE50AAAA3BA552 /* WXVideoContentNode.swift */; };
 		F40D3A0927A12DC0CA8E02FBD4A98AC7 /* ASCollectionLayoutDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 467678981FBD7EBC85D596366BB02D2C /* ASCollectionLayoutDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F42709B4D2E1F562A78469D253919E6A /* PINMemMapAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A468A0BEB58C6EB923CE4F21146AB67 /* PINMemMapAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F434638C71FC0AE063F0C89A7868541D /* WXNavigationBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32295120C69138F00E67E0EF2A06BAFF /* WXNavigationBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -556,7 +558,6 @@
 		F90417F58EC71BEE267F22B71CDD3A42 /* ASNavigationController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDE31302704BF582AB4319376EF733C /* ASNavigationController.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		FB5EEFB759CCDAC5A4D34FF8BC26A5C8 /* ASVideoNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DE79EEE2B195C752ACD37275117F376 /* ASVideoNode.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		FCD292D043C501CF54E50BC83FB553E4 /* NSArray+Diffing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9142AE0540CD5709519C3CC34F53F289 /* NSArray+Diffing.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
-		FCD897B8A6A09E6B5BE8A932AF850782 /* WXLinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72750CEC89BDDE920319E0043E51A2 /* WXLinkParser.swift */; };
 		FDF5877D38A81924C6A93138F33E3550 /* ASVisibilityProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C73DB8080F797CB4ED565E5172AEFF /* ASVisibilityProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE7DAF6410C68A5F2E2049B56FD4C2BD /* ASPhotosFrameworkImageRequest.mm in Sources */ = {isa = PBXBuildFile; fileRef = B610C298976530B14957037B2DC88904 /* ASPhotosFrameworkImageRequest.mm */; settings = {COMPILER_FLAGS = "-fno-exceptions -Wno-implicit-retain-self"; }; };
 		FF1496139C9609A42E5571CD9A20D40E /* ASTextKitFontSizeAdjuster.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF634A86F2B7995EAE1F4D8BD1714E5 /* ASTextKitFontSizeAdjuster.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -596,13 +597,6 @@
 			remoteGlobalIDString = 65817C377231320607BD620F51F5B439;
 			remoteInfo = WXNavigationBar;
 		};
-		6BA89E1719922D83EF97121F44DEE346 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 752D425EA0C1E5BCC145CCFC49C21AE3;
-			remoteInfo = "WXMessageKit-Media";
-		};
 		73EE10BF05D060427F37B63B54CD6C25 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -616,20 +610,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = E2A8B2A28D2EAB2E4CCF3B69E6792851;
 			remoteInfo = PINRemoteImage;
-		};
-		9C864DE4CE17D76683B247A304A30247 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2A8B2A28D2EAB2E4CCF3B69E6792851;
-			remoteInfo = PINRemoteImage;
-		};
-		9C915D59411BA25D5DD70B4B2267DB58 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DB66E43BC980D741F3C7C5CF3ACEEFA4;
-			remoteInfo = Texture;
 		};
 		9E69C729BDC147DE35E03D350C945696 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -645,12 +625,26 @@
 			remoteGlobalIDString = 4132C476B62F20FDC6A0F590DC960D37;
 			remoteInfo = WXMessageKit;
 		};
+		B95B488307180F7166DCDB555F205F57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB66E43BC980D741F3C7C5CF3ACEEFA4;
+			remoteInfo = Texture;
+		};
 		C4779C11C8C0526F64E51C44B7319F4C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A927C3CD51C30012080D6CA07959B246;
 			remoteInfo = PINCache;
+		};
+		C9CFC799B14EF801B2E8A569AA4AF9F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 752D425EA0C1E5BCC145CCFC49C21AE3;
+			remoteInfo = "WXMessageKit-Media";
 		};
 		D1BA3C5BF0570921114A163D29EB396D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -665,6 +659,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4A8E8992707D01510894596DB9BCCA00;
 			remoteInfo = FLAnimatedImage;
+		};
+		ECC1673CC4B589B019CB48F4B2A4C368 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2A8B2A28D2EAB2E4CCF3B69E6792851;
+			remoteInfo = PINRemoteImage;
 		};
 		FF30B81F9789B64937FC47064BE2F2FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -693,10 +694,10 @@
 		08DD8C403FAFE9E44D34B0B3935D80E7 /* ASTextLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextLine.h; path = Source/Private/TextExperiment/Component/ASTextLine.h; sourceTree = "<group>"; };
 		0A028FF54209564EEDFF4C04CF1AB8E4 /* PINRemoteImageManagerResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageManagerResult.m; path = Source/Classes/PINRemoteImageManagerResult.m; sourceTree = "<group>"; };
 		0A29271217CDFF2C350460EA033B86DB /* ASMainThreadDeallocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASMainThreadDeallocation.h; path = Source/ASMainThreadDeallocation.h; sourceTree = "<group>"; };
-		0A5DF2FF4575504A353ED4CA9433A20E /* WXSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXSession.swift; sourceTree = "<group>"; };
 		0A6E0A036026E4902DA46D9072E27ED0 /* ASTextKitTruncating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextKitTruncating.h; path = Source/TextKit/ASTextKitTruncating.h; sourceTree = "<group>"; };
 		0B599CEF5896A05A999BBFDAA9F97EB4 /* PINImage+ScaledImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINImage+ScaledImage.m"; path = "Source/Classes/Categories/PINImage+ScaledImage.m"; sourceTree = "<group>"; };
 		0B93AB1E4B07413AFD0B867C7BFD5B70 /* ASDisplayNodeInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDisplayNodeInternal.h; path = Source/Private/ASDisplayNodeInternal.h; sourceTree = "<group>"; };
+		0BBC93BC1A9C42C1A0D4DE86574EAEFC /* WXMessageContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXMessageContentNode.swift; sourceTree = "<group>"; };
 		0BF264046F414CD5868D8743CDEDD229 /* ASStackLayoutSpec.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASStackLayoutSpec.mm; path = Source/Layout/ASStackLayoutSpec.mm; sourceTree = "<group>"; };
 		0C8FD18EE3805664BFE848EDC7EA19FC /* ASCollectionLayoutCache.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCollectionLayoutCache.mm; path = Source/Private/ASCollectionLayoutCache.mm; sourceTree = "<group>"; };
 		0CF6722B937C604C06E212C421B11493 /* NSArray+Diffing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Diffing.h"; path = "Source/Details/NSArray+Diffing.h"; sourceTree = "<group>"; };
@@ -719,6 +720,7 @@
 		0F4ACB2ABEEAB4539EDBD4FF06D3F3FD /* ASTableNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTableNode.h; path = Source/ASTableNode.h; sourceTree = "<group>"; };
 		0FC51247C2018E177168C41E9A6AE924 /* ASWeakSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASWeakSet.h; path = Source/Details/ASWeakSet.h; sourceTree = "<group>"; };
 		0FE9D0C65CEE901294A06647C5F79E65 /* ASCollectionLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCollectionLayout.mm; path = Source/Private/ASCollectionLayout.mm; sourceTree = "<group>"; };
+		107403307B1DB29BCC096D9290E8A5F9 /* WXImageContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXImageContentNode.swift; sourceTree = "<group>"; };
 		10BA525B4F55B1227A935EFDBA863847 /* PINImage+DecodedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINImage+DecodedImage.m"; path = "Source/Classes/Categories/PINImage+DecodedImage.m"; sourceTree = "<group>"; };
 		10E1F2DF7804F2C99A16C2D3AB8AC3EC /* Texture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Texture.release.xcconfig; sourceTree = "<group>"; };
 		115A4FCB2A03922EC10B633F15359653 /* PINRemoteImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PINRemoteImage.framework; path = PINRemoteImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -727,7 +729,6 @@
 		12C73DB8080F797CB4ED565E5172AEFF /* ASVisibilityProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASVisibilityProtocols.h; path = Source/ASVisibilityProtocols.h; sourceTree = "<group>"; };
 		13CCCC5DE229EF9B5F752B0A69A5804E /* ASAbsoluteLayoutElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASAbsoluteLayoutElement.h; path = Source/Layout/ASAbsoluteLayoutElement.h; sourceTree = "<group>"; };
 		14E4A1EF1D982AF777882C61658BF345 /* ASLayoutSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASLayoutSpec.h; path = Source/Layout/ASLayoutSpec.h; sourceTree = "<group>"; };
-		1503638020DD1AC0E0D3B8E493C09551 /* WXTextContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXTextContentNode.swift; sourceTree = "<group>"; };
 		1557B129EC1DF6B9227BF2725BAACB00 /* ASPendingStateController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPendingStateController.h; path = Source/Private/ASPendingStateController.h; sourceTree = "<group>"; };
 		156FCC4C543C552AB38FC7A335A887DE /* ASTextKitAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextKitAttributes.h; path = Source/TextKit/ASTextKitAttributes.h; sourceTree = "<group>"; };
 		15F25C86D30AF89AD998B4719292729D /* PINGIFAnimatedImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINGIFAnimatedImageManager.h; path = Source/Classes/PINGIFAnimatedImageManager.h; sourceTree = "<group>"; };
@@ -755,10 +756,12 @@
 		1E48079FE18C92056AF92ECE3C16A979 /* Texture-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Texture-umbrella.h"; sourceTree = "<group>"; };
 		1E6376287892329C31BE2FC5C67C80CD /* ASPagerNode+Beta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASPagerNode+Beta.h"; path = "Source/ASPagerNode+Beta.h"; sourceTree = "<group>"; };
 		1E8BA0B690F571BBACAEF5A43A2382E1 /* IGListAdapter+AsyncDisplayKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IGListAdapter+AsyncDisplayKit.h"; path = "Source/IGListAdapter+AsyncDisplayKit.h"; sourceTree = "<group>"; };
+		1ED232D0E50F494C531BBB04273E79C0 /* WXMessageKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WXMessageKit.modulemap; sourceTree = "<group>"; };
 		1FAB33BF4E26DE0EF41AC5900BC35CD4 /* ASDefaultPlaybackButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDefaultPlaybackButton.h; path = Source/Private/ASDefaultPlaybackButton.h; sourceTree = "<group>"; };
 		1FC3331112FFB84AF906674833B69F10 /* ASImageNode.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASImageNode.mm; path = Source/ASImageNode.mm; sourceTree = "<group>"; };
 		201892DF425BFC7EAE4977EFD54F1935 /* FLAnimatedImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FLAnimatedImage-Info.plist"; sourceTree = "<group>"; };
 		20374B33019E9F90DAA570528F392611 /* _ASAsyncTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _ASAsyncTransaction.h; path = Source/Details/Transactions/_ASAsyncTransaction.h; sourceTree = "<group>"; };
+		20B25CFF354D26F55F4C6EE53C7AB7B3 /* ResourceBundle-Media-WXMessageKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Media-WXMessageKit-Info.plist"; sourceTree = "<group>"; };
 		20E6E09F7B346E903D590D8FDC464FB5 /* ASTextInput.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextInput.mm; path = Source/Private/TextExperiment/Component/ASTextInput.mm; sourceTree = "<group>"; };
 		21BD0C4AD95213FAE15E3F6525D8E108 /* ASTextNode.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextNode.mm; path = Source/ASTextNode.mm; sourceTree = "<group>"; };
 		21CD9CFEC82C67424F72BE6AE24578AC /* ASStackUnpositionedLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASStackUnpositionedLayout.mm; path = Source/Private/Layout/ASStackUnpositionedLayout.mm; sourceTree = "<group>"; };
@@ -780,6 +783,7 @@
 		26FA8890002018267CB55FDEB615858D /* ASHighlightOverlayLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASHighlightOverlayLayer.h; path = Source/Details/ASHighlightOverlayLayer.h; sourceTree = "<group>"; };
 		271DCB89B530E97789E49E2B9D49C32F /* ASTextNode2.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextNode2.mm; path = Source/ASTextNode2.mm; sourceTree = "<group>"; };
 		28721ACE27889E643EC4EF4688661F32 /* WXNavigationBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WXNavigationBar-Info.plist"; sourceTree = "<group>"; };
+		28CB701F0D8F0A53E1F8921806953918 /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Sources/Media.xcassets; sourceTree = "<group>"; };
 		28E17A1708DE241E8620997E02EDAA08 /* ASAsciiArtBoxCreator.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASAsciiArtBoxCreator.mm; path = Source/Layout/ASAsciiArtBoxCreator.mm; sourceTree = "<group>"; };
 		28E8A6E7ACBBA4BF54D73D7FE0162893 /* ASDisplayNode+InterfaceState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASDisplayNode+InterfaceState.h"; path = "Source/ASDisplayNode+InterfaceState.h"; sourceTree = "<group>"; };
 		28FC43BE555B2D8FFB97B314F5043794 /* ASBaseDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASBaseDefines.h; path = Source/Base/ASBaseDefines.h; sourceTree = "<group>"; };
@@ -788,11 +792,11 @@
 		2C8CFC189622706290CF1B3C87E768DB /* ASEventLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASEventLog.h; path = Source/Details/ASEventLog.h; sourceTree = "<group>"; };
 		2CBA822E612A7AC8B471ED90887E58C7 /* ASVideoNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASVideoNode.h; path = Source/ASVideoNode.h; sourceTree = "<group>"; };
 		2E4DFAD7707BD6E83EC51B9B94CAE1D0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2ECF63977F406D0D9BF4F099F3758038 /* WXLinkParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXLinkParser.swift; sourceTree = "<group>"; };
 		2EE332E65C798AA2246E9FB68E61840C /* ASCollectionViewFlowLayoutInspector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCollectionViewFlowLayoutInspector.mm; path = Source/Private/ASCollectionViewFlowLayoutInspector.mm; sourceTree = "<group>"; };
 		2F0A4A72F2BFDD0A09B02B205234F083 /* ASCellNode.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCellNode.mm; path = Source/ASCellNode.mm; sourceTree = "<group>"; };
 		2FBAAFDC2C618D76A7E940051A5D38A9 /* ASControlNode+Subclasses.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASControlNode+Subclasses.h"; path = "Source/ASControlNode+Subclasses.h"; sourceTree = "<group>"; };
 		3020516403DA8857304D8B26A8CFFB9D /* PINRemoteImageBasicCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageBasicCache.m; path = Source/Classes/PINRemoteImageBasicCache.m; sourceTree = "<group>"; };
-		304951079F44FADB75C165A47C47346F /* WXEmoticonContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXEmoticonContentNode.swift; sourceTree = "<group>"; };
 		30AC3D3E3CD946BBC4CF76B805F8B706 /* _ASScopeTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _ASScopeTimer.h; path = Source/Private/_ASScopeTimer.h; sourceTree = "<group>"; };
 		31970EF77AA73D4944521F86202E2B5B /* ASNetworkImageLoadInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASNetworkImageLoadInfo.h; path = Source/ASNetworkImageLoadInfo.h; sourceTree = "<group>"; };
 		31C35F8B194DB8508CDD167B18529812 /* ASTextNodeCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextNodeCommon.h; path = Source/ASTextNodeCommon.h; sourceTree = "<group>"; };
@@ -805,7 +809,6 @@
 		3446382E771FDA891DA7FBD8097573FC /* ASTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTabBarController.h; path = Source/ASTabBarController.h; sourceTree = "<group>"; };
 		34C38BCAD49C4024E2AC0438542CD141 /* ASImageNode+tvOS.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASImageNode+tvOS.mm"; path = "Source/tvOS/ASImageNode+tvOS.mm"; sourceTree = "<group>"; };
 		34CEDCBA40180BD8BC78574701203A88 /* ASCollectionViewProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionViewProtocols.h; path = Source/ASCollectionViewProtocols.h; sourceTree = "<group>"; };
-		350BD7D9979C60F4606ADF3EC0B8F9AD /* WXMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXMessage.swift; sourceTree = "<group>"; };
 		359362197C112A7EB22762FEE597CC65 /* Texture-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Texture-Info.plist"; sourceTree = "<group>"; };
 		35DBD0401C4BB9D88B955CFDE9749417 /* UIViewController+WXNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+WXNavigationBar.swift"; path = "Sources/UIViewController+WXNavigationBar.swift"; sourceTree = "<group>"; };
 		35E6ACE7CE8323EDF5E37CFB330764C2 /* ASViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASViewController.h; path = Source/ASViewController.h; sourceTree = "<group>"; };
@@ -819,12 +822,13 @@
 		390E0F47B9FF2800C2C335B8F217C39E /* ASCollectionGalleryLayoutDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionGalleryLayoutDelegate.h; path = Source/Details/ASCollectionGalleryLayoutDelegate.h; sourceTree = "<group>"; };
 		3938C29079B35063A6754221269F1CD6 /* ASCollectionNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionNode.h; path = Source/ASCollectionNode.h; sourceTree = "<group>"; };
 		394044AA2109FD63B2CB4025793C957D /* ASMultiplexImageNode.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASMultiplexImageNode.mm; path = Source/ASMultiplexImageNode.mm; sourceTree = "<group>"; };
-		396FFF685FBBF9E9C9519E1B4374F2F3 /* WXMessageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXMessageViewController.swift; path = Sources/WXMessageViewController.swift; sourceTree = "<group>"; };
 		39815F142E7ED947DB731F495603C894 /* FLAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImageView.m; path = FLAnimatedImage/FLAnimatedImageView.m; sourceTree = "<group>"; };
 		39BDD0913C73DAF45A67981B875B73F7 /* ASHashing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASHashing.h; path = Source/Details/ASHashing.h; sourceTree = "<group>"; };
 		3B5539C2F3E68F57D5E7788A18F35D39 /* FLAnimatedImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FLAnimatedImage.release.xcconfig; sourceTree = "<group>"; };
 		3BA1B64B774BF4155C6AA792AA8AC136 /* ASAssert.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASAssert.mm; path = Source/Base/ASAssert.mm; sourceTree = "<group>"; };
 		3C146AA03D75E72BEBE8F93C47604C6C /* ASCollectionViewLayoutFacilitatorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionViewLayoutFacilitatorProtocol.h; path = Source/ASCollectionViewLayoutFacilitatorProtocol.h; sourceTree = "<group>"; };
+		3C55F19EE4A3D761BD3D1476689CA8BF /* WXVoiceContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXVoiceContentNode.swift; sourceTree = "<group>"; };
+		3CE1E40C1A53DA1CBF513654A6B97DB6 /* WXMessageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXMessageViewController.swift; path = Sources/WXMessageViewController.swift; sourceTree = "<group>"; };
 		3CE4915C804AF0DEBA41D6E3DE2F846C /* PINRemoteImageBasicCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageBasicCache.h; path = Source/Classes/PINRemoteImageBasicCache.h; sourceTree = "<group>"; };
 		3D330B31E9F334244F66C2D22F3AEB8E /* ASControlTargetAction.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASControlTargetAction.mm; path = Source/Private/ASControlTargetAction.mm; sourceTree = "<group>"; };
 		3D3CB11AE59CD22139474CB583AAC747 /* ASMainThreadDeallocation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASMainThreadDeallocation.mm; path = Source/ASMainThreadDeallocation.mm; sourceTree = "<group>"; };
@@ -836,17 +840,15 @@
 		40FD4F4821124D31CC149810EC852E3B /* ASBatchFetching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASBatchFetching.h; path = Source/Private/ASBatchFetching.h; sourceTree = "<group>"; };
 		41A510A94AA2FF239009DB1296CD65DD /* ASButtonNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASButtonNode.h; path = Source/ASButtonNode.h; sourceTree = "<group>"; };
 		41BFAA56094BD4FDED907DBEFA8A92BE /* _ASAsyncTransactionGroup.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASAsyncTransactionGroup.mm; path = Source/Details/Transactions/_ASAsyncTransactionGroup.mm; sourceTree = "<group>"; };
-		41C75BA7182B146DF99974B8BEFDF179 /* WXMessageKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WXMessageKit.modulemap; sourceTree = "<group>"; };
 		42741E3F4A5EDDAEDAF1343C5C466A5F /* _ASAsyncTransactionContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _ASAsyncTransactionContainer.h; path = Source/Details/Transactions/_ASAsyncTransactionContainer.h; sourceTree = "<group>"; };
 		42A4E81C75A3553B5CF25A1F3573BC5E /* ASDefaultPlayButton.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASDefaultPlayButton.mm; path = Source/Private/ASDefaultPlayButton.mm; sourceTree = "<group>"; };
-		432EF743847097A3E0B6099B216E0D46 /* WXImageContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXImageContentNode.swift; sourceTree = "<group>"; };
 		434FA62464B408BC4C0CA6A762D999A3 /* _ASCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _ASCollectionViewCell.h; path = Source/Details/_ASCollectionViewCell.h; sourceTree = "<group>"; };
 		436250101DB8C7E2B1BD3A1C58610C59 /* _ASTransitionContext.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASTransitionContext.mm; path = Source/_ASTransitionContext.mm; sourceTree = "<group>"; };
 		4395A4FF4A5B1B1085DB9ADBF97DD505 /* ASRangeControllerUpdateRangeProtocol+Beta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASRangeControllerUpdateRangeProtocol+Beta.h"; path = "Source/Details/ASRangeControllerUpdateRangeProtocol+Beta.h"; sourceTree = "<group>"; };
+		444E6C92C8839E67E630172DA4D0339C /* WXMessageDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXMessageDataSource.swift; sourceTree = "<group>"; };
 		44610368773C6171851237DDBCE6D544 /* ASTraceEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTraceEvent.h; path = Source/Details/ASTraceEvent.h; sourceTree = "<group>"; };
 		44DE3E8E853D9606AE3856F520B463FE /* PINCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PINCache-dummy.m"; sourceTree = "<group>"; };
 		4591432FDD1D8F7F541116A89EB1F056 /* ASRangeController.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASRangeController.mm; path = Source/Details/ASRangeController.mm; sourceTree = "<group>"; };
-		45B87ACD7827873E60C6C077EE6D140F /* WXNoticeContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXNoticeContentNode.swift; sourceTree = "<group>"; };
 		466AA1DBA35AE4011C088555C4B169AF /* ASPhotosFrameworkImageRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPhotosFrameworkImageRequest.h; path = Source/Details/ASPhotosFrameworkImageRequest.h; sourceTree = "<group>"; };
 		466C478D7323E5D40EA31897775ECD44 /* PINRequestRetryStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRequestRetryStrategy.h; path = Source/Classes/PINRequestRetryStrategy.h; sourceTree = "<group>"; };
 		467678981FBD7EBC85D596366BB02D2C /* ASCollectionLayoutDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionLayoutDelegate.h; path = Source/Details/ASCollectionLayoutDelegate.h; sourceTree = "<group>"; };
@@ -869,13 +871,13 @@
 		4D1FBD819F0C791936D435AB7AA1DF11 /* _ASCollectionReusableView.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASCollectionReusableView.mm; path = Source/Details/_ASCollectionReusableView.mm; sourceTree = "<group>"; };
 		4DBFEEA58525E7EAF47273992BBF8BA9 /* ASScrollNode.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASScrollNode.mm; path = Source/ASScrollNode.mm; sourceTree = "<group>"; };
 		4EA264D3C22113B421FA01909317E9B0 /* ASLog.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASLog.mm; path = Source/Base/ASLog.mm; sourceTree = "<group>"; };
-		4F6BF8C45A5D7452C117561474F5CF89 /* WXUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXUtility.swift; sourceTree = "<group>"; };
 		4FC0F40D04115DF69394F435D5162C63 /* ASEventLog.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASEventLog.mm; path = Source/Details/ASEventLog.mm; sourceTree = "<group>"; };
 		4FC546317A3BF019ED4E63B41C01DAAB /* ASCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionView.h; path = Source/ASCollectionView.h; sourceTree = "<group>"; };
 		50E8A36C16E37A32395BA3ED51B55846 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		50FF64D8205DBA867939F85595342C4C /* WXNavigationBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXNavigationBar.release.xcconfig; sourceTree = "<group>"; };
 		5111903E855DA1EB1255FCAC58BD8934 /* PINSpeedRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINSpeedRecorder.h; path = Source/Classes/PINSpeedRecorder.h; sourceTree = "<group>"; };
 		515F08394AC6278EFD28FAD21B2110B6 /* ASHashing.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASHashing.mm; path = Source/Details/ASHashing.mm; sourceTree = "<group>"; };
+		51DF477EA73366DC3F8C65DE19A86DB9 /* WXEmoticonContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXEmoticonContentNode.swift; sourceTree = "<group>"; };
 		51EA7B28C041237EB1A1ACF6C313B410 /* ASTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTableView.h; path = Source/ASTableView.h; sourceTree = "<group>"; };
 		51EE3279FADF6F317EB276715EDDF17E /* ASImageContainerProtocolCategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASImageContainerProtocolCategories.h; path = Source/Details/ASImageContainerProtocolCategories.h; sourceTree = "<group>"; };
 		52402D34945F1E9460F9C59E306FA094 /* PINRemoteImageDownloadTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageDownloadTask.h; path = Source/Classes/PINRemoteImageDownloadTask.h; sourceTree = "<group>"; };
@@ -892,6 +894,7 @@
 		5517AE75560C86DB3F910DCBBE73D888 /* ASCollectionViewLayoutInspector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCollectionViewLayoutInspector.mm; path = Source/Details/ASCollectionViewLayoutInspector.mm; sourceTree = "<group>"; };
 		57420ED1A401DB4EF62AF09B56D8B149 /* _ASTransitionContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _ASTransitionContext.h; path = Source/_ASTransitionContext.h; sourceTree = "<group>"; };
 		57513389A747B2B62BE621CC836E5D5E /* ASTableView+Undeprecated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASTableView+Undeprecated.h"; path = "Source/Private/ASTableView+Undeprecated.h"; sourceTree = "<group>"; };
+		57DBB1704720CE003A608542A07B362C /* WXInputBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXInputBar.swift; sourceTree = "<group>"; };
 		58F1A98414C750FE5E7E5EBC216510A0 /* ASNetworkImageNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASNetworkImageNode.h; path = Source/ASNetworkImageNode.h; sourceTree = "<group>"; };
 		59944B6E6169B369F95134A963314121 /* PINImageView+PINRemoteImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINImageView+PINRemoteImage.m"; path = "Source/Classes/ImageCategories/PINImageView+PINRemoteImage.m"; sourceTree = "<group>"; };
 		599667DCF12EC1AE7F881E9C7E3BDB14 /* ASTextNodeWordKerner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextNodeWordKerner.h; path = Source/TextKit/ASTextNodeWordKerner.h; sourceTree = "<group>"; };
@@ -911,13 +914,13 @@
 		5CD9922B4FC94A411654FE7F9EADD21A /* ASCollections.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCollections.mm; path = Source/ASCollections.mm; sourceTree = "<group>"; };
 		5CF530E43787729D81A458E8B9AA7C83 /* ASTextNode2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextNode2.h; path = Source/ASTextNode2.h; sourceTree = "<group>"; };
 		5EB28C69B3C36F4C4F6AA40F25066C46 /* ASCollectionViewLayoutInspector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionViewLayoutInspector.h; path = Source/Details/ASCollectionViewLayoutInspector.h; sourceTree = "<group>"; };
-		618AA871B08FBFC3BE5E544D74B5EF0F /* WXVoiceContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXVoiceContentNode.swift; sourceTree = "<group>"; };
 		6265592B757BE943222DCAD91762A112 /* ASTextKitComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextKitComponents.h; path = Source/TextKit/ASTextKitComponents.h; sourceTree = "<group>"; };
 		626B63E7129AB81462747DA6B84688A6 /* PINImage+WebP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINImage+WebP.m"; path = "Source/Classes/Categories/PINImage+WebP.m"; sourceTree = "<group>"; };
 		628B7C0A9E31E73E815ABA7AB87F862C /* PINGIFAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINGIFAnimatedImage.m; path = Source/Classes/AnimatedImages/PINGIFAnimatedImage.m; sourceTree = "<group>"; };
 		6320170E5A5A268B11CAE15D4EF6A9E3 /* PINCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PINCache.framework; path = PINCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A3E29D821F098E24E77337844AEB89 /* NSAttributedString+ASText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+ASText.h"; path = "Source/Private/TextExperiment/Utility/NSAttributedString+ASText.h"; sourceTree = "<group>"; };
 		63A7EB062460D8CC85D587E3C7A2A398 /* ASDimension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDimension.h; path = Source/Layout/ASDimension.h; sourceTree = "<group>"; };
+		648C7DCA1EDC30D9ABCDBEA5BD408D04 /* WXNoticeContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXNoticeContentNode.swift; sourceTree = "<group>"; };
 		64D8C3FA2AA3C11AF3C312DAF78B45E3 /* ASCollectionLayoutContext+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASCollectionLayoutContext+Private.h"; path = "Source/Private/ASCollectionLayoutContext+Private.h"; sourceTree = "<group>"; };
 		65CB53E3BD3676E1CA26C36C44794E8C /* _ASAsyncTransactionGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _ASAsyncTransactionGroup.h; path = Source/Details/Transactions/_ASAsyncTransactionGroup.h; sourceTree = "<group>"; };
 		66317FADEE8781EAD7C5B8D700724172 /* ASRecursiveUnfairLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASRecursiveUnfairLock.h; path = Source/Details/ASRecursiveUnfairLock.h; sourceTree = "<group>"; };
@@ -939,11 +942,13 @@
 		6BE4C53E859CC6EE10682AEB94766FD7 /* ASControlTargetAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASControlTargetAction.h; path = Source/Private/ASControlTargetAction.h; sourceTree = "<group>"; };
 		6C0D131C7A12A8133C12C4C33EEA664A /* ASTextKitComponents.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextKitComponents.mm; path = Source/TextKit/ASTextKitComponents.mm; sourceTree = "<group>"; };
 		6C5B402C6CFF1BAB8E5EF25DDDF2CED8 /* Pods-WXMessageKitExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WXMessageKitExample.modulemap"; sourceTree = "<group>"; };
+		6C6A93A9F0A2B182D958B7BA47C25050 /* WXLocationContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXLocationContentNode.swift; sourceTree = "<group>"; };
 		6CC2CCEB59166D6618BDE5B62F54B03A /* ASTextKitRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextKitRenderer.h; path = Source/TextKit/ASTextKitRenderer.h; sourceTree = "<group>"; };
 		6D2C73CEB936C893759A00CAC117551C /* PINCache+PINRemoteImageCaching.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINCache+PINRemoteImageCaching.m"; path = "Source/Classes/PINCache/PINCache+PINRemoteImageCaching.m"; sourceTree = "<group>"; };
-		6D72750CEC89BDDE920319E0043E51A2 /* WXLinkParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXLinkParser.swift; sourceTree = "<group>"; };
 		6EB6E2D20B516353662DD1CBB87C4CDC /* PINRemoteImageCallbacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageCallbacks.h; path = Source/Classes/PINRemoteImageCallbacks.h; sourceTree = "<group>"; };
 		6EDA89CE9517F63ED3F480C92A5C1C80 /* ASDisplayNode+Beta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASDisplayNode+Beta.h"; path = "Source/ASDisplayNode+Beta.h"; sourceTree = "<group>"; };
+		6F9040C3AF6746A671C5428B7E019CD7 /* WXSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXSession.swift; sourceTree = "<group>"; };
+		6FB139C2A81C60ABC4874A7B1801BE5C /* WXMessageKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXMessageKit-umbrella.h"; sourceTree = "<group>"; };
 		6FC97E8727652989CFF12E2A02EB320C /* PINOperation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PINOperation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		701107C0330B1052C3D9F324E5553293 /* ASLayoutElementExtensibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASLayoutElementExtensibility.h; path = Source/Layout/ASLayoutElementExtensibility.h; sourceTree = "<group>"; };
 		7063B7D1DE728E91510C10FB79806655 /* UIImage+ASConvenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ASConvenience.h"; path = "Source/UIImage+ASConvenience.h"; sourceTree = "<group>"; };
@@ -953,6 +958,7 @@
 		728E400A11E852FB3C0958D698E29A86 /* AsyncDisplayKit+Debug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AsyncDisplayKit+Debug.h"; path = "Source/Debug/AsyncDisplayKit+Debug.h"; sourceTree = "<group>"; };
 		72AADAC4D1D1D5A2ADDB27A55E67BB7E /* ASImageContainerProtocolCategories.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASImageContainerProtocolCategories.mm; path = Source/Details/ASImageContainerProtocolCategories.mm; sourceTree = "<group>"; };
 		73CCCF127BE70B231A388A43B11BB53F /* PINOperationGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINOperationGroup.m; path = Source/PINOperationGroup.m; sourceTree = "<group>"; };
+		740C3D3475AAC839AB464CAC69545830 /* WXMessageKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WXMessageKit-Info.plist"; sourceTree = "<group>"; };
 		7419F14B48F9A116C40FC20D89FFD1F5 /* _ASCollectionViewCell.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASCollectionViewCell.mm; path = Source/Details/_ASCollectionViewCell.mm; sourceTree = "<group>"; };
 		742D240847163A7B6CB3C6BAC00A0DC4 /* ASPagerFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPagerFlowLayout.h; path = Source/ASPagerFlowLayout.h; sourceTree = "<group>"; };
 		746329142415A199A17D49F4E74B6288 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImageView.h; path = FLAnimatedImage/FLAnimatedImageView.h; sourceTree = "<group>"; };
@@ -996,13 +1002,12 @@
 		8603C79FB1AD98D6848445228B1F2AC0 /* AsyncDisplayKit+Tips.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "AsyncDisplayKit+Tips.mm"; path = "Source/Debug/AsyncDisplayKit+Tips.mm"; sourceTree = "<group>"; };
 		86261C6C82D65336646853CFA13B82FC /* NSData+ImageDetectors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageDetectors.m"; path = "Source/Classes/Categories/NSData+ImageDetectors.m"; sourceTree = "<group>"; };
 		864A4D068A865259992F84FF0275DC31 /* PINCache.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PINCache.debug.xcconfig; sourceTree = "<group>"; };
+		88534C6B2BC5E2D7854AD8FA3AF6C0E2 /* WXMessageKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WXMessageKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		88BECC60156D410B35C75631CA2D5354 /* ASCellNode+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASCellNode+Internal.h"; path = "Source/Private/ASCellNode+Internal.h"; sourceTree = "<group>"; };
 		88CC708CF71BD3D6391A982F77AA3DC4 /* ASDimension.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASDimension.mm; path = Source/Layout/ASDimension.mm; sourceTree = "<group>"; };
-		89101F0C5AC5A427C0785C9D3A77D4CB /* WXTimeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXTimeNode.swift; sourceTree = "<group>"; };
 		894C6D828CD5EC171FD43FCCE15D749D /* PINRemoteImageManagerResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageManagerResult.h; path = Source/Classes/PINRemoteImageManagerResult.h; sourceTree = "<group>"; };
 		899B074E8B262C4ECF8CC9FE9B64D44A /* ASTextNodeWordKerner.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextNodeWordKerner.mm; path = Source/TextKit/ASTextNodeWordKerner.mm; sourceTree = "<group>"; };
 		89E164D52D28413E28CBFC5B4930FB51 /* ASPageTable.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASPageTable.mm; path = Source/Details/ASPageTable.mm; sourceTree = "<group>"; };
-		8A7F64BA75CA047351E314F149462DBE /* WXMessageCellNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXMessageCellNode.swift; sourceTree = "<group>"; };
 		8B0C6987F61BF4CCEBDA4409443AB710 /* FLAnimatedImageView+PINRemoteImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FLAnimatedImageView+PINRemoteImage.m"; path = "Source/Classes/ImageCategories/FLAnimatedImageView+PINRemoteImage.m"; sourceTree = "<group>"; };
 		8B15F2C554838490006A39F4FF219703 /* PINOperation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PINOperation.debug.xcconfig; sourceTree = "<group>"; };
 		8B9F0D0D3A573938FBDDFF93FF9F12AD /* PINURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINURLSessionManager.m; path = Source/Classes/PINURLSessionManager.m; sourceTree = "<group>"; };
@@ -1014,10 +1019,10 @@
 		8D2C76AA29229D1B3AAF5AB0798699F7 /* ASTextKitEntityAttribute.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextKitEntityAttribute.mm; path = Source/TextKit/ASTextKitEntityAttribute.mm; sourceTree = "<group>"; };
 		8E5D93F21334CEE674AFA346B7162A40 /* UINavigationBar+WXNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+WXNavigationBar.swift"; path = "Sources/UINavigationBar+WXNavigationBar.swift"; sourceTree = "<group>"; };
 		8EFC5225DFF313BE8CEBEC73829C7067 /* NSIndexSet+ASHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSIndexSet+ASHelpers.h"; path = "Source/Details/NSIndexSet+ASHelpers.h"; sourceTree = "<group>"; };
-		8F18B60FA2D90DC099FC5F59C3C46F07 /* WXMessageKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXMessageKit.debug.xcconfig; sourceTree = "<group>"; };
 		8FA09F834E5FA4859E42C6BFA11D089D /* ASImageNode+AnimatedImage.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASImageNode+AnimatedImage.mm"; path = "Source/ASImageNode+AnimatedImage.mm"; sourceTree = "<group>"; };
 		9031381126BB711F92FDB538B4C560B9 /* ASSupplementaryNodeSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASSupplementaryNodeSource.h; path = Source/ASSupplementaryNodeSource.h; sourceTree = "<group>"; };
 		90A7EF5EA15E81A39DF999B7943CDEB7 /* ASDefaultPlayButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDefaultPlayButton.h; path = Source/Private/ASDefaultPlayButton.h; sourceTree = "<group>"; };
+		90C6C27BB76B2AF1A28A19AD47CFD86A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		9142AE0540CD5709519C3CC34F53F289 /* NSArray+Diffing.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "NSArray+Diffing.mm"; path = "Source/Details/NSArray+Diffing.mm"; sourceTree = "<group>"; };
 		91B4D5BC6FF7032226A35DCD305F58BD /* PINRemoteImageTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageTask.m; path = Source/Classes/PINRemoteImageTask.m; sourceTree = "<group>"; };
 		9221AAC962E26739C18A514BBDE0FD04 /* ASPINRemoteImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPINRemoteImageDownloader.h; path = Source/Details/ASPINRemoteImageDownloader.h; sourceTree = "<group>"; };
@@ -1031,6 +1036,7 @@
 		951F146513BB884BBAC2B43EA7FDF37A /* PINAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINAnimatedImage.h; path = Source/Classes/AnimatedImages/PINAnimatedImage.h; sourceTree = "<group>"; };
 		958617067AAB3BC4BF70E3463ACEEA0A /* ASImageNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASImageNode.h; path = Source/ASImageNode.h; sourceTree = "<group>"; };
 		95969457FF3F4B897DF4CD1ED82AA88F /* ASStackUnpositionedLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASStackUnpositionedLayout.h; path = Source/Private/Layout/ASStackUnpositionedLayout.h; sourceTree = "<group>"; };
+		969EE86983CEAFEFAF673746998956F8 /* WXUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXUtility.swift; sourceTree = "<group>"; };
 		96B7FF344B6411E0BD6697534B602176 /* NSMutableAttributedString+TextKitAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+TextKitAdditions.h"; path = "Source/Details/NSMutableAttributedString+TextKitAdditions.h"; sourceTree = "<group>"; };
 		96F7690484009EC6BF5F7FC340F367EA /* Pods-WXMessageKitExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WXMessageKitExample-dummy.m"; sourceTree = "<group>"; };
 		97560110B5EA50B74FB28425134282C5 /* ASCollectionView.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCollectionView.mm; path = Source/ASCollectionView.mm; sourceTree = "<group>"; };
@@ -1043,7 +1049,6 @@
 		99A70E671FFDDC480DA8CEE0492D8462 /* FLAnimatedImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FLAnimatedImage.modulemap; sourceTree = "<group>"; };
 		9B19C9494174A3C7D32A1EFF4E36417C /* ASEqualityHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASEqualityHelpers.h; path = Source/Base/ASEqualityHelpers.h; sourceTree = "<group>"; };
 		9BC3F525DB2E5D506EAF46E3049077F8 /* ASCollectionLayoutDefines.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCollectionLayoutDefines.mm; path = Source/Private/ASCollectionLayoutDefines.mm; sourceTree = "<group>"; };
-		9C0673FBB071C70B1041DB9934AED85F /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Sources/Media.xcassets; sourceTree = "<group>"; };
 		9C76D7308FE57230A8BCAA9A2903193E /* ASDefaultPlaybackButton.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASDefaultPlaybackButton.mm; path = Source/Private/ASDefaultPlaybackButton.mm; sourceTree = "<group>"; };
 		9CE00058D0CED9803FBB5A02D3169FE3 /* ASTip.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTip.mm; path = Source/Private/ASTip.mm; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -1053,7 +1058,6 @@
 		9E6038AF064BB4464835B984909D4086 /* ASControlNode+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASControlNode+Private.h"; path = "Source/Private/ASControlNode+Private.h"; sourceTree = "<group>"; };
 		9E769D4E4A1DAFEA7B1E49A47BE247CC /* ASDimensionInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDimensionInternal.h; path = Source/Layout/ASDimensionInternal.h; sourceTree = "<group>"; };
 		9FD78B400FA352AAC4247B11F05CCDF6 /* PINProgressiveImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINProgressiveImage.h; path = Source/Classes/PINProgressiveImage.h; sourceTree = "<group>"; };
-		9FEFE40B69DE29A6540BCD6380C7D326 /* WXMessageKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WXMessageKit-Info.plist"; sourceTree = "<group>"; };
 		A074D4FFCBA951E68ACE8F2867113DBE /* ASTableViewProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTableViewProtocols.h; path = Source/ASTableViewProtocols.h; sourceTree = "<group>"; };
 		A0CB3FECD5ACB6FC5C50BD1371592D6B /* ASExperimentalFeatures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASExperimentalFeatures.h; path = Source/ASExperimentalFeatures.h; sourceTree = "<group>"; };
 		A0DA94590C2301A468B76A94F8EACC5E /* PINOperation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINOperation-umbrella.h"; sourceTree = "<group>"; };
@@ -1064,7 +1068,6 @@
 		A2565BA8C1B4C70C1036835185EC1520 /* Texture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Texture.debug.xcconfig; sourceTree = "<group>"; };
 		A2ACFC6E268E40A580FA30FDC2D4E900 /* Pods-WXMessageKitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WXMessageKitExample.release.xcconfig"; sourceTree = "<group>"; };
 		A2C0797A588FEE7A27E9B30D9B6A24CD /* ASCornerLayoutSpec.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCornerLayoutSpec.mm; path = Source/Layout/ASCornerLayoutSpec.mm; sourceTree = "<group>"; };
-		A31E5F9009CD35180056834C6EFD4390 /* WXMessageKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WXMessageKit-dummy.m"; sourceTree = "<group>"; };
 		A3BA14E176BB680F963B60C6A086A6E8 /* PINMemMapAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINMemMapAnimatedImage.m; path = Source/Classes/AnimatedImages/PINMemMapAnimatedImage.m; sourceTree = "<group>"; };
 		A3EE95AF765145863478D2C30CE62B91 /* PINImage+DecodedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PINImage+DecodedImage.h"; path = "Source/Classes/Categories/PINImage+DecodedImage.h"; sourceTree = "<group>"; };
 		A45C8163DDB39D3837CE492A8DDF891E /* ASGraphicsContext.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASGraphicsContext.mm; path = Source/Details/ASGraphicsContext.mm; sourceTree = "<group>"; };
@@ -1073,13 +1076,13 @@
 		A5113A0217B3E09AB51D17A4873B5C81 /* ASCGImageBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCGImageBuffer.h; path = Source/ASCGImageBuffer.h; sourceTree = "<group>"; };
 		A5160A2B1CF10B4135ABA00712CE356D /* PINRemoteImageDownloadTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageDownloadTask.m; path = Source/Classes/PINRemoteImageDownloadTask.m; sourceTree = "<group>"; };
 		A55D320DDE79E062A1EBA481499B89A4 /* AsyncDisplayKit+Tips.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AsyncDisplayKit+Tips.h"; path = "Source/Debug/AsyncDisplayKit+Tips.h"; sourceTree = "<group>"; };
-		A5DA97FB49AA17D42A940BBCCDF7DC90 /* WXMessageDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXMessageDataSource.swift; sourceTree = "<group>"; };
+		A6CFA55A55F1C642E2893A0F5AB71DC1 /* WXTextContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXTextContentNode.swift; sourceTree = "<group>"; };
 		A70FAA88404D58F22BBA8F27941F2B88 /* ASRunLoopQueue.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASRunLoopQueue.mm; path = Source/ASRunLoopQueue.mm; sourceTree = "<group>"; };
 		A741675D049F650C3949402538B675DB /* PINDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINDiskCache.h; path = Source/PINDiskCache.h; sourceTree = "<group>"; };
-		A78BFA81883028211F9E790E515D6071 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		A7BC87499CCFFF9A602E395983728CFD /* PINCachedAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINCachedAnimatedImage.m; path = Source/Classes/AnimatedImages/PINCachedAnimatedImage.m; sourceTree = "<group>"; };
 		A7F75A6241A13B9FB1E1B9FF89E097A4 /* _ASAsyncTransaction.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASAsyncTransaction.mm; path = Source/Details/Transactions/_ASAsyncTransaction.mm; sourceTree = "<group>"; };
 		A804920595511979AFDF6E8EDB4077CB /* ASTextKitShadower.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextKitShadower.mm; path = Source/TextKit/ASTextKitShadower.mm; sourceTree = "<group>"; };
+		A856AD45421833E5ABD7872295F1262C /* WXMessageCellNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXMessageCellNode.swift; sourceTree = "<group>"; };
 		A86F519073600A0F2279535CF05B2B90 /* PINRemoteImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINRemoteImage-prefix.pch"; sourceTree = "<group>"; };
 		A88708EA65B660127286E246BFE693FD /* ASSection.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASSection.mm; path = Source/Private/ASSection.mm; sourceTree = "<group>"; };
 		A8A0C1749CD55AE1B664A79B2A567DCB /* _ASCollectionGalleryLayoutItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _ASCollectionGalleryLayoutItem.h; path = Source/Private/_ASCollectionGalleryLayoutItem.h; sourceTree = "<group>"; };
@@ -1089,14 +1092,13 @@
 		AAF1EA269C2018E999CFA66796D77058 /* ASDispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDispatch.h; path = Source/Private/ASDispatch.h; sourceTree = "<group>"; };
 		AAF5619DD0351D48748F392FBB37076F /* ASLayoutTransition.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASLayoutTransition.mm; path = Source/Private/ASLayoutTransition.mm; sourceTree = "<group>"; };
 		AB6CBB1DC6A0B87614EE3672C5C84361 /* ASLocking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASLocking.h; path = Source/ASLocking.h; sourceTree = "<group>"; };
+		AB7C61885EF1D6C18F9E9DA9F53C9DFE /* WXTimeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXTimeNode.swift; sourceTree = "<group>"; };
 		ABB4699AD0D71E89B2BE92FB404B6613 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		AD3A3580F0282CFC708FBE2EF1CD092D /* ASCollectionLayoutCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionLayoutCache.h; path = Source/Private/ASCollectionLayoutCache.h; sourceTree = "<group>"; };
+		AD697C722C9F71195DB40E88DE5B9DA2 /* WXMessageKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXMessageKit.debug.xcconfig; sourceTree = "<group>"; };
 		AE1C69EA1CE671008038A2557BEE2A1B /* ASPagerNode.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASPagerNode.mm; path = Source/ASPagerNode.mm; sourceTree = "<group>"; };
 		B055C6D8B86E2115F225864D51C48EEA /* ASTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextInput.h; path = Source/Private/TextExperiment/Component/ASTextInput.h; sourceTree = "<group>"; };
 		B0DA949B7DEF13F31FF9FAF9482C3AC4 /* ASNodeController+Beta.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASNodeController+Beta.mm"; path = "Source/ASNodeController+Beta.mm"; sourceTree = "<group>"; };
-		B159282B4E0A71B9C509757321B65288 /* WXLocationContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXLocationContentNode.swift; sourceTree = "<group>"; };
-		B1F8F9E3F89B415B9482221331CF676F /* WXMessageKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXMessageKit-umbrella.h"; sourceTree = "<group>"; };
-		B2C594FB3A4CD11C4E36F71720CE4A3F /* WXMessageKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXMessageKit.release.xcconfig; sourceTree = "<group>"; };
 		B35699A4DA63ACA64E95BB8418C1D9C8 /* ASDisplayNode+Yoga.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASDisplayNode+Yoga.h"; path = "Source/ASDisplayNode+Yoga.h"; sourceTree = "<group>"; };
 		B417DEC2FB7286D0154730E1C5A9BB7C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		B4EE20FE13E08FB9EBCA05CB2FA10E8C /* ASCenterLayoutSpec.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASCenterLayoutSpec.mm; path = Source/Layout/ASCenterLayoutSpec.mm; sourceTree = "<group>"; };
@@ -1105,11 +1107,11 @@
 		B55DBBC779A7E6C8F21EF3A12EE2F55A /* ASCollectionElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionElement.h; path = Source/Details/ASCollectionElement.h; sourceTree = "<group>"; };
 		B561325EB339D0797767E68D7DD4E7FA /* FLAnimatedImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FLAnimatedImage-dummy.m"; sourceTree = "<group>"; };
 		B610C298976530B14957037B2DC88904 /* ASPhotosFrameworkImageRequest.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASPhotosFrameworkImageRequest.mm; path = Source/Details/ASPhotosFrameworkImageRequest.mm; sourceTree = "<group>"; };
+		B6C6B5EA82D2E1E21E536951001A7475 /* WXMessageKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WXMessageKit.release.xcconfig; sourceTree = "<group>"; };
 		B741D63F1A09BC8682DEA68C2E94FFF9 /* _ASHierarchyChangeSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _ASHierarchyChangeSet.h; path = Source/Private/_ASHierarchyChangeSet.h; sourceTree = "<group>"; };
 		B7A632187B0D080E795DF1E8E0320D6C /* ASTextAttribute.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextAttribute.mm; path = Source/Private/TextExperiment/String/ASTextAttribute.mm; sourceTree = "<group>"; };
 		B821BC801CB657C66CD72BDFEF552576 /* ASTextLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextLayout.mm; path = Source/Private/TextExperiment/Component/ASTextLayout.mm; sourceTree = "<group>"; };
 		B836A183E78A89421AC56C00FC9FB8C5 /* PINRemoteImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PINRemoteImage-Info.plist"; sourceTree = "<group>"; };
-		B866A377417FF116DBB5B1B5843A30FA /* WXMessageContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXMessageContentNode.swift; sourceTree = "<group>"; };
 		B95E8CE868C5163EE1008EA80EE35663 /* ASTableNode+Beta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASTableNode+Beta.h"; path = "Source/ASTableNode+Beta.h"; sourceTree = "<group>"; };
 		BA835C5A0730CD6EB8FBFFA5612C3E1F /* ASConfigurationInternal.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASConfigurationInternal.mm; path = Source/ASConfigurationInternal.mm; sourceTree = "<group>"; };
 		BA9342E702CACC3EB25B1E152BE0BE12 /* ASLayoutTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASLayoutTransition.h; path = Source/Private/ASLayoutTransition.h; sourceTree = "<group>"; };
@@ -1142,6 +1144,7 @@
 		C539270D4D2504C4A938E815DF97DD07 /* FLAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImage.m; path = FLAnimatedImage/FLAnimatedImage.m; sourceTree = "<group>"; };
 		C62728AAA7BEBE88D901FC74DFB4DBF6 /* ASAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASAssert.h; path = Source/Base/ASAssert.h; sourceTree = "<group>"; };
 		C6F8CA2F76A44DBDFADD361CA4609443 /* ASTextKitEntityAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTextKitEntityAttribute.h; path = Source/TextKit/ASTextKitEntityAttribute.h; sourceTree = "<group>"; };
+		C74D1DF073DE4B67635FE5A0A94F7384 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		C75A011045CE17F6D3BC2740CCF1BFF2 /* ASAbsoluteLayoutSpec.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASAbsoluteLayoutSpec.mm; path = Source/Layout/ASAbsoluteLayoutSpec.mm; sourceTree = "<group>"; };
 		C7A418E606BAC2356D3D82B61D9BB638 /* PINRemoteImageProcessorTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageProcessorTask.m; path = Source/Classes/PINRemoteImageProcessorTask.m; sourceTree = "<group>"; };
 		C7E76EA27113E5B9FFE331673763779D /* PINButton+PINRemoteImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINButton+PINRemoteImage.m"; path = "Source/Classes/ImageCategories/PINButton+PINRemoteImage.m"; sourceTree = "<group>"; };
@@ -1150,7 +1153,6 @@
 		C8602681FADA3236227585F6C193896D /* ASMutableAttributedStringBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASMutableAttributedStringBuilder.h; path = Source/Details/ASMutableAttributedStringBuilder.h; sourceTree = "<group>"; };
 		C8969841F2A5AB5CB7CA33B6D0DBB825 /* ASIGListAdapterBasedDataSource.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASIGListAdapterBasedDataSource.mm; path = Source/Private/ASIGListAdapterBasedDataSource.mm; sourceTree = "<group>"; };
 		C8CC55C2BA4803E92C41C3C027DE9B5B /* PINRemoteImageCategoryManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageCategoryManager.h; path = Source/Classes/PINRemoteImageCategoryManager.h; sourceTree = "<group>"; };
-		C92B22FDE366A6462C3998A8D61FD91F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		C9FF62405D4260EDA88ADB709DCCD8D4 /* ASDisplayNode+Yoga.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASDisplayNode+Yoga.mm"; path = "Source/ASDisplayNode+Yoga.mm"; sourceTree = "<group>"; };
 		CA4889A58033C5E0BA7D68CCE2227A2E /* ASCollectionViewLayoutController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionViewLayoutController.h; path = Source/Details/ASCollectionViewLayoutController.h; sourceTree = "<group>"; };
 		CA5CEAB843DE8FC66529E7B58474816E /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Sources/Utility.swift; sourceTree = "<group>"; };
@@ -1173,12 +1175,12 @@
 		D2B7B88A109A8881B5F7461CBAF2D353 /* FLAnimatedImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FLAnimatedImage.debug.xcconfig; sourceTree = "<group>"; };
 		D3ABE8599FD5BAD5288A4DAF9F6E5BD0 /* ASObjectDescriptionHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASObjectDescriptionHelpers.h; path = Source/Details/ASObjectDescriptionHelpers.h; sourceTree = "<group>"; };
 		D3B9286AF9D95D4A74BA7D9D942F6A64 /* PINRemoteImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PINRemoteImage.release.xcconfig; sourceTree = "<group>"; };
+		D3F372FF012A57D175A291B10BFAA311 /* WXVideoContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXVideoContentNode.swift; sourceTree = "<group>"; };
 		D4FAA55061AFFBE9F9098DA85B1D12BD /* ASTextKitContext.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTextKitContext.mm; path = Source/TextKit/ASTextKitContext.mm; sourceTree = "<group>"; };
 		D5FCF1B089A78DEF7BC6234C3F7BEB2A /* ASRatioLayoutSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASRatioLayoutSpec.h; path = Source/Layout/ASRatioLayoutSpec.h; sourceTree = "<group>"; };
 		D64DD8663E9A9BB0C2D93FAAFFBE5C52 /* ASLayerBackingTipProvider.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASLayerBackingTipProvider.mm; path = Source/Private/ASLayerBackingTipProvider.mm; sourceTree = "<group>"; };
 		D6A5A91A3C17B15866564FE293B5E5DA /* ASTipProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASTipProvider.h; path = Source/Private/ASTipProvider.h; sourceTree = "<group>"; };
 		D785221E72D687799DB930F14FEB8903 /* PINOperation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINOperation-prefix.pch"; sourceTree = "<group>"; };
-		D81D56AEF02452047658133E7BDDE69C /* WXMessageKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXMessageKit-prefix.pch"; sourceTree = "<group>"; };
 		D83AA64E45F94DDD6DA1CADE3CE9E066 /* ASImageNode+AnimatedImagePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASImageNode+AnimatedImagePrivate.h"; path = "Source/Private/ASImageNode+AnimatedImagePrivate.h"; sourceTree = "<group>"; };
 		D869C7294F91AF6086C41998077DE560 /* ASMainSerialQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASMainSerialQueue.h; path = Source/Details/ASMainSerialQueue.h; sourceTree = "<group>"; };
 		D92D15EA804D0F2D697E4674F500D4BB /* WXNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WXNavigationBar.swift; path = Sources/WXNavigationBar.swift; sourceTree = "<group>"; };
@@ -1201,6 +1203,7 @@
 		E1D50CC0D402DB10EEF3D4B522F16B45 /* ASExperimentalFeatures.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASExperimentalFeatures.mm; path = Source/ASExperimentalFeatures.mm; sourceTree = "<group>"; };
 		E30515DDD01729B00D757E88990CEE03 /* ASAbstractLayoutController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASAbstractLayoutController.h; path = Source/Details/ASAbstractLayoutController.h; sourceTree = "<group>"; };
 		E3D1B140E99C0AB3648EC83D0B7FD7B5 /* ASCornerLayoutSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCornerLayoutSpec.h; path = Source/Layout/ASCornerLayoutSpec.h; sourceTree = "<group>"; };
+		E4C4B781F789347326E409D4C1A02BF2 /* WXMessageKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WXMessageKit-prefix.pch"; sourceTree = "<group>"; };
 		E612BD520943749F4F2206978F84C1B9 /* _ASHierarchyChangeSet.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASHierarchyChangeSet.mm; path = Source/Private/_ASHierarchyChangeSet.mm; sourceTree = "<group>"; };
 		E62236D3DEA1F916CF1F7D1BF29814CC /* ASTableNode.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTableNode.mm; path = Source/ASTableNode.mm; sourceTree = "<group>"; };
 		E6245E8BE5D17965B603E356C71F2109 /* ASCollectionFlowLayoutDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCollectionFlowLayoutDelegate.h; path = Source/Details/ASCollectionFlowLayoutDelegate.h; sourceTree = "<group>"; };
@@ -1225,6 +1228,7 @@
 		ED09D2BF5252D491B976669E7676AFEB /* _ASDisplayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _ASDisplayView.h; path = Source/Details/_ASDisplayView.h; sourceTree = "<group>"; };
 		EDC5F1CE7B450E9AEAEE0AF222D0F952 /* _ASPendingState.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = _ASPendingState.mm; path = Source/Private/_ASPendingState.mm; sourceTree = "<group>"; };
 		EE25DDC1411CBB664A31F1B5B173FA68 /* ASButtonNode.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASButtonNode.mm; path = Source/ASButtonNode.mm; sourceTree = "<group>"; };
+		EE434CFAB3256C9EEC01836E8C9721AD /* WXMessageKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WXMessageKit-dummy.m"; sourceTree = "<group>"; };
 		EE726372630D02BE153A43D2B20AC642 /* ASBasicImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASBasicImageDownloader.h; path = Source/Details/ASBasicImageDownloader.h; sourceTree = "<group>"; };
 		EFADAC911E0B95D5CF564FA6DA5837C0 /* ASTraitCollection.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTraitCollection.mm; path = Source/Details/ASTraitCollection.mm; sourceTree = "<group>"; };
 		F0918AFF640BCBFCC41AB9608CCB6384 /* ASRelativeLayoutSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASRelativeLayoutSpec.h; path = Source/Layout/ASRelativeLayoutSpec.h; sourceTree = "<group>"; };
@@ -1243,10 +1247,10 @@
 		F46298856CADBB5F802340E8F8ED4473 /* WXNavigationBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WXNavigationBar.modulemap; sourceTree = "<group>"; };
 		F46831F4FCE3AB140F12577CE0C2AAB3 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AsyncDisplayKit.framework; path = Texture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4930A2D6DA8BF132F516B79A59E7CE9 /* AsyncDisplayKit+IGListKitMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AsyncDisplayKit+IGListKitMethods.h"; path = "Source/AsyncDisplayKit+IGListKitMethods.h"; sourceTree = "<group>"; };
+		F49828ACE54DBD9763DFD6A4A56CB633 /* WXMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXMessage.swift; sourceTree = "<group>"; };
 		F504E364179F781D8E84286B8C102F2F /* ASWeakMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASWeakMap.h; path = Source/Private/ASWeakMap.h; sourceTree = "<group>"; };
 		F50C6789CDC178FBFA5424FEC0601E62 /* ASLayoutSpec.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASLayoutSpec.mm; path = Source/Layout/ASLayoutSpec.mm; sourceTree = "<group>"; };
 		F5A810FAEBAA6064EFF6474434C4E63A /* ASDisplayNode+Convenience.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASDisplayNode+Convenience.mm"; path = "Source/ASDisplayNode+Convenience.mm"; sourceTree = "<group>"; };
-		F5DD543D373AB6EC818706440A00CDD2 /* ResourceBundle-Media-WXMessageKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Media-WXMessageKit-Info.plist"; sourceTree = "<group>"; };
 		F6711E9466F12D88FC1BD9AD72813BCF /* ASRangeManagingNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASRangeManagingNode.h; path = Source/ASRangeManagingNode.h; sourceTree = "<group>"; };
 		F693A3F0914BAC1FE9DB419E7561FA9D /* ASControlNode+tvOS.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASControlNode+tvOS.mm"; path = "Source/tvOS/ASControlNode+tvOS.mm"; sourceTree = "<group>"; };
 		F6ACFCCD03FFCD99A2E62B2C16C173E3 /* WXNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WXNavigationBar.framework; path = WXNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1266,32 +1270,20 @@
 		FBB7A3D1C32206478D69F0B048630EB0 /* UIResponder+AsyncDisplayKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIResponder+AsyncDisplayKit.h"; path = "Source/UIResponder+AsyncDisplayKit.h"; sourceTree = "<group>"; };
 		FC34A66A24C1DFFFB72D89E5053419EB /* ASPagerFlowLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASPagerFlowLayout.mm; path = Source/ASPagerFlowLayout.mm; sourceTree = "<group>"; };
 		FC5B7603BBCAE1052B7F2354F207E92D /* Media.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Media.bundle; path = "WXMessageKit-Media.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCD35F4DF9D1553909001A79544461AD /* WXMessageKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WXMessageKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FDA2439F842D56DFE078CAABE77CBF12 /* ASLayout+IGListKit.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASLayout+IGListKit.mm"; path = "Source/Layout/ASLayout+IGListKit.mm"; sourceTree = "<group>"; };
-		FDC91C4CB17851A223CE50AAAA3BA552 /* WXVideoContentNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXVideoContentNode.swift; sourceTree = "<group>"; };
 		FDDE31302704BF582AB4319376EF733C /* ASNavigationController.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASNavigationController.mm; path = Source/ASNavigationController.mm; sourceTree = "<group>"; };
 		FE0F28E99B6C08CF119833C67E43498C /* PINCacheObjectSubscripting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINCacheObjectSubscripting.h; path = Source/PINCacheObjectSubscripting.h; sourceTree = "<group>"; };
+		FE770E78BE4A82B6F371F26EE3DD5FB6 /* WXExpressionParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXExpressionParser.swift; sourceTree = "<group>"; };
 		FE858314456339FFF712C07176A20550 /* ASTableView.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASTableView.mm; path = Source/ASTableView.mm; sourceTree = "<group>"; };
 		FF1903478B50B3CBD5AE990936D984E7 /* PINGIFAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINGIFAnimatedImage.h; path = Source/Classes/AnimatedImages/PINGIFAnimatedImage.h; sourceTree = "<group>"; };
 		FF1B90B055AA2D9E0E06C55A933BBC24 /* ASStackLayoutElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASStackLayoutElement.h; path = Source/Layout/ASStackLayoutElement.h; sourceTree = "<group>"; };
 		FF57430E9A14EB2F86B41509F30C0F3D /* PINOperation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PINOperation-dummy.m"; sourceTree = "<group>"; };
 		FF57FDF90A1722DC240A42B44CF7752F /* ASTextKitRenderer+Positioning.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "ASTextKitRenderer+Positioning.mm"; path = "Source/TextKit/ASTextKitRenderer+Positioning.mm"; sourceTree = "<group>"; };
-		FF6F92B4FA6B7BBD82670D3C1E847B2E /* WXExpressionParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WXExpressionParser.swift; sourceTree = "<group>"; };
 		FF88E8F438001F844E00F12A51282E1C /* ASWeakProxy.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = ASWeakProxy.mm; path = Source/Details/ASWeakProxy.mm; sourceTree = "<group>"; };
 		FF969382F22DD043499B5CE202B8776E /* ASDisplayNode+Subclasses.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ASDisplayNode+Subclasses.h"; path = "Source/ASDisplayNode+Subclasses.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		07A334AC8E2A161C469AD6A108809C8D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D7EE2434816A8BFD0EA1F82AEF11D40 /* AsyncDisplayKit.framework in Frameworks */,
-				B86885BA502CD4B472995101B71881E2 /* Foundation.framework in Frameworks */,
-				3889DCC7D6263DBACF320F52DCCC5922 /* PINRemoteImage.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1936C21DE636BD2B82081D2BDFFD902B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1312,6 +1304,16 @@
 				F26DBA07E4395641FAE0F387285C6DAD /* MapKit.framework in Frameworks */,
 				154078E295CEF73049CC0E6EA4E894BF /* Photos.framework in Frameworks */,
 				B078D55EE106C5BFF41BFFDE043A00C0 /* PINRemoteImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34D4A072F02C6461883201A45FEFD4FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C57F188EF062920F3034FC4D016C49 /* AsyncDisplayKit.framework in Frameworks */,
+				4CCBCD6C22A3545D02B6B09297627133 /* Foundation.framework in Frameworks */,
+				4626EC928C27FD6CE1493778835633A4 /* PINRemoteImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1341,13 +1343,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9722157B3FC9A5CD5D37938C9FC1F5BE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A778F03BF6D5012EB67925281D5EFB16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1373,6 +1368,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7C66E7DEC7B7E15AA1510433CA784A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1387,6 +1389,15 @@
 				3B8F2700DAE0DD748B7EECC303B4252F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07D2A6D6EED91101F139E5C2B5FCF899 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A856AD45421833E5ABD7872295F1262C /* WXMessageCellNode.swift */,
+			);
+			name = Cells;
+			path = Sources/Cells;
 			sourceTree = "<group>";
 		};
 		0974CA303C3EE596782FF16DD386EFA9 /* Core */ = {
@@ -1829,13 +1840,12 @@
 			path = "../Target Support Files/Texture";
 			sourceTree = "<group>";
 		};
-		36DF50C6E796CA5AEEF626B058E94732 /* Cells */ = {
+		1ED896D4E5DEEE9449AB8FD5E0DEAD59 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8A7F64BA75CA047351E314F149462DBE /* WXMessageCellNode.swift */,
+				28CB701F0D8F0A53E1F8921806953918 /* Media.xcassets */,
 			);
-			name = Cells;
-			path = Sources/Cells;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		3A7D3618DCD5F4F583CB0BFA11854DBF /* Support Files */ = {
@@ -1871,19 +1881,6 @@
 				2E4DFAD7707BD6E83EC51B9B94CAE1D0 /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		3F6743F4F8AC8EF900E1934235A15455 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				FF6F92B4FA6B7BBD82670D3C1E847B2E /* WXExpressionParser.swift */,
-				6D72750CEC89BDDE920319E0043E51A2 /* WXLinkParser.swift */,
-				350BD7D9979C60F4606ADF3EC0B8F9AD /* WXMessage.swift */,
-				A5DA97FB49AA17D42A940BBCCDF7DC90 /* WXMessageDataSource.swift */,
-				0A5DF2FF4575504A353ED4CA9433A20E /* WXSession.swift */,
-			);
-			name = Protocols;
-			path = Sources/Protocols;
 			sourceTree = "<group>";
 		};
 		431D1106777E1AE42353980B812FCBCE /* Support Files */ = {
@@ -1942,25 +1939,6 @@
 			path = "../Target Support Files/PINCache";
 			sourceTree = "<group>";
 		};
-		50C37A555C6D23A574F6B5D13D6BB91C /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A78BFA81883028211F9E790E515D6071 /* LICENSE */,
-				C92B22FDE366A6462C3998A8D61FD91F /* README.md */,
-				FCD35F4DF9D1553909001A79544461AD /* WXMessageKit.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		5D44C778236D4FF0D50276F084CBBBA3 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				89101F0C5AC5A427C0785C9D3A77D4CB /* WXTimeNode.swift */,
-			);
-			name = Views;
-			path = Sources/Views;
-			sourceTree = "<group>";
-		};
 		5E86D598ED0FE6D556E9C9003538AF8F /* Texture */ = {
 			isa = PBXGroup;
 			children = (
@@ -1971,46 +1949,56 @@
 			path = Texture;
 			sourceTree = "<group>";
 		};
-		7BCB6C05A52CD23342B4C907A6456F2D /* Support Files */ = {
+		6275A32B3EDF7E2E50C0B57B032090C2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				F5DD543D373AB6EC818706440A00CDD2 /* ResourceBundle-Media-WXMessageKit-Info.plist */,
-				41C75BA7182B146DF99974B8BEFDF179 /* WXMessageKit.modulemap */,
-				A31E5F9009CD35180056834C6EFD4390 /* WXMessageKit-dummy.m */,
-				9FEFE40B69DE29A6540BCD6380C7D326 /* WXMessageKit-Info.plist */,
-				D81D56AEF02452047658133E7BDDE69C /* WXMessageKit-prefix.pch */,
-				B1F8F9E3F89B415B9482221331CF676F /* WXMessageKit-umbrella.h */,
-				8F18B60FA2D90DC099FC5F59C3C46F07 /* WXMessageKit.debug.xcconfig */,
-				B2C594FB3A4CD11C4E36F71720CE4A3F /* WXMessageKit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/WXMessageKit";
-			sourceTree = "<group>";
-		};
-		877A25BEF61833FBFF989222CF6BB992 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				4F6BF8C45A5D7452C117561474F5CF89 /* WXUtility.swift */,
+				969EE86983CEAFEFAF673746998956F8 /* WXUtility.swift */,
 			);
 			name = Helper;
 			path = Sources/Helper;
 			sourceTree = "<group>";
 		};
-		93D81549DF2EBDDAE19E3CFE1EA5D763 /* WXMessageKit */ = {
+		7216FD68AE3F7D8A924955D4E0796FD1 /* WXMessageKit */ = {
 			isa = PBXGroup;
 			children = (
-				396FFF685FBBF9E9C9519E1B4374F2F3 /* WXMessageViewController.swift */,
-				36DF50C6E796CA5AEEF626B058E94732 /* Cells */,
-				CD4905F0861B8EBDEBFE5476CFA74582 /* Contents */,
-				877A25BEF61833FBFF989222CF6BB992 /* Helper */,
-				50C37A555C6D23A574F6B5D13D6BB91C /* Pod */,
-				3F6743F4F8AC8EF900E1934235A15455 /* Protocols */,
-				ECB7E113DEA46BB64F3B65640EC17505 /* Resources */,
-				7BCB6C05A52CD23342B4C907A6456F2D /* Support Files */,
-				5D44C778236D4FF0D50276F084CBBBA3 /* Views */,
+				3CE1E40C1A53DA1CBF513654A6B97DB6 /* WXMessageViewController.swift */,
+				07D2A6D6EED91101F139E5C2B5FCF899 /* Cells */,
+				C16350F5A913A8FA50F990BED9BC8ECE /* Contents */,
+				6275A32B3EDF7E2E50C0B57B032090C2 /* Helper */,
+				A4B38E638ACF6221CEDD79ECF71C4425 /* InputBar */,
+				C5F0DB6B5761EA8D44B2FF26581A8D70 /* Pod */,
+				D559CD1DFA6298AE8C61C7210258F430 /* Protocols */,
+				1ED896D4E5DEEE9449AB8FD5E0DEAD59 /* Resources */,
+				7270ECC89AC6F780812F16F30DB888EF /* Support Files */,
+				9E20BC8A85DD140945C58F5E0A338261 /* Views */,
 			);
 			name = WXMessageKit;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		7270ECC89AC6F780812F16F30DB888EF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20B25CFF354D26F55F4C6EE53C7AB7B3 /* ResourceBundle-Media-WXMessageKit-Info.plist */,
+				1ED232D0E50F494C531BBB04273E79C0 /* WXMessageKit.modulemap */,
+				EE434CFAB3256C9EEC01836E8C9721AD /* WXMessageKit-dummy.m */,
+				740C3D3475AAC839AB464CAC69545830 /* WXMessageKit-Info.plist */,
+				E4C4B781F789347326E409D4C1A02BF2 /* WXMessageKit-prefix.pch */,
+				6FB139C2A81C60ABC4874A7B1801BE5C /* WXMessageKit-umbrella.h */,
+				AD697C722C9F71195DB40E88DE5B9DA2 /* WXMessageKit.debug.xcconfig */,
+				B6C6B5EA82D2E1E21E536951001A7475 /* WXMessageKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WXMessageKit";
+			sourceTree = "<group>";
+		};
+		9E20BC8A85DD140945C58F5E0A338261 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C61885EF1D6C18F9E9DA9F53C9DFE /* WXTimeNode.swift */,
+			);
+			name = Views;
+			path = Sources/Views;
 			sourceTree = "<group>";
 		};
 		9EB619DA81858EF0459462684A8C258B /* Core */ = {
@@ -2028,6 +2016,15 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		A4B38E638ACF6221CEDD79ECF71C4425 /* InputBar */ = {
+			isa = PBXGroup;
+			children = (
+				57DBB1704720CE003A608542A07B362C /* WXInputBar.swift */,
+			);
+			name = InputBar;
+			path = Sources/InputBar;
+			sourceTree = "<group>";
+		};
 		AC3479287E543D43B8109A8688B981EB /* FLAnimatedImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -2039,6 +2036,14 @@
 			);
 			name = FLAnimatedImage;
 			path = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		BC5CB4596C23B9FA9DF81AC0BC9819F6 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7216FD68AE3F7D8A924955D4E0796FD1 /* WXMessageKit */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		BDBA81C681B602F38C4CB178FEE5AD1F /* Products */ = {
@@ -2082,6 +2087,22 @@
 			path = PINCache;
 			sourceTree = "<group>";
 		};
+		C16350F5A913A8FA50F990BED9BC8ECE /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				51DF477EA73366DC3F8C65DE19A86DB9 /* WXEmoticonContentNode.swift */,
+				107403307B1DB29BCC096D9290E8A5F9 /* WXImageContentNode.swift */,
+				6C6A93A9F0A2B182D958B7BA47C25050 /* WXLocationContentNode.swift */,
+				0BBC93BC1A9C42C1A0D4DE86574EAEFC /* WXMessageContentNode.swift */,
+				648C7DCA1EDC30D9ABCDBEA5BD408D04 /* WXNoticeContentNode.swift */,
+				A6CFA55A55F1C642E2893A0F5AB71DC1 /* WXTextContentNode.swift */,
+				D3F372FF012A57D175A291B10BFAA311 /* WXVideoContentNode.swift */,
+				3C55F19EE4A3D761BD3D1476689CA8BF /* WXVoiceContentNode.swift */,
+			);
+			name = Contents;
+			path = Sources/Contents;
+			sourceTree = "<group>";
+		};
 		C25F79B4F644069CEC24DE9BB6096123 /* PINRemoteImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -2094,27 +2115,21 @@
 			path = PINRemoteImage;
 			sourceTree = "<group>";
 		};
-		CD4905F0861B8EBDEBFE5476CFA74582 /* Contents */ = {
+		C5F0DB6B5761EA8D44B2FF26581A8D70 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				304951079F44FADB75C165A47C47346F /* WXEmoticonContentNode.swift */,
-				432EF743847097A3E0B6099B216E0D46 /* WXImageContentNode.swift */,
-				B159282B4E0A71B9C509757321B65288 /* WXLocationContentNode.swift */,
-				B866A377417FF116DBB5B1B5843A30FA /* WXMessageContentNode.swift */,
-				45B87ACD7827873E60C6C077EE6D140F /* WXNoticeContentNode.swift */,
-				1503638020DD1AC0E0D3B8E493C09551 /* WXTextContentNode.swift */,
-				FDC91C4CB17851A223CE50AAAA3BA552 /* WXVideoContentNode.swift */,
-				618AA871B08FBFC3BE5E544D74B5EF0F /* WXVoiceContentNode.swift */,
+				90C6C27BB76B2AF1A28A19AD47CFD86A /* LICENSE */,
+				C74D1DF073DE4B67635FE5A0A94F7384 /* README.md */,
+				88534C6B2BC5E2D7854AD8FA3AF6C0E2 /* WXMessageKit.podspec */,
 			);
-			name = Contents;
-			path = Sources/Contents;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				EC41A10914DB6197D6C366E799A6CA9D /* Development Pods */,
+				BC5CB4596C23B9FA9DF81AC0BC9819F6 /* Development Pods */,
 				04B5E29CA1D79D3214CE6244FD2414C8 /* Frameworks */,
 				DAE1474A51BBE0EA2165044244A61BFE /* Pods */,
 				BDBA81C681B602F38C4CB178FEE5AD1F /* Products */,
@@ -2135,6 +2150,19 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/PINOperation";
+			sourceTree = "<group>";
+		};
+		D559CD1DFA6298AE8C61C7210258F430 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FE770E78BE4A82B6F371F26EE3DD5FB6 /* WXExpressionParser.swift */,
+				2ECF63977F406D0D9BF4F099F3758038 /* WXLinkParser.swift */,
+				F49828ACE54DBD9763DFD6A4A56CB633 /* WXMessage.swift */,
+				444E6C92C8839E67E630172DA4D0339C /* WXMessageDataSource.swift */,
+				6F9040C3AF6746A671C5428B7E019CD7 /* WXSession.swift */,
+			);
+			name = Protocols;
+			path = Sources/Protocols;
 			sourceTree = "<group>";
 		};
 		DAE1474A51BBE0EA2165044244A61BFE /* Pods */ = {
@@ -2228,14 +2256,6 @@
 			name = "Arc-exception-safe";
 			sourceTree = "<group>";
 		};
-		EC41A10914DB6197D6C366E799A6CA9D /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				93D81549DF2EBDDAE19E3CFE1EA5D763 /* WXMessageKit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		EC71E962CE3AF09D47987602BFFE597A /* PINOperation */ = {
 			isa = PBXGroup;
 			children = (
@@ -2250,14 +2270,6 @@
 			);
 			name = PINOperation;
 			path = PINOperation;
-			sourceTree = "<group>";
-		};
-		ECB7E113DEA46BB64F3B65640EC17505 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				9C0673FBB071C70B1041DB9934AED85F /* Media.xcassets */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		FD9FE002525DE82E41DB0096C196CD0F /* PINCache */ = {
@@ -2540,11 +2552,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		998920E0ECB6A9C484F9698585F4B95B /* Headers */ = {
+		881C33ACB5D9603DD4A25D8084D67DD4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A451DE275B3D3F75D42F95693023A0E /* WXMessageKit-umbrella.h in Headers */,
+				808F13CDCCA8915291C0FCF385B269A0 /* WXMessageKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2653,19 +2665,19 @@
 		};
 		4132C476B62F20FDC6A0F590DC960D37 /* WXMessageKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36956F859F84BF6E1F80DB1B4E390735 /* Build configuration list for PBXNativeTarget "WXMessageKit" */;
+			buildConfigurationList = 11E8F18A6EF788A7B26FCF1EB03480B2 /* Build configuration list for PBXNativeTarget "WXMessageKit" */;
 			buildPhases = (
-				998920E0ECB6A9C484F9698585F4B95B /* Headers */,
-				EE7A6E28B5DA540EF2629C3A6F5678CD /* Sources */,
-				07A334AC8E2A161C469AD6A108809C8D /* Frameworks */,
-				41880B9586985B1D209B2BF1E2930502 /* Resources */,
+				881C33ACB5D9603DD4A25D8084D67DD4 /* Headers */,
+				3D1EF761C08D5AD4525D5168B03E32E5 /* Sources */,
+				34D4A072F02C6461883201A45FEFD4FB /* Frameworks */,
+				A895FDA12281AA8B0D9E3D70BACD27F6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DC9F0D7B4F0E3C9A8F0522D9401C534D /* PBXTargetDependency */,
-				1971EBFDF3DF9AE967DC21C78CC7219D /* PBXTargetDependency */,
-				43AD2C41E73AE396B8DAC97E40FDA1D8 /* PBXTargetDependency */,
+				BB7D5F130524B270C0E9518A34CDE70C /* PBXTargetDependency */,
+				3C5D2D3B0767245AA753E6F3FF54E3B8 /* PBXTargetDependency */,
+				C1C9D73DE102C3218B27906431780C0A /* PBXTargetDependency */,
 			);
 			name = WXMessageKit;
 			productName = WXMessageKit;
@@ -2728,11 +2740,11 @@
 		};
 		752D425EA0C1E5BCC145CCFC49C21AE3 /* WXMessageKit-Media */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC2B4AA5EB15F9C0BC3FA8385CC6CF27 /* Build configuration list for PBXNativeTarget "WXMessageKit-Media" */;
+			buildConfigurationList = C2438203574BAC3F0431C884F2A57CB8 /* Build configuration list for PBXNativeTarget "WXMessageKit-Media" */;
 			buildPhases = (
-				A85FC580545CEF36159A9B5C5E9659AC /* Sources */,
-				9722157B3FC9A5CD5D37938C9FC1F5BE /* Frameworks */,
-				2974C01965671CB10F5B4F9794B233A3 /* Resources */,
+				96FE43EA16E4FA63503859830DE1D850 /* Sources */,
+				F7C66E7DEC7B7E15AA1510433CA784A9 /* Frameworks */,
+				E601925497FF239C8482220093231B25 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -2845,26 +2857,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2974C01965671CB10F5B4F9794B233A3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BD028C6CD34086196AD3A16D712F7160 /* Media.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		37C7A5AF0DE3FFE6DA8319E6C0AADD04 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		41880B9586985B1D209B2BF1E2930502 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				70287DABD6CEE93DF5D6B849E64F480A /* Media.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2882,10 +2878,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A895FDA12281AA8B0D9E3D70BACD27F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5984286D813586D05B56ADF9A87537B9 /* Media.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3D9A6CC1BC0C661EE081290A3ADA04B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E601925497FF239C8482220093231B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F4A0F9240EA7298BE610C5B5BFA19E /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2906,6 +2918,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3D1EF761C08D5AD4525D5168B03E32E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629B2E54DE38B7EB6650C0331363EA09 /* WXEmoticonContentNode.swift in Sources */,
+				B20580E002AAB5EB708CFEC3D037574B /* WXExpressionParser.swift in Sources */,
+				1598AE300F38D69B2424FEDB50994CA8 /* WXImageContentNode.swift in Sources */,
+				7C56C58456EC73299F44D86C86B60379 /* WXInputBar.swift in Sources */,
+				720DC94785106EC238696FF6304FE47A /* WXLinkParser.swift in Sources */,
+				B89B9695B0382264D4CAFE6FFAF625DC /* WXLocationContentNode.swift in Sources */,
+				ED4471AC846660D526E48CD6CD5C19DE /* WXMessage.swift in Sources */,
+				D0C35450A6C23F9A3266AFFDEBC4ADBD /* WXMessageCellNode.swift in Sources */,
+				795CB1C5FA063E395906512A1D769D14 /* WXMessageContentNode.swift in Sources */,
+				ED0B14558EBF10100A2B279FDC9F3D2C /* WXMessageDataSource.swift in Sources */,
+				EF8D1B742AC0D84FD6A263A01DA1437A /* WXMessageKit-dummy.m in Sources */,
+				11132F84705067D80D36988EFD5E8F19 /* WXMessageViewController.swift in Sources */,
+				0B0C47A213F3DB49DD603591FD033AC9 /* WXNoticeContentNode.swift in Sources */,
+				D1161C677957BCCA3C07BB5C02A9C467 /* WXSession.swift in Sources */,
+				5F2D0BAFAD9EC9EDDC41A63B170B7983 /* WXTextContentNode.swift in Sources */,
+				92973299463484CD0F0E20AD83E51AC7 /* WXTimeNode.swift in Sources */,
+				62D25F65CB22A5EA8746E158F2CA2B9A /* WXUtility.swift in Sources */,
+				EBA533AC43734981FD80612E8B0205F8 /* WXVideoContentNode.swift in Sources */,
+				395375556E4C1557B3533D424012BF0B /* WXVoiceContentNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CF091A6F21E933F0E417FCEC4B09D66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2927,6 +2965,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		96FE43EA16E4FA63503859830DE1D850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CD9A7DB29AB9C244829F0F0080BD3D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2937,13 +2982,6 @@
 				96CF823B8BD3C01C420E7211C3DE9561 /* Utility.swift in Sources */,
 				ABC41EF72D95CB66799C2BE1074FE513 /* WXNavigationBar-dummy.m in Sources */,
 				A52AE667528A304D00C4286547AF9E2E /* WXNavigationBar.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A85FC580545CEF36159A9B5C5E9659AC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3185,31 +3223,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE7A6E28B5DA540EF2629C3A6F5678CD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D72F1BD4069AEF7FA2BE4CC387CD3A19 /* WXEmoticonContentNode.swift in Sources */,
-				30258730F4C86D4E1382EABCA8DDEEDF /* WXExpressionParser.swift in Sources */,
-				21226D6A12F4AD62E1F22246D5E935EE /* WXImageContentNode.swift in Sources */,
-				FCD897B8A6A09E6B5BE8A932AF850782 /* WXLinkParser.swift in Sources */,
-				9CA57836E865421142CF04DDCE59E20F /* WXLocationContentNode.swift in Sources */,
-				528A23D31E81A109E828B0C133791951 /* WXMessage.swift in Sources */,
-				7476886C290FBEE37F3005BF85A20C36 /* WXMessageCellNode.swift in Sources */,
-				0D846AA848796830FF77EA387B3660B3 /* WXMessageContentNode.swift in Sources */,
-				301EFE5DF22AAAA4C74A38F09B4FA4A9 /* WXMessageDataSource.swift in Sources */,
-				BA80BB743D3B36C0649C7BE064871EF1 /* WXMessageKit-dummy.m in Sources */,
-				1FB8573FD45C81C92579D191261D3B3C /* WXMessageViewController.swift in Sources */,
-				6FA5C3233D4AD6623951C0CF823440B9 /* WXNoticeContentNode.swift in Sources */,
-				DB93E5C05052E4E7783BC4974EFBFFD6 /* WXSession.swift in Sources */,
-				D1C938D069A89EC95BEDF2088BB3A336 /* WXTextContentNode.swift in Sources */,
-				46F8E7C59D9B48F495D293848940C980 /* WXTimeNode.swift in Sources */,
-				E2EB9FC7E41724327DFD31F6E9263ACD /* WXUtility.swift in Sources */,
-				F318079158B756C1515030FE2616E5A8 /* WXVideoContentNode.swift in Sources */,
-				C9E71DF65F8F59C0D3F1A125ECB831D0 /* WXVoiceContentNode.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -3225,12 +3238,6 @@
 			target = 4A8E8992707D01510894596DB9BCCA00 /* FLAnimatedImage */;
 			targetProxy = D343345AF9CE8D330F458BB788809482 /* PBXContainerItemProxy */;
 		};
-		1971EBFDF3DF9AE967DC21C78CC7219D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Texture;
-			target = DB66E43BC980D741F3C7C5CF3ACEEFA4 /* Texture */;
-			targetProxy = 9C915D59411BA25D5DD70B4B2267DB58 /* PBXContainerItemProxy */;
-		};
 		2878FCD5AE1495E5A7586AD4804F9121 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PINOperation;
@@ -3243,11 +3250,11 @@
 			target = 4132C476B62F20FDC6A0F590DC960D37 /* WXMessageKit */;
 			targetProxy = B39AA7FEB73BE724A31FD2490D37CE85 /* PBXContainerItemProxy */;
 		};
-		43AD2C41E73AE396B8DAC97E40FDA1D8 /* PBXTargetDependency */ = {
+		3C5D2D3B0767245AA753E6F3FF54E3B8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "WXMessageKit-Media";
-			target = 752D425EA0C1E5BCC145CCFC49C21AE3 /* WXMessageKit-Media */;
-			targetProxy = 6BA89E1719922D83EF97121F44DEE346 /* PBXContainerItemProxy */;
+			name = Texture;
+			target = DB66E43BC980D741F3C7C5CF3ACEEFA4 /* Texture */;
+			targetProxy = B95B488307180F7166DCDB555F205F57 /* PBXContainerItemProxy */;
 		};
 		50DE4C826642E1A7A0201C6FC2ABA667 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3291,11 +3298,17 @@
 			target = E2A8B2A28D2EAB2E4CCF3B69E6792851 /* PINRemoteImage */;
 			targetProxy = 9E69C729BDC147DE35E03D350C945696 /* PBXContainerItemProxy */;
 		};
-		DC9F0D7B4F0E3C9A8F0522D9401C534D /* PBXTargetDependency */ = {
+		BB7D5F130524B270C0E9518A34CDE70C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PINRemoteImage;
 			target = E2A8B2A28D2EAB2E4CCF3B69E6792851 /* PINRemoteImage */;
-			targetProxy = 9C864DE4CE17D76683B247A304A30247 /* PBXContainerItemProxy */;
+			targetProxy = ECC1673CC4B589B019CB48F4B2A4C368 /* PBXContainerItemProxy */;
+		};
+		C1C9D73DE102C3218B27906431780C0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "WXMessageKit-Media";
+			target = 752D425EA0C1E5BCC145CCFC49C21AE3 /* WXMessageKit-Media */;
+			targetProxy = C9CFC799B14EF801B2E8A569AA4AF9F2 /* PBXContainerItemProxy */;
 		};
 		E74BED1F23C3B9831F84696AE745A813 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3480,6 +3493,43 @@
 			};
 			name = Debug;
 		};
+		24854BAE63F31075C682BFBB29FC0D6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C6B5EA82D2E1E21E536951001A7475 /* WXMessageKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WXMessageKit/WXMessageKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WXMessageKit/WXMessageKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WXMessageKit/WXMessageKit.modulemap";
+				PRODUCT_MODULE_NAME = WXMessageKit;
+				PRODUCT_NAME = WXMessageKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		26545F2F27AAF940195F0DF974F2B873 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA2B46DAFB9FF7200D862733C679C1FC /* PINOperation.release.xcconfig */;
@@ -3587,6 +3637,23 @@
 			};
 			name = Release;
 		};
+		424ACECE1FBA8C83520204794F4A7A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C6B5EA82D2E1E21E536951001A7475 /* WXMessageKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WXMessageKit";
+				IBSC_MODULE = WXMessageKit;
+				INFOPLIST_FILE = "Target Support Files/WXMessageKit/ResourceBundle-Media-WXMessageKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = Media;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		4A4B20F947E06CAA3186CD77B54D89EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8B15F2C554838490006A39F4FF219703 /* PINOperation.debug.xcconfig */;
@@ -3619,6 +3686,23 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		599BF0EE86BA6A61F346634D66861B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD697C722C9F71195DB40E88DE5B9DA2 /* WXMessageKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WXMessageKit";
+				IBSC_MODULE = WXMessageKit;
+				INFOPLIST_FILE = "Target Support Files/WXMessageKit/ResourceBundle-Media-WXMessageKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = Media;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -3658,9 +3742,9 @@
 			};
 			name = Debug;
 		};
-		68C16C3F08C07EE67582587E407127AC /* Release */ = {
+		626E83D33AE4ACDE1E3C59712E98F78F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2C594FB3A4CD11C4E36F71720CE4A3F /* WXMessageKit.release.xcconfig */;
+			baseConfigurationReference = AD697C722C9F71195DB40E88DE5B9DA2 /* WXMessageKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -3689,11 +3773,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		A9A12A003419E9A6515B84449ABDE555 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -3730,23 +3813,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AFEE2EFF3BC0894A71A1E1B9339779C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F18B60FA2D90DC099FC5F59C3C46F07 /* WXMessageKit.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WXMessageKit";
-				IBSC_MODULE = WXMessageKit;
-				INFOPLIST_FILE = "Target Support Files/WXMessageKit/ResourceBundle-Media-WXMessageKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = Media;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -3894,59 +3960,6 @@
 			};
 			name = Release;
 		};
-		D193987B50E3BEAFF3F7D4CDD43E94DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2C594FB3A4CD11C4E36F71720CE4A3F /* WXMessageKit.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WXMessageKit";
-				IBSC_MODULE = WXMessageKit;
-				INFOPLIST_FILE = "Target Support Files/WXMessageKit/ResourceBundle-Media-WXMessageKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = Media;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		D6110CDC9F0AF14FA69CD1FDA81264F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F18B60FA2D90DC099FC5F59C3C46F07 /* WXMessageKit.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WXMessageKit/WXMessageKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WXMessageKit/WXMessageKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/WXMessageKit/WXMessageKit.modulemap";
-				PRODUCT_MODULE_NAME = WXMessageKit;
-				PRODUCT_NAME = WXMessageKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		E71CFD104F7BE6E1544681028E25890E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A2565BA8C1B4C70C1036835185EC1520 /* Texture.debug.xcconfig */;
@@ -4045,20 +4058,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		11E8F18A6EF788A7B26FCF1EB03480B2 /* Build configuration list for PBXNativeTarget "WXMessageKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				626E83D33AE4ACDE1E3C59712E98F78F /* Debug */,
+				24854BAE63F31075C682BFBB29FC0D6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		14088B7296F043F753D5957271096369 /* Build configuration list for PBXNativeTarget "FLAnimatedImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A9F0E7621449293FBCE80D4E794F676 /* Debug */,
 				B9CD34C7951CC3C5C2A18B146F3146C4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		36956F859F84BF6E1F80DB1B4E390735 /* Build configuration list for PBXNativeTarget "WXMessageKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D6110CDC9F0AF14FA69CD1FDA81264F9 /* Debug */,
-				68C16C3F08C07EE67582587E407127AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4126,11 +4139,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC2B4AA5EB15F9C0BC3FA8385CC6CF27 /* Build configuration list for PBXNativeTarget "WXMessageKit-Media" */ = {
+		C2438203574BAC3F0431C884F2A57CB8 /* Build configuration list for PBXNativeTarget "WXMessageKit-Media" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFEE2EFF3BC0894A71A1E1B9339779C3 /* Debug */,
-				D193987B50E3BEAFF3F7D4CDD43E94DE /* Release */,
+				599BF0EE86BA6A61F346634D66861B13 /* Debug */,
+				424ACECE1FBA8C83520204794F4A7A6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.source_files    = 'Sources/**/*.swift'
   s.resource_bundle = { 'Media' => 'Sources/Media.xcassets'}
   s.ios.deployment_target = '12.0'
-  s.dependency 'PINRemoteImage'
   s.dependency 'Texture'
+  s.dependency 'PINRemoteImage', '3.0.0-beta.13'
   
 end
