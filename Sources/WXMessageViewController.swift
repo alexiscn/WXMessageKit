@@ -49,6 +49,7 @@ open class WXMessageViewController: ASViewController<ASDisplayNode> {
         
         configureTableNode()
         configureInputBar()
+        scrollToLastMessage(animated: false)
     }
     
     func configureTableNode() {

@@ -7,8 +7,23 @@
 
 import UIKit
 
+/*
+ ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐
+   ┌────┐ ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐  ┌────┐ ┌────┐
+ │ │voic│        Input Text View         │stic│ │more│ │
+   │ e  │ │                           │  │ker │ │    │
+ │ └────┘  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─   └────┘ └────┘ │
+  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
+ │                                                     │
+ │                                                     │
+                    Custom Input View
+ │                                                     │
+ │                                                     │
+ └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┘
+ */
 public class WXInputBar: UIView {
     
+    /// Container view for input views, include `inputTextView`, `voiceButton`, `stickerButton`, `moreButton`
     public let inputContainerView: UIView
     
     public let voiceButton: UIButton
@@ -69,7 +84,7 @@ public class WXInputBar: UIView {
         inputTextView.textContainerInset = UIEdgeInsets(top: 10, left: 8, bottom: 10, right: 8)
         inputTextView.layer.cornerRadius = 6
         inputTextView.layer.masksToBounds = true
-        inputTextView.tintColor = .red
+        inputTextView.tintColor = UIColor(red: 0.0, green: 194.0/255, blue: 95.0/255, alpha: 1.0)
         
         customInputContainerView = UIView()
         
@@ -94,7 +109,7 @@ public class WXInputBar: UIView {
         
         configureConstraints()
         configureEvents()
-        registerNotifications()
+        registerKeyboardNotifications()
         
         inputTextView.delegate = self
     }
@@ -249,17 +264,27 @@ extension WXInputBar {
     }
     
     private func setPreferredContentHeight(_ contentHeight: CGFloat, animated: Bool) {
-        updateTableView(animated: animated)
+        updateTableViewInsets(with: contentHeight, animated: animated)
     }
     
-    private func updateTableView(animated: Bool) {
-        associatedTableView?.scrollIndicatorInsets.bottom = bounds.height - safeAreaBottomInset
+    private func updateTableViewInsets(with preferredHeight: CGFloat, animated: Bool) {
+        
+        guard let tableView = associatedTableView else {
+            return
+        }
+        
+        tableView.scrollIndicatorInsets.bottom = preferredHeight - safeAreaBottomInset
         if animated {
             UIView.beginAnimations(nil, context: nil)
-            UIView.setAnimationDuration(0.5)
+            UIView.setAnimationDuration(0.25)
             UIView.setAnimationCurve(.overdamped)
         }
-        associatedTableView?.contentInset.bottom = bounds.height
+        
+        let offset = tableView.contentOffset.y + preferredHeight - tableView.contentInset.bottom
+        
+        tableView.contentInset.bottom = preferredHeight
+        tableView.setContentOffset(CGPoint(x: 0, y: offset), animated: false)
+        
         if animated {
             UIView.commitAnimations()
         }
@@ -270,7 +295,7 @@ extension WXInputBar {
 
 extension WXInputBar {
     
-    private func registerNotifications() {
+    private func registerKeyboardNotifications() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(keyboardDidShow(_:)),
                                                name: UIResponder.keyboardDidShowNotification,
@@ -296,9 +321,17 @@ extension WXInputBar {
             return
         }
         let keyboardWillBeInvisible = (screenHeight - endFrame.origin.y) <= 1
-        
         if !keyboardWillBeInvisible {
             customInputContainerHeightConstraint.constant = endFrame.height 
+        }
+        
+        if keyboardWillBeInvisible {
+            
+        } else {
+            let height = screenHeight - endFrame.origin.y + inputContainerView.frame.height
+            if bounds.height != height {
+                setPreferredContentHeight(height, animated: false)
+            }
         }
     }
     
